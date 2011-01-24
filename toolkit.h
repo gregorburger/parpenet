@@ -19,10 +19,10 @@ AUTHOR:     L. Rossman
 
 #ifdef DLL
   #ifdef __cplusplus
-  #define DLLEXPORT extern "C" __declspec(dllexport) __stdcall
+  #define DLLEXPORT extern "C"
   #else
-  #define DLLEXPORT __declspec(dllexport) __stdcall
-  #endif
+  #define DLLEXPORT
+#endif
 #else
   #ifdef __cplusplus
   #define DLLEXPORT extern "C"
