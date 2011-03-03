@@ -1,3 +1,5 @@
+#ifndef EPANET2_MEMPOOL_H
+#define EPANET2_MEMPOOL_H
 /*
 **  mempool.h
 **
@@ -17,3 +19,5 @@ char           *Alloc(long);
 alloc_handle_t *AllocSetPool(alloc_handle_t *);
 void            AllocReset(void);
 void            AllocFreePool(void);
+
+#endif

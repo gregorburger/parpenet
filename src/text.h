@@ -1,3 +1,5 @@
+#ifndef EPANET2_TEXT_H
+#define EPANET2_TEXT_H
 /*
 ****************************************************
 
@@ -528,3 +530,4 @@ AUTHOR:     L. Rossman
 #define WARN5 "WARNING: Valves cannot deliver enough flow."
 #define WARN6 "WARNING: System has negative pressures."
 
+#endif

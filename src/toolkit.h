@@ -1,3 +1,5 @@
+#ifndef EPANET2_TOOLKIT_H
+#define EPANET2_TOOLKIT_H
 /*
 *******************************************************************
 
@@ -222,3 +224,4 @@ AUTHOR:     L. Rossman
  int  DLLEXPORT ENsetstatusreport(int);
  int  DLLEXPORT ENsetqualtype(int, char *, char *, char *);
 
+#endif

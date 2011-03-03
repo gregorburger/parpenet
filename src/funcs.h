@@ -1,3 +1,5 @@
+#ifndef EPANET2_FUNCS_H
+#define EPANET2_FUNCS_H
 /*
 **************************************************************************
                                                                    
@@ -279,3 +281,5 @@ int     saveepilog(void);                 /* Saves output file epilog   */
 
 /* ------------ INPFILE.C --------------*/
 int     saveinpfile(char *);              /* Saves network to text file  */
+
+#endif

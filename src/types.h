@@ -1,3 +1,5 @@
+#ifndef TYPES_H
+#define TYPES_H
 /*
 ***********************************************************************
                                                                      
@@ -451,3 +453,4 @@ enum HdrType                    /* Type of table heading   */
                   NODEHDR,      /*  Node Results           */
                   LINKHDR};     /*  Link Results           */
 
+#endif

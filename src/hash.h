@@ -1,3 +1,5 @@
+#ifndef EPANET2_HASH_H
+#define EPANET2_HASH_H
 /* HASH.H
 **
 ** Header file for Hash Table module HASH.C
@@ -22,3 +24,4 @@ int 	HTfind(HTtable *, char *);
 char    *HTfindKey(HTtable *, char *);
 void	HTfree(HTtable *);
 	
+#endif
