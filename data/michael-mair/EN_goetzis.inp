@@ -1,0 +1,2420 @@
+[TITLE]
+
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ 218             	547         	0.09060     	ObererBerg      	;
+ 269             	575.5       	0.08034     	ObererBerg      	;
+ 270             	562.4       	0           	ObererBerg      	;
+ 272             	550         	0.03932     	ObererBerg      	;
+ 277             	555.5       	0.03419     	ObererBerg      	;
+ 449             	616.1       	0.00000     	ObererBerg      	;
+ 491             	608         	0.00000     	ObererBerg      	;
+ 504             	564         	0           	ObererBerg      	;
+ 519             	591.4       	0.15385     	ObererBerg      	;
+ 521             	591.2       	0.05641     	ObererBerg      	;
+ 537             	559         	0.13162     	ObererBerg      	;
+ 515A            	737         	0.00000     	ObererBerg      	;
+ 516A            	640.7       	0.00000     	ObererBerg      	;
+ 517A            	631.7       	0.00000     	ObererBerg      	;
+ 518A            	649.6       	0.03761     	ObererBerg      	;
+ 520A            	581.4       	0.00000     	ObererBerg      	;
+ EICHB_SCHW2     	575         	0.37607     	ObererBerg      	;
+ EICHB_SCHW      	575         	0.00000     	ObererBerg      	;
+ HY10            	538         	0           	ObererBerg      	;
+ 177             	484.19      	0.01864     	UntererBerg     	;
+ 177A            	492.5       	0.02175     	UntererBerg     	;
+ 178             	497.87      	0.02175     	UntererBerg     	;
+ 180             	519.72      	0.03418     	UntererBerg     	;
+ 181             	532         	0.00621     	UntererBerg     	;
+ 182             	522.5       	0.02796     	UntererBerg     	;
+ 183             	514         	0.01864     	UntererBerg     	;
+ 216             	510         	0.03418     	UntererBerg     	;
+ 217             	500         	0.00000     	UntererBerg     	;
+ 219             	537.1       	0.06525     	UntererBerg     	;
+ 220             	533         	0.00000     	UntererBerg     	;
+ 220A            	526         	0.00000     	UntererBerg     	;
+ 222             	526.1       	0.01197     	UntererBerg     	;
+ 223             	527.5       	0.07768     	UntererBerg     	;
+ 224             	516.6       	0.06214     	UntererBerg     	;
+ 225             	514         	0.01553     	UntererBerg     	;
+ 226             	522.9       	0.03728     	UntererBerg     	;
+ 228             	520.3       	0.00000     	UntererBerg     	;
+ 229             	519.5       	0.00000     	UntererBerg     	;
+ 230             	520.5       	0.03107     	UntererBerg     	;
+ 231             	527         	0.04661     	UntererBerg     	;
+ 232             	528.84      	0.00932     	UntererBerg     	;
+ 263             	524         	0.04039     	UntererBerg     	;
+ 264             	527.6       	0.01864     	UntererBerg     	;
+ 266             	526.6       	0.03418     	UntererBerg     	;
+ 265             	527.5       	0.02175     	UntererBerg     	;
+ 267             	532.1       	0.08389     	UntererBerg     	;
+ 268             	527.1       	0.04039     	UntererBerg     	;
+ 495             	554.3       	0.00000     	UntererBerg     	;
+ 502             	491.3       	0.00621     	UntererBerg     	;
+ 503             	513         	0.01243     	UntererBerg     	;
+ 509             	528.1       	0.06214     	UntererBerg     	;
+ 523             	513.4       	0.03418     	UntererBerg     	;
+ 525             	491         	0.00000     	UntererBerg     	;
+ 524             	513.8       	0.03107     	UntererBerg     	;
+ 526             	523.81      	0.04971     	UntererBerg     	;
+ 527             	527.18      	0.00000     	UntererBerg     	;
+ 528             	528.8       	0.02486     	UntererBerg     	;
+ 536             	557.6       	0.00000     	UntererBerg     	;
+ 71              	440         	0.03247     	Markt           	;
+ 72              	437.1       	0.01706     	Markt           	;
+ 74              	437.5       	0.00550     	Markt           	;
+ 75              	437.5       	0.00550     	Markt           	;
+ 78              	438.5       	0.01156     	Markt           	;
+ 80              	439         	0.00550     	Markt           	;
+ 81              	451         	0.00550     	Markt           	;
+ 82              	466.5       	0.00605     	Markt           	;
+ 83              	450.5       	0.00605     	Markt           	;
+ 84              	444         	0.00605     	Markt           	;
+ 86              	457         	0.00605     	Markt           	;
+ 87              	451.5       	0.01156     	Markt           	;
+ 88              	453         	0.01156     	Markt           	;
+ 89              	453.5       	0.01156     	Markt           	;
+ 90              	455.5       	0.11007     	Markt           	;
+ 91              	450         	0.01156     	Markt           	;
+ 93              	458         	0.00715     	Markt           	;
+ 95              	476         	0.00550     	Markt           	;
+ 96              	472         	0.01046     	Markt           	;
+ 97              	468         	0.00550     	Markt           	;
+ 98              	462         	0.00550     	Markt           	;
+ 99              	458         	0.00550     	Markt           	;
+ 100             	462         	0.01046     	Markt           	;
+ 102             	459         	0.00550     	Markt           	;
+ 103             	457         	0.00495     	Markt           	;
+ 104             	455.5       	0.00495     	Markt           	;
+ 105             	455         	0.04293     	Markt           	;
+ 106             	452.5       	0.04843     	Markt           	;
+ 107             	450.5       	0.01431     	Markt           	;
+ 108             	455.5       	0.01541     	Markt           	;
+ 109             	459.5       	0.00550     	Markt           	;
+ 110             	443.5       	0.00605     	Markt           	;
+ 111             	443         	0.00605     	Markt           	;
+ 112             	442         	0.01596     	Markt           	;
+ 113             	446         	0.09081     	Markt           	;
+ 114             	442         	0.05228     	Markt           	;
+ 162             	446.5       	0.07815     	Markt           	;
+ 164             	447.5       	0.03908     	Markt           	;
+ 167             	447         	0.01706     	Markt           	;
+ 169             	449.5       	0.02807     	Markt           	;
+ 171             	450.5       	0.02201     	Markt           	;
+ 172             	452         	0.05559     	Markt           	;
+ 189             	443.5       	0.00000     	Markt           	;
+ 190             	442.5       	0.00000     	Markt           	;
+ 213             	443.2       	0.00000     	Markt           	;
+ 457             	500         	0           	Markt           	;
+ 458             	483.5       	0.02256     	Markt           	;
+ 460             	479         	0.00000     	Markt           	;
+ 465             	465         	0.00550     	Markt           	;
+ 483             	448.5       	0.00000     	Markt           	;
+ 490             	474         	0.00000     	Markt           	;
+ 514             	459.5       	0.00165     	Markt           	;
+ 520             	463         	0.00605     	Markt           	;
+ 114A            	440         	0.02697     	Unterzone       	;
+ 190A            	440         	0.00000     	Markt           	;
+ 457A            	497.1       	0.00220     	Markt           	;
+ 90A             	455.5       	0.00000     	Markt           	;
+ 90B             	453         	0.00000     	Markt           	;
+ HY96            	441.5       	0.00000     	Markt           	;
+ HY96A           	440.8       	0.00000     	Markt           	;
+ HY96B           	443.1       	0.06824     	Markt           	;
+ 2               	422.5       	0.00060     	Unterzone       	;
+ 3               	423         	0.00185     	Unterzone       	;
+ 4               	424         	0.00179     	Unterzone       	;
+ 5               	425         	0.00030     	Unterzone       	;
+ 6               	424.5       	0.00030     	Unterzone       	;
+ 7               	425.5       	0.00090     	Unterzone       	;
+ 8               	426.5       	0.00078     	Unterzone       	;
+ 9               	427         	0.00078     	Unterzone       	;
+ 10              	426         	0.00311     	Unterzone       	;
+ 11              	426.5       	0.00311     	Unterzone       	;
+ 12              	428         	0.00299     	Unterzone       	;
+ 13              	426         	0.00598     	Unterzone       	;
+ 14              	425.5       	0.00215     	Unterzone       	;
+ 15              	424.5       	0.00251     	Unterzone       	;
+ 16              	425         	0.00299     	Unterzone       	;
+ 17              	428         	0.00078     	Unterzone       	;
+ 18              	428.5       	0.00078     	Unterzone       	;
+ 19              	429         	0.00078     	Unterzone       	;
+ 21              	430         	0.00114     	Unterzone       	;
+ 23              	429         	0.00239     	Unterzone       	;
+ 24              	430         	0.00317     	Unterzone       	;
+ 25              	430         	0.00257     	Unterzone       	;
+ 26              	429.5       	0.00299     	Unterzone       	;
+ 33              	434         	0.02512     	Unterzone       	;
+ 34              	436         	0.00467     	Unterzone       	;
+ 35              	427.5       	0.00365     	Unterzone       	;
+ 36              	427         	0.00060     	Unterzone       	;
+ 37              	426.5       	0.00299     	Unterzone       	;
+ 38              	425.5       	0.00299     	Unterzone       	;
+ 39              	424.5       	0.00371     	Unterzone       	;
+ 40              	427         	0.00102     	Unterzone       	;
+ 41              	424.5       	0.00598     	Unterzone       	;
+ 42              	423         	0.00837     	Unterzone       	;
+ 43              	424.5       	0.00969     	Unterzone       	;
+ 44              	423.5       	0.01113     	Unterzone       	;
+ 45              	422.5       	0.00478     	Unterzone       	;
+ 46              	423.5       	0.00299     	Unterzone       	;
+ 47              	423         	0.00084     	Unterzone       	;
+ 48              	423         	0.00359     	Unterzone       	;
+ 49              	422.5       	0.00598     	Unterzone       	;
+ 52              	426.5       	0.01741     	Unterzone       	;
+ 53              	427         	0.00299     	Unterzone       	;
+ 54              	427         	0.00120     	Unterzone       	;
+ 58              	427         	0.00359     	Unterzone       	;
+ 60              	427         	0.00299     	Unterzone       	;
+ 62              	423         	0.00359     	Unterzone       	;
+ 63              	428         	0.00574     	Unterzone       	;
+ 64              	432         	0.00598     	Unterzone       	;
+ 65              	432.5       	0.00299     	Unterzone       	;
+ 66              	426.5       	0.00281     	Unterzone       	;
+ 67              	432.5       	0.00299     	Unterzone       	;
+ 68              	434         	0.00150     	Unterzone       	;
+ 69              	434.5       	0.00227     	Unterzone       	;
+ 73              	436.9       	0           	Markt           	;
+ 77              	435         	0.00574     	Unterzone       	;
+ 79              	435.1       	0.00431     	Markt           	;
+ 115             	438         	0.00120     	Unterzone       	;
+ 116             	437.5       	0.00239     	Unterzone       	;
+ 118             	436.5       	0.00120     	Unterzone       	;
+ 119             	436.5       	0.00598     	Unterzone       	;
+ 120             	437.5       	0.00502     	Unterzone       	;
+ 122             	434         	0.00598     	Unterzone       	;
+ 123             	432         	0.00299     	Unterzone       	;
+ 125             	431         	0.01370     	Unterzone       	;
+ 126             	429.5       	0.00126     	Unterzone       	;
+ 127             	429.5       	0.00239     	Unterzone       	;
+ 128             	428.5       	0.00305     	Unterzone       	;
+ 129             	428         	0.00299     	Unterzone       	;
+ 130             	426.5       	0.00257     	Unterzone       	;
+ 131             	427.5       	0.00658     	Unterzone       	;
+ 133             	427.5       	0.00179     	Unterzone       	;
+ 134             	427.5       	0.00197     	Unterzone       	;
+ 135             	427.5       	0.00239     	Unterzone       	;
+ 136             	423.5       	0.00239     	Unterzone       	;
+ 137             	423.5       	0.01124     	Unterzone       	;
+ 138             	425         	0.00299     	Unterzone       	;
+ 139             	422         	0.00060     	Unterzone       	;
+ 140             	422.36      	0.00299     	Unterzone       	;
+ 145             	422.5       	0.00144     	Unterzone       	;
+ 146             	422.5       	0.00060     	Unterzone       	;
+ 147             	425         	0.00114     	Unterzone       	;
+ 149             	430.5       	0.00245     	Unterzone       	;
+ 150             	430         	0.00245     	Unterzone       	;
+ 151             	428         	0.00455     	Unterzone       	;
+ 152             	426.5       	0.00550     	Unterzone       	;
+ 153             	426.5       	0.00425     	Unterzone       	;
+ 154             	433         	0.00772     	Unterzone       	;
+ 155             	433         	0.01101     	Unterzone       	;
+ 156             	436         	0.00478     	Unterzone       	;
+ 157             	437         	0.00508     	Unterzone       	;
+ 159             	437.5       	0.00215     	Unterzone       	;
+ 161             	437         	0.00778     	Unterzone       	;
+ 163             	447.5       	0.00478     	Unterzone       	;
+ 184             	444         	0.00299     	Unterzone       	;
+ 186             	443.5       	0.00455     	Unterzone       	;
+ 188             	450         	0.00825     	Unterzone       	;
+ 192             	439         	0.00634     	Unterzone       	;
+ 194             	439         	0.00347     	Unterzone       	;
+ 195             	435         	0.01208     	Unterzone       	;
+ 196             	434         	0.01262     	Unterzone       	;
+ 197             	437.5       	0.00449     	Unterzone       	;
+ 198             	430.5       	0.00299     	Unterzone       	;
+ 199             	429         	0.00419     	Unterzone       	;
+ 200             	431         	0.01352     	Unterzone       	;
+ 201             	427         	0.00126     	Unterzone       	;
+ 202             	426         	0.00179     	Unterzone       	;
+ 206             	419.5       	0.00239     	Unterzone       	;
+ 207             	419.5       	0.00126     	Unterzone       	;
+ 211             	419         	0.01507     	Unterzone       	;
+ 234             	417.5       	0.01531     	Unterzone       	;
+ 235             	419.5       	0.00090     	Unterzone       	;
+ 236             	419.5       	0.00060     	Unterzone       	;
+ 237             	420         	0.00120     	Unterzone       	;
+ 238             	420         	0.00060     	Unterzone       	;
+ 239             	422.5       	0.00179     	Unterzone       	;
+ 240             	422         	0.00299     	Unterzone       	;
+ 241             	424         	0.00305     	Unterzone       	;
+ 242             	425.5       	0.00299     	Unterzone       	;
+ 243             	426         	0.00066     	Unterzone       	;
+ 244             	427         	0.00042     	Unterzone       	;
+ 245             	427         	0.00478     	Unterzone       	;
+ 246             	427         	0.00652     	Unterzone       	;
+ 247             	430         	0.01382     	Unterzone       	;
+ 248             	428         	0.00347     	Unterzone       	;
+ 249             	430         	0.00185     	Unterzone       	;
+ 250             	430         	0.00179     	Unterzone       	;
+ 252             	431.5       	0.00395     	Unterzone       	;
+ 253             	435         	0.00120     	Unterzone       	;
+ 254             	437         	0.00150     	Unterzone       	;
+ 256             	437         	0.00239     	Unterzone       	;
+ 259             	437         	0.00514     	Unterzone       	;
+ 260             	441         	0.00395     	Unterzone       	;
+ 261             	442         	0.00478     	Unterzone       	;
+ 262             	438         	0.00299     	Unterzone       	;
+ 281             	434.5       	0.00150     	Unterzone       	;
+ 282             	433         	0.00179     	Unterzone       	;
+ 285             	434         	0.00239     	Unterzone       	;
+ 289             	435         	0.01029     	Unterzone       	;
+ 290             	428         	0.00419     	Unterzone       	;
+ 291             	428         	0.00120     	Unterzone       	;
+ 292             	428         	0.00060     	Unterzone       	;
+ 293             	428         	0.00610     	Unterzone       	;
+ 294             	428         	0.00060     	Unterzone       	;
+ 295             	424         	0.00419     	Unterzone       	;
+ 297             	422.5       	0.00239     	Unterzone       	;
+ 299             	422         	0.00179     	Unterzone       	;
+ 301             	420         	0.00030     	Unterzone       	;
+ 302             	420         	0.00060     	Unterzone       	;
+ 303             	420         	0.00179     	Unterzone       	;
+ 304             	417.5       	0.00742     	Unterzone       	;
+ 308             	414         	0.00299     	Unterzone       	;
+ 309             	416         	0.00090     	Unterzone       	;
+ 311             	416         	0.00102     	Unterzone       	;
+ 313             	416         	0.00060     	Unterzone       	;
+ 314             	415         	0.00096     	Unterzone       	;
+ 315             	414         	0.00060     	Unterzone       	;
+ 318             	418.5       	0.00072     	Unterzone       	;
+ 319             	418         	0.00239     	Unterzone       	;
+ 320             	419.5       	0.00096     	Unterzone       	;
+ 321             	419.5       	0.00114     	Unterzone       	;
+ 322             	419         	0.00030     	Unterzone       	;
+ 323             	415.5       	0.00096     	Unterzone       	;
+ 324             	420         	0.00179     	Unterzone       	;
+ 325             	421.5       	0.00359     	Unterzone       	;
+ 327             	422         	0.00299     	Unterzone       	;
+ 328             	423.5       	0.00335     	Unterzone       	;
+ 329             	422.5       	0.00359     	Unterzone       	;
+ 330             	421         	0.00365     	Unterzone       	;
+ 331             	424         	0.00060     	Unterzone       	;
+ 333             	424         	0.00341     	Unterzone       	;
+ 335             	424         	0.00060     	Unterzone       	;
+ 337             	421.5       	0.00778     	Unterzone       	;
+ 338             	426         	0.00419     	Unterzone       	;
+ 340             	427.5       	0.01316     	Unterzone       	;
+ 341             	424         	0.00239     	Unterzone       	;
+ 343             	429.5       	0.00173     	Unterzone       	;
+ 344             	429.5       	0.00120     	Unterzone       	;
+ 345             	432         	0.00179     	Unterzone       	;
+ 346             	432         	0.00215     	Unterzone       	;
+ 348             	431.5       	0.00179     	Unterzone       	;
+ 349             	430.5       	0.00179     	Unterzone       	;
+ 352             	432.5       	0.00072     	Unterzone       	;
+ 353             	427.5       	0.00598     	Unterzone       	;
+ 354             	429.5       	0.00179     	Unterzone       	;
+ 355             	431         	0.00179     	Unterzone       	;
+ 358             	431.5       	0.00718     	Unterzone       	;
+ 360             	432         	0.00299     	Unterzone       	;
+ 361             	431.5       	0.01675     	Unterzone       	;
+ 364             	433         	0.00275     	Unterzone       	;
+ 365             	430.5       	0.00921     	Unterzone       	;
+ 367             	427         	0.00245     	Unterzone       	;
+ 368             	425.5       	0.00419     	Unterzone       	;
+ 369             	424         	0.00365     	Unterzone       	;
+ 370             	424         	0.00000     	Unterzone       	;
+ 371             	419         	0.00179     	Unterzone       	;
+ 372             	419.5       	0.00353     	Unterzone       	;
+ 373             	420         	0.00658     	Unterzone       	;
+ 375             	420         	0.00161     	Unterzone       	;
+ 376             	420.5       	0.00299     	Unterzone       	;
+ 377             	422         	0.00239     	Unterzone       	;
+ 378             	422.5       	0.00245     	Unterzone       	;
+ 379             	420.5       	0.00299     	Unterzone       	;
+ 380             	419         	0.00299     	Unterzone       	;
+ 381             	420         	0.00179     	Unterzone       	;
+ 382             	412.5       	0.00000     	Unterzone       	;
+ 383             	413.5       	0.00150     	Unterzone       	;
+ 385             	425         	0.00778     	Unterzone       	;
+ 386             	422.5       	0.00275     	Unterzone       	;
+ 387             	429         	0.00484     	Unterzone       	;
+ 389             	413.5       	0.00179     	Unterzone       	;
+ 390             	413.3       	0.00179     	Unterzone       	;
+ 391             	414.2       	0.00239     	Unterzone       	;
+ 392             	413.7       	0.00239     	Unterzone       	;
+ 394             	413.8       	0.00496     	Unterzone       	;
+ 395             	413.85      	0.00299     	Unterzone       	;
+ 396             	413.8       	0.00299     	Unterzone       	;
+ 397             	413         	0.00335     	Unterzone       	;
+ 399             	412         	0.00825     	Unterzone       	;
+ 400             	415         	0.00179     	Unterzone       	;
+ 401             	415         	0.00120     	Unterzone       	;
+ 403             	414         	0.00203     	Unterzone       	;
+ 404             	414.5       	0.00090     	Unterzone       	;
+ 405             	414         	0.00060     	Unterzone       	;
+ 406             	414         	0.00060     	Unterzone       	;
+ 407             	418         	0.00090     	Unterzone       	;
+ 408             	416.7       	0.00060     	Unterzone       	;
+ 409             	416.5       	0.00060     	Unterzone       	;
+ 410             	418.9       	0.00179     	Unterzone       	;
+ 411             	414.6       	0.00179     	Unterzone       	;
+ 412             	413.5       	0.00120     	Unterzone       	;
+ 413             	412.5       	0.00090     	Unterzone       	;
+ 417             	419         	0.00891     	Unterzone       	;
+ 418             	415.5       	0.01065     	Unterzone       	;
+ 422             	416         	0.00664     	Unterzone       	;
+ 423             	416         	0.00461     	Unterzone       	;
+ 425             	415.5       	0.00299     	Unterzone       	;
+ 426             	416         	0.00897     	Unterzone       	;
+ 427             	415.5       	0.00526     	Unterzone       	;
+ 428             	418         	0.00526     	Unterzone       	;
+ 429             	416         	0.00455     	Unterzone       	;
+ 430             	417.5       	0.00449     	Unterzone       	;
+ 431             	417         	0.00102     	Unterzone       	;
+ 434             	412.95      	0.00060     	Unterzone       	;
+ 436             	412.9       	0.00455     	Unterzone       	;
+ 437             	413         	0.00138     	Unterzone       	;
+ 438             	413         	0.00419     	Unterzone       	;
+ 439             	412.5       	0.00359     	Unterzone       	;
+ 440             	412.5       	0.00634     	Unterzone       	;
+ 441             	412.5       	0.00478     	Unterzone       	;
+ 442             	412.5       	0.00060     	Unterzone       	;
+ 446             	419         	0.02093     	Unterzone       	;
+ 447             	411.5       	0.00598     	Unterzone       	;
+ 455             	413.8       	0.00000     	Unterzone       	;
+ 467             	440         	0.00245     	Unterzone       	;
+ 468             	430         	0.00185     	Unterzone       	;
+ 470             	427         	0.00060     	Unterzone       	;
+ 471             	411.5       	0.00060     	Unterzone       	;
+ 473             	421         	0.00185     	Unterzone       	;
+ 474             	425         	0.00299     	Unterzone       	;
+ 476             	421.4       	0.00179     	Unterzone       	;
+ 477             	415.5       	0.00060     	Unterzone       	;
+ 478             	413.5       	0.00299     	Unterzone       	;
+ 478A            	414.25      	0.00000     	Unterzone       	;
+ 480             	429.5       	0.00299     	Unterzone       	;
+ 481             	437.6       	0.00000     	Unterzone       	;
+ 497             	413.7       	0.00299     	Unterzone       	;
+ 498             	413.7       	0.00353     	Unterzone       	;
+ 499             	414.2       	0.00179     	Unterzone       	;
+ 501             	422         	0.00173     	Unterzone       	;
+ 510             	424         	0.00179     	Unterzone       	;
+ 511             	436         	0.00275     	Unterzone       	;
+ 513             	412         	0.00772     	Unterzone       	;
+ 515             	446         	0.00897     	Unterzone       	;
+ 516             	415.5       	0.00030     	Unterzone       	;
+ 531             	412         	0.00754     	Unterzone       	;
+ 532             	413         	0.00000     	Unterzone       	;
+ 533             	413         	0.00000     	Unterzone       	;
+ 534             	413         	0.00000     	Unterzone       	;
+ 535             	413.7       	0.00179     	Unterzone       	;
+ 538             	422.84      	0.00000     	Unterzone       	;
+ 539             	423.1       	0.00000     	Unterzone       	;
+ 540             	423.28      	0.00000     	Unterzone       	;
+ 541             	423.31      	0.00000     	Unterzone       	;
+ 542             	423.64      	0.00000     	Unterzone       	;
+ 543             	423.82      	0.00000     	Unterzone       	;
+ 544             	423.91      	0.00000     	Unterzone       	;
+ 119A            	433         	0.00000     	Unterzone       	;
+ 139A            	420.97      	0.00000     	Unterzone       	;
+ 150A            	432         	0.00000     	Unterzone       	;
+ 150B            	432         	0.00000     	Unterzone       	;
+ 157A            	436.5       	0.00000     	Unterzone       	;
+ 157B            	437         	0.00000     	Unterzone       	;
+ 240A            	422         	0.00000     	Unterzone       	;
+ 240B            	422.35      	0.00000     	Unterzone       	;
+ 289A            	430         	0.00000     	Unterzone       	;
+ 387A            	430         	0.00000     	Unterzone       	;
+ 45A             	422.6       	0.00000     	Unterzone       	;
+ RTWV            	411         	0.00000     	Unterzone       	;
+ HY346           	422.5       	0.00000     	Unterzone       	;
+ ÜbergabeKoblach 	422.5       	0.00000     	Unterzone       	;
+ HYNeu           	414         	0.00000     	Unterzone       	;
+ 459             	470         	0.00000     	Markt           	;
+ DUM4            	737         	0.00000     	ObererBerg      	;
+ 22              	1130        	0.00000     	ObererBerg      	;
+ DUM9            	1130        	0.00000     	ObererBerg      	;
+ 523A            	513.4       	0.00000     	UntererBerg     	;
+ 508             	495         	0.00000     	UntererBerg     	;
+ 463             	495         	0.00000     	UntererBerg     	;
+ 214             	495         	0.00000     	UntererBerg     	;
+ DUM1            	500         	0.00000     	UntererBerg     	;
+ 101             	462         	0.00000     	Markt           	;
+ 514A            	459.5       	0           	Markt           	;
+ 490A            	474         	0.00000     	Unterzone       	;
+ 414             	412         	0.00000     	Unterzone       	;
+ 432             	412         	0.00000     	Unterzone       	;
+ DUM10           	411         	0.00000     	Unterzone       	;
+ 51              	575         	0.00000     	ObererBerg      	;
+ 55              	495         	0.00000     	UntererBerg     	;
+ 160             	437         	0.00000     	Unterzone       	;
+ 158             	437         	0.00000     	Unterzone       	;
+ 493             	562.4       	0           	ObererBerg      	;
+ 271             	564         	0.00431     	ObererBerg      	;
+ 221             	526.1       	0.00215     	UntererBerg     	;
+ 227             	519.5       	0.00000     	Unterzone       	;
+ DUM5            	737         	0           	ObererBerg      	;
+ DUM6            	737         	0           	ObererBerg      	;
+ DUM3            	500         	0           	UntererBerg     	;
+ DUM2            	500         	0           	Unterzone       	;
+ DUM8            	1130        	0           	ObererBerg      	;
+ DUM7            	1130        	0           	ObererBerg      	;
+ DUM11           	411         	0           	Unterzone       	;
+ DUM12           	411         	0           	Unterzone       	;
+ 1               	414         	0           	                	;
+ 20              	413.8       	10          	                	;
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+ Stiegquellen    	737         	                	;
+ GötznerMoos     	1130        	                	;
+ Örflaquellen    	500         	                	;
+ 30              	414         	                	;
+ 31              	486         	                	;
+ Kommingen       	485         	                	;
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve
+ HBObererBerg    	677.6       	2           	0           	2           	5.64        	0           	                	;
+ Schlatt         	1103        	2           	0           	2           	3.09        	0           	                	;
+ DUSI            	1110        	2           	0           	2           	3.09        	0           	                	;
+ HBUntererBerg   	573         	2           	0           	2           	15.96       	0           	                	;
+ Bulitta         	493         	2           	0           	2           	22          	0           	                	;
+ Arbogast        	529         	2           	0           	2           	4.37        	0           	                	;
+ AmHof           	473         	2           	0           	2           	33.66       	0           	                	;
+ SENSOR_ObererBerg	649.6       	20          	0           	20          	1           	0           	                	;
+ SENSOR_UntererBerg	432.1       	20          	0           	20          	1           	0           	                	;
+ SENSOR_Markt    	479         	10          	0           	10          	1           	0           	                	;
+ SENSOR_Unterzone	450         	20          	0           	20          	1           	0           	                	;
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ 1               	515A            	HBObererBerg    	326.6       	90          	0.1         	0           	Closed	;
+ 2               	HBObererBerg    	516A            	181         	132         	0.1         	0           	Open  	;
+ 3               	516A            	517A            	49          	132         	0.1         	0           	Open  	;
+ 4               	517A            	518A            	109         	53          	0.1         	0           	Open  	;
+ 5               	517A            	449             	74          	132         	0.1         	0           	Open  	;
+ 6               	449             	491             	53          	132         	0.1         	0           	Open  	;
+ 7               	491             	519             	177         	132         	0.1         	0           	Open  	;
+ 8               	519             	520A            	100         	132         	0.1         	0           	Open  	;
+ 9               	520A            	521             	115         	53          	0.1         	0           	Open  	;
+ 10              	520A            	EICHB_SCHW      	83          	132         	0.1         	0           	Open  	;
+ 13              	EICHB_SCHW2     	HY10            	71          	103         	0.1         	0           	Open  	;
+ 14              	HY10            	493             	83          	103         	0.1         	0           	Open  	;
+ 15              	493             	272             	124         	80          	0.4         	0           	Open  	;
+ 16              	270             	504             	23          	80          	0.4         	0           	Open  	;
+ 17              	504             	269             	34          	50          	0.1         	0           	Open  	;
+ 18              	EICHB_SCHW2     	537             	264         	103         	0.1         	0           	Open  	;
+ 19              	537             	277             	36.8        	80          	0.4         	0           	Open  	;
+ 20              	277             	218             	48.7        	80          	0.4         	0           	Open  	;
+ 21              	HBUntererBerg   	536             	342         	148         	0.1         	0           	Open  	;
+ 22              	536             	495             	73.5        	150         	0.4         	0           	Open  	;
+ 23              	495             	219             	113.5       	150         	0.4         	0           	Open  	;
+ 24              	219             	220             	34          	148         	0.1         	0           	Open  	;
+ 25              	220             	222             	142.1       	100         	0.4         	0           	Open  	;
+ 26              	222             	226             	96.2        	100         	0.4         	0           	Open  	;
+ 27              	226             	224             	149.4       	100         	0.4         	0           	Open  	;
+ 28              	224             	225             	64          	100         	0.4         	0           	Open  	;
+ 29              	225             	503             	61          	100         	0.4         	0           	Open  	;
+ 30              	503             	216             	63.2        	100         	0.4         	0           	Open  	;
+ 31              	216             	Bulitta         	236.9       	100         	0.4         	0           	Open  	;
+ 32              	220             	220A            	174.7       	132         	0.1         	0           	Open  	;
+ 33              	220A            	223             	250.6       	150         	0.4         	0           	Open  	;
+ 34              	223             	268             	103.4       	80          	0.4         	0           	Open  	;
+ 35              	268             	267             	51.4        	80          	0.4         	0           	Open  	;
+ 36              	268             	527             	215.4       	80          	0.4         	0           	Open  	;
+ 37              	527             	528             	124.1       	80          	0.4         	0           	Open  	;
+ 38              	528             	263             	72.8        	80          	0.4         	0           	Open  	;
+ 39              	528             	264             	32.7        	80          	0.4         	0           	Open  	;
+ 40              	264             	509             	67          	80          	0.4         	0           	Open  	;
+ 41              	509             	526             	156.5       	100         	0.4         	0           	Open  	;
+ 42              	526             	182             	53          	100         	0.4         	0           	Open  	;
+ 43              	182             	181             	123.4       	80          	0.4         	0           	Open  	;
+ 44              	182             	523             	119.3       	103         	0.1         	0           	Open  	;
+ 45              	523A            	183             	48          	103         	0.1         	0           	Open  	;
+ 46              	183             	216             	49.6        	100         	0.4         	0           	Open  	;
+ 47              	523A            	180             	228.1       	100         	0.4         	0           	Open  	;
+ 48              	180             	178             	135.6       	100         	0.4         	0           	Open  	;
+ 49              	178             	177             	140.7       	80          	0.4         	0           	Open  	;
+ 50              	177             	177A            	179         	100         	4           	0           	Open  	;
+ 51              	Bulitta         	177A            	86          	100         	4           	0           	Open  	;
+ 52              	523             	524             	56.5        	80          	4           	0           	Open  	;
+ 53              	524             	230             	158.8       	80          	4           	0           	Open  	;
+ 54              	230             	231             	160         	80          	0.4         	0           	Open  	;
+ 55              	231             	266             	32          	80          	0.4         	0           	Open  	;
+ 56              	231             	265             	50          	80          	0.4         	0           	Open  	;
+ 57              	230             	228             	10          	80          	4           	0           	Open  	;
+ 58              	229             	224             	76.5        	80          	4           	0           	Open  	;
+ 59              	228             	268             	173.5       	80          	0.4         	0           	Open  	;
+ 60              	227             	229             	10.7        	80          	0.4         	0           	Open  	;
+ 61              	229             	225             	74.5        	80          	0.4         	0           	Open  	;
+ 62              	217             	525             	166.8       	100         	0.4         	0           	Open  	;
+ 63              	525             	502             	16          	100         	0.4         	0           	Open  	;
+ 64              	502             	214             	198         	150         	0.4         	0           	Open  	;
+ 65              	71              	74              	77          	100         	4           	0           	Open  	;
+ 66              	71              	111             	146         	100         	4           	0           	Open  	;
+ 67              	71              	72              	96          	80          	4           	0           	Open  	;
+ 68              	74              	75              	15          	100         	4           	0           	Open  	;
+ 69              	74              	73              	6.8         	80          	4           	0           	Open  	;
+ 70              	78              	72              	26          	80          	4           	0           	Open  	;
+ 71              	80              	81              	108         	80          	1           	0           	Open  	;
+ 72              	79              	78              	94          	100         	0.4         	0           	Open  	;
+ 73              	79              	80              	30          	100         	0.4         	0           	Open  	;
+ 74              	81              	82              	138         	80          	1           	0           	Open  	;
+ 75              	81              	86              	70          	80          	1           	0           	Open  	;
+ 76              	83              	84              	91          	100         	4           	0           	Open  	;
+ 77              	83              	87              	67          	80          	1           	0           	Open  	;
+ 78              	83              	82              	110         	100         	4           	0           	Open  	;
+ 79              	86              	84              	94          	80          	0.4         	0           	Open  	;
+ 80              	87              	88              	67          	80          	0.4         	0           	Open  	;
+ 81              	88              	91              	61          	100         	0.4         	0           	Open  	;
+ 82              	89              	88              	37          	80          	0.4         	0           	Open  	;
+ 83              	89              	520             	145         	103         	0.1         	0           	Open  	;
+ 84              	90              	90B             	45          	103         	0.1         	0           	Open  	;
+ 85              	90              	514A            	187         	148         	0.1         	0           	Open  	;
+ 86              	91              	106             	175         	100         	0.4         	0           	Open  	;
+ 87              	93              	100             	102         	100         	0.4         	0           	Open  	;
+ 88              	95              	96              	76          	175         	4           	0           	Open  	;
+ 89              	96              	97              	67          	175         	4           	0           	Open  	;
+ 90              	97              	465             	9           	175         	4           	0           	Open  	;
+ 91              	98              	97              	18          	80          	0.4         	0           	Open  	;
+ 92              	99              	98              	54          	100         	0.4         	0           	Open  	;
+ 93              	100             	98              	45          	80          	0.4         	0           	Open  	;
+ 94              	102             	103             	47          	150         	0.4         	0           	Open  	;
+ 95              	103             	104             	42          	150         	0.4         	0           	Open  	;
+ 96              	104             	105             	20          	150         	0.4         	0           	Open  	;
+ 97              	104             	108             	118         	150         	0.4         	0           	Open  	;
+ 98              	105             	106             	81          	150         	0.4         	0           	Open  	;
+ 99              	106             	107             	50          	175         	4           	0           	Open  	;
+ 100             	107             	483             	53          	175         	4           	0           	Open  	;
+ 101             	108             	90A             	47          	150         	0.4         	0           	Open  	;
+ 102             	108             	109             	73          	80          	4           	0           	Open  	;
+ 103             	109             	99              	75          	100         	0.4         	0           	Open  	;
+ 104             	110             	91              	201         	100         	0.4         	0           	Open  	;
+ 105             	110             	84              	37          	100         	4           	0           	Open  	;
+ 106             	111             	110             	31          	80          	4           	0           	Open  	;
+ 107             	112             	114             	43          	150         	0.4         	0           	Open  	;
+ 108             	112             	111             	60          	100         	0.4         	0           	Open  	;
+ 109             	112             	113             	160         	125         	4           	0           	Open  	;
+ 110             	113             	107             	131         	80          	4           	0           	Open  	;
+ 111             	113             	162             	85          	125         	4           	0           	Open  	;
+ 112             	113             	213             	50          	100         	0.4         	0           	Open  	;
+ 113             	114             	114A            	113         	125         	0.4         	0           	Closed	;
+ 114             	114             	481             	151         	150         	0.4         	0           	Closed	;
+ 115             	162             	169             	77          	100         	0.4         	0           	Open  	;
+ 116             	162             	167             	62          	100         	0.4         	0           	Open  	;
+ 117             	164             	105             	193         	150         	0.4         	0           	Open  	;
+ 118             	163             	171             	89          	100         	0.4         	0           	Open  	;
+ 119             	164             	113             	318         	125         	4           	0           	Open  	;
+ 120             	167             	164             	136         	100         	0.4         	0           	Open  	;
+ 121             	169             	106             	87          	100         	0.4         	0           	Open  	;
+ 122             	171             	172             	54          	100         	0.4         	0           	Open  	;
+ 123             	171             	103             	200         	80          	4           	0           	Open  	;
+ 124             	172             	102             	208         	100         	4           	0           	Open  	;
+ 125             	189             	190             	18          	103         	0.1         	0           	Open  	;
+ 126             	189             	162             	89          	103         	0.1         	0           	Open  	;
+ 127             	190             	192             	89          	103         	0.1         	0           	Open  	;
+ 128             	213             	189             	111.5       	100         	0.4         	0           	Open  	;
+ 129             	Bulitta         	460             	171         	175         	4           	0           	Open  	;
+ 130             	Arbogast        	457             	134         	148         	0.1         	0           	Open  	;
+ 131             	458             	457A            	155         	103         	0.1         	0           	Open  	;
+ 132             	459             	490             	167.7       	148         	0.1         	0           	Open  	;
+ 133             	460             	95              	58          	200         	0.4         	0           	Open  	;
+ 134             	465             	102             	97          	175         	4           	0           	Open  	;
+ 135             	483             	112             	173         	175         	4           	0           	Open  	;
+ 136             	490A            	458             	170         	103         	0.1         	0           	Open  	;
+ 137             	514             	459             	247.7       	148         	0.1         	0           	Open  	;
+ 138             	520             	82              	40          	100         	0.4         	0           	Open  	;
+ 139             	520             	514A            	50          	103         	0.1         	0           	Open  	;
+ 140             	190A            	HY96            	57          	103         	0.1         	0           	Open  	;
+ 141             	190A            	HY96A           	26          	103         	0.1         	0           	Open  	;
+ 142             	457A            	457             	147         	103         	0.1         	0           	Open  	;
+ 143             	90A             	93              	120         	100         	0.4         	0           	Open  	;
+ 144             	90A             	90              	52          	150         	0.4         	0           	Open  	;
+ 145             	90B             	89              	52          	65          	4           	0           	Open  	;
+ 146             	HY96            	190             	95          	103         	0.1         	0           	Open  	;
+ 147             	HY96A           	HY96B           	74          	103         	0.1         	0           	Open  	;
+ 148             	213             	194             	116.6       	100         	0.4         	0           	Open  	;
+ 149             	2               	3               	61.5        	100         	0.4         	0           	Open  	;
+ 150             	3               	4               	71          	100         	0.4         	0           	Open  	;
+ 151             	4               	5               	68          	100         	0.4         	0           	Open  	;
+ 152             	5               	543             	11.5        	100         	0.4         	0           	Open  	;
+ 153             	6               	3               	106.2       	80          	0.4         	0           	Open  	;
+ 154             	7               	6               	78.7        	100         	0.4         	0           	Open  	;
+ 155             	7               	4               	128.7       	80          	0.4         	0           	Open  	;
+ 156             	8               	7               	69.7        	100         	0.4         	0           	Open  	;
+ 157             	8               	5               	140         	80          	0.4         	0           	Open  	;
+ 158             	9               	8               	74          	100         	0.4         	0           	Open  	;
+ 159             	9               	10              	148.7       	80          	0.4         	0           	Open  	;
+ 160             	10              	11              	73          	80          	0.4         	0           	Open  	;
+ 161             	10              	14              	63.5        	80          	0.4         	0           	Open  	;
+ 162             	11              	12              	82          	80          	0.4         	0           	Open  	;
+ 163             	12              	23              	64          	80          	0.4         	0           	Open  	;
+ 164             	13              	14              	92.7        	100         	0.4         	0           	Open  	;
+ 165             	14              	15              	92.7        	80          	0.4         	0           	Open  	;
+ 166             	15              	16              	64          	100         	0.4         	0           	Open  	;
+ 167             	16              	38              	30.5        	100         	0.4         	0           	Open  	;
+ 168             	17              	9               	73.2        	100         	0.4         	0           	Open  	;
+ 169             	17              	11              	153.2       	80          	0.4         	0           	Open  	;
+ 170             	18              	17              	80.7        	100         	0.4         	0           	Open  	;
+ 171             	18              	12              	157.5       	80          	0.4         	0           	Open  	;
+ 172             	19              	18              	65          	100         	0.4         	0           	Open  	;
+ 173             	19              	23              	157.7       	80          	0.4         	0           	Open  	;
+ 174             	21              	19              	100.7       	100         	0.4         	0           	Open  	;
+ 175             	21              	33              	194.7       	250         	0.4         	0           	Open  	;
+ 176             	23              	24              	59.8        	80          	0.4         	0           	Open  	;
+ 177             	25              	26              	8.5         	100         	0.4         	0           	Open  	;
+ 178             	25              	24              	68          	80          	0.4         	0           	Open  	;
+ 179             	26              	13              	184.2       	100         	0.4         	0           	Open  	;
+ 180             	34              	33              	74          	250         	0.4         	0           	Open  	;
+ 181             	35              	26              	89          	125         	0.4         	0           	Open  	;
+ 182             	35              	67              	237.2       	80          	0.4         	0           	Open  	;
+ 183             	36              	35              	49.2        	125         	0.4         	0           	Open  	;
+ 184             	36              	40              	53.5        	100         	0.4         	0           	Open  	;
+ 185             	37              	36              	74.2        	100         	0.4         	0           	Open  	;
+ 186             	38              	37              	74.5        	100         	0.4         	0           	Open  	;
+ 187             	38              	13              	44.6        	100         	0.4         	0           	Open  	;
+ 188             	39              	538             	117         	100         	0.4         	0           	Open  	;
+ 189             	39              	41              	85.7        	100         	0.4         	0           	Open  	;
+ 190             	39              	16              	95.5        	100         	0.4         	0           	Open  	;
+ 191             	39              	37              	182.5       	100         	0.4         	0           	Open  	;
+ 192             	41              	45              	257.5       	100         	0.4         	0           	Open  	;
+ 193             	41              	66              	167         	100         	0.4         	0           	Open  	;
+ 194             	42              	49              	117.5       	80          	0.4         	0           	Open  	;
+ 195             	42              	43              	217.2       	100         	0.4         	0           	Open  	;
+ 196             	43              	54              	154.2       	100         	0.4         	0           	Open  	;
+ 197             	44              	42              	91.5        	80          	0.4         	0           	Open  	;
+ 198             	44              	63              	460.2       	80          	0.4         	0           	Open  	;
+ 199             	45              	45A             	61.4        	100         	0.4         	0           	Open  	;
+ 200             	45              	44              	93.7        	100         	0.4         	0           	Open  	;
+ 201             	46              	47              	63          	100         	0.4         	0           	Open  	;
+ 202             	48              	2               	226.5       	100         	0.4         	0           	Open  	;
+ 203             	48              	47              	74.5        	100         	0.4         	0           	Open  	;
+ 204             	49              	43              	116.5       	80          	0.4         	0           	Open  	;
+ 205             	52              	135             	107.8       	100         	0.4         	0           	Open  	;
+ 206             	53              	54              	31.5        	80          	1.5         	0           	Open  	;
+ 207             	53              	52              	46.8        	100         	0.4         	0           	Open  	;
+ 208             	54              	60              	13.8        	80          	1.5         	0           	Open  	;
+ 209             	58              	63              	34.5        	80          	1.5         	0           	Open  	;
+ 210             	60              	58              	47          	100         	0.4         	0           	Open  	;
+ 211             	62              	64              	152.5       	103         	0.1         	0           	Open  	;
+ 212             	62              	66              	113         	100         	0.4         	0           	Open  	;
+ 213             	63              	62              	12.5        	80          	0.4         	0           	Open  	;
+ 214             	64              	65              	54          	103         	0.1         	0           	Open  	;
+ 215             	64              	123             	67          	100         	0.4         	0           	Open  	;
+ 216             	65              	67              	25.7        	103         	0.1         	0           	Open  	;
+ 217             	65              	77              	110.3       	80          	1.5         	0           	Open  	;
+ 218             	66              	40              	108.2       	80          	0.4         	0           	Open  	;
+ 219             	68              	69              	24          	100         	0.4         	0           	Open  	;
+ 220             	68              	67              	107.2       	100         	0.4         	0           	Open  	;
+ 221             	68              	25              	205.7       	125         	0.4         	0           	Open  	;
+ 222             	69              	34              	128.2       	250         	0.4         	0           	Open  	;
+ 223             	77              	69              	128.5       	200         	0.4         	0           	Open  	;
+ 224             	115             	116             	14          	100         	0.4         	0           	Open  	;
+ 225             	116             	118             	42.5        	100         	0.4         	0           	Open  	;
+ 226             	118             	119             	32          	150         	0.4         	0           	Open  	;
+ 227             	119             	156             	43          	150         	0.4         	0           	Open  	;
+ 228             	119             	119A            	146         	100         	0.4         	0           	Open  	;
+ 229             	120             	118             	129         	150         	0.4         	0           	Open  	;
+ 230             	122             	120             	127         	150         	0.4         	0           	Open  	;
+ 231             	122             	77              	103         	200         	0.4         	0           	Open  	;
+ 232             	123             	122             	82          	200         	0.4         	0           	Open  	;
+ 233             	125             	123             	79          	100         	0.4         	0           	Open  	;
+ 234             	126             	480             	20          	200         	0.4         	0           	Open  	;
+ 235             	126             	127             	49          	100         	4           	0           	Open  	;
+ 236             	127             	128             	112         	80          	4           	0           	Open  	;
+ 237             	128             	151             	123         	80          	4           	0           	Open  	;
+ 238             	129             	126             	84          	200         	0.4         	0           	Open  	;
+ 239             	130             	129             	60          	200         	0.4         	0           	Open  	;
+ 240             	131             	130             	28          	200         	0.4         	0           	Open  	;
+ 241             	133             	130             	92.5        	100         	0.4         	0           	Open  	;
+ 242             	134             	133             	16.5        	80          	1.5         	0           	Open  	;
+ 243             	134             	135             	33.5        	80          	1.5         	0           	Open  	;
+ 244             	134             	129             	464.6       	80          	1.5         	0           	Open  	;
+ 245             	136             	135             	86          	80          	1.5         	0           	Open  	;
+ 246             	137             	146             	152.3       	100         	0.4         	0           	Open  	;
+ 247             	137             	138             	76.5        	100         	0.4         	0           	Open  	;
+ 248             	137             	136             	170         	100         	0.4         	0           	Open  	;
+ 249             	138             	147             	108.3       	100         	0.4         	0           	Open  	;
+ 250             	138             	133             	138.8       	100         	0.4         	0           	Open  	;
+ 251             	139             	206             	143         	100         	0.4         	0           	Open  	;
+ 252             	139             	140             	70          	100         	0.4         	0           	Open  	;
+ 253             	140             	137             	153         	100         	0.4         	0           	Open  	;
+ 254             	145             	147             	129         	200         	0.4         	0           	Open  	;
+ 255             	145             	147             	135         	80          	4           	0           	Open  	;
+ 256             	145             	146             	20.5        	100         	0.4         	0           	Open  	;
+ 257             	147             	153             	74          	200         	0.4         	0           	Open  	;
+ 258             	147             	202             	278         	100         	0.4         	0           	Open  	;
+ 259             	149             	150             	55          	100         	0.4         	0           	Open  	;
+ 260             	150             	150A            	100         	100         	0.4         	0           	Open  	;
+ 261             	151             	152             	93          	80          	4           	0           	Open  	;
+ 262             	151             	150             	93          	80          	4           	0           	Open  	;
+ 263             	152             	201             	163         	100         	0.4         	0           	Open  	;
+ 264             	153             	131             	131         	200         	0.4         	0           	Open  	;
+ 265             	153             	152             	124         	100         	0.4         	0           	Open  	;
+ 266             	154             	157B            	72.5        	100         	0.4         	0           	Open  	;
+ 267             	154             	198             	127         	100         	0.4         	0           	Open  	;
+ 268             	155             	154             	50          	100         	0.4         	0           	Open  	;
+ 269             	155             	149             	106         	80          	4           	0           	Open  	;
+ 270             	155             	156             	124         	80          	4           	0           	Open  	;
+ 271             	156             	157A            	40          	150         	0.4         	0           	Open  	;
+ 272             	157             	161             	37          	200         	4           	0           	Open  	;
+ 273             	157             	195             	80          	100         	4           	0           	Open  	;
+ 274             	157             	114A            	160         	125         	4           	0           	Open  	;
+ 275             	159             	197             	75          	200         	4           	0           	Open  	;
+ 276             	161             	159             	76          	200         	0.4         	0           	Open  	;
+ 277             	160             	195             	61          	100         	0.4         	0           	Open  	;
+ 278             	184             	186             	44          	250         	0.4         	0           	Open  	;
+ 279             	184             	261             	58          	100         	0.4         	0           	Open  	;
+ 280             	186             	256             	213         	250         	0.4         	0           	Open  	;
+ 281             	188             	184             	110         	250         	0.4         	0           	Open  	;
+ 282             	195             	200             	136         	80          	4           	0           	Open  	;
+ 283             	195             	196             	132         	100         	4           	0           	Open  	;
+ 284             	196             	252             	156         	80          	4           	0           	Open  	;
+ 285             	197             	253             	210         	200         	4           	0           	Open  	;
+ 286             	197             	196             	10          	103         	0.1         	0           	Open  	;
+ 287             	198             	149             	71          	100         	0.4         	0           	Open  	;
+ 288             	199             	198             	73          	80          	4           	0           	Open  	;
+ 289             	200             	198             	53          	80          	4           	0           	Open  	;
+ 290             	200             	247             	131         	80          	4           	0           	Open  	;
+ 291             	201             	246             	72          	100         	0.4         	0           	Open  	;
+ 292             	201             	199             	87          	100         	0.4         	0           	Open  	;
+ 293             	202             	243             	214         	100         	0.4         	0           	Open  	;
+ 294             	202             	241             	70          	100         	0.4         	0           	Open  	;
+ 295             	206             	211             	29          	100         	0.4         	0           	Open  	;
+ 296             	207             	235             	59          	200         	0.4         	0           	Open  	;
+ 297             	211             	234             	193         	80          	4           	0           	Open  	;
+ 298             	234             	308             	338         	80          	4           	0           	Open  	;
+ 299             	235             	236             	18          	100         	0.4         	0           	Open  	;
+ 300             	236             	238             	184         	100         	0.4         	0           	Open  	;
+ 301             	236             	139A            	241         	100         	0.4         	0           	Open  	;
+ 302             	237             	235             	182         	200         	0.4         	0           	Open  	;
+ 303             	237             	303             	182         	200         	0.4         	0           	Open  	;
+ 304             	238             	237             	17          	100         	0.4         	0           	Open  	;
+ 305             	238             	301             	65          	100         	0.4         	0           	Open  	;
+ 306             	239             	476             	49          	100         	0.4         	0           	Open  	;
+ 307             	239             	HY346           	52          	100         	0.4         	0           	Open  	;
+ 308             	240             	240B            	64          	100         	0.4         	0           	Open  	;
+ 309             	241             	240B            	66          	100         	0.4         	0           	Open  	;
+ 310             	242             	243             	23          	103         	0.1         	0           	Open  	;
+ 311             	242             	328             	237         	100         	0.4         	0           	Open  	;
+ 312             	243             	244             	39          	132         	0.1         	0           	Open  	;
+ 313             	244             	245             	20          	103         	0.1         	0           	Open  	;
+ 314             	244             	331             	271         	100         	0.4         	0           	Open  	;
+ 315             	245             	247             	137         	103         	0.1         	0           	Open  	;
+ 316             	246             	245             	123         	100         	0.4         	0           	Open  	;
+ 317             	246             	200             	171         	80          	0.4         	0           	Open  	;
+ 318             	247             	196             	147         	103         	0.1         	0           	Open  	;
+ 319             	247             	248             	131         	80          	4           	0           	Open  	;
+ 320             	248             	290             	34          	80          	4           	0           	Open  	;
+ 321             	249             	294             	96          	200         	0.4         	0           	Open  	;
+ 322             	250             	249             	18          	200         	0.4         	0           	Open  	;
+ 323             	252             	249             	86          	80          	4           	0           	Open  	;
+ 324             	253             	474             	108         	200         	4           	0           	Open  	;
+ 325             	253             	385             	390         	200         	4           	0           	Open  	;
+ 326             	254             	253             	115         	200         	0.4         	0           	Open  	;
+ 327             	254             	511             	50          	80          	4           	0           	Open  	;
+ 328             	256             	254             	95          	250         	0.4         	0           	Open  	;
+ 329             	259             	289             	185         	80          	0.4         	0           	Open  	;
+ 330             	259             	346             	207         	103         	0.1         	0           	Open  	;
+ 331             	260             	186             	70          	100         	0.4         	0           	Open  	;
+ 332             	260             	259             	195         	100         	0.4         	0           	Open  	;
+ 333             	261             	467             	74          	103         	0.1         	0           	Open  	;
+ 334             	262             	364             	90          	100         	0.4         	0           	Open  	;
+ 335             	262             	281             	115         	100         	0.4         	0           	Open  	;
+ 336             	281             	285             	67          	150         	0.4         	0           	Open  	;
+ 337             	281             	515             	315         	150         	0.4         	0           	Open  	;
+ 338             	282             	281             	85          	100         	0.4         	0           	Open  	;
+ 339             	285             	345             	81          	148         	0.1         	0           	Open  	;
+ 340             	289             	260             	268         	80          	4           	0           	Open  	;
+ 341             	289             	387             	85          	80          	4           	0           	Open  	;
+ 342             	290             	294             	105         	80          	4           	0           	Open  	;
+ 343             	291             	333             	155         	100         	0.4         	0           	Open  	;
+ 344             	292             	335             	99          	200         	0.4         	0           	Open  	;
+ 345             	292             	291             	10          	100         	0.4         	0           	Open  	;
+ 346             	293             	291             	97          	100         	0.4         	0           	Open  	;
+ 347             	294             	292             	10          	200         	0.4         	0           	Open  	;
+ 348             	295             	242             	71          	103         	0.1         	0           	Open  	;
+ 349             	297             	303             	114         	100         	0.4         	0           	Open  	;
+ 350             	297             	299             	97          	103         	0.1         	0           	Open  	;
+ 351             	297             	295             	66          	103         	0.1         	0           	Open  	;
+ 352             	299             	325             	91          	103         	0.1         	0           	Open  	;
+ 353             	299             	320             	94          	100         	0.4         	0           	Open  	;
+ 354             	301             	322             	88          	100         	0.4         	0           	Open  	;
+ 355             	302             	301             	98          	100         	0.4         	0           	Open  	;
+ 356             	302             	321             	16          	100         	0.4         	0           	Open  	;
+ 357             	304             	311             	334         	103         	0.1         	0           	Open  	;
+ 358             	304             	206             	285         	103         	0.1         	0           	Open  	;
+ 359             	309             	314             	100         	250         	0.4         	0           	Open  	;
+ 360             	311             	313             	64          	103         	0.1         	0           	Open  	;
+ 361             	313             	477             	20          	103         	0.1         	0           	Open  	;
+ 362             	313             	304             	202         	103         	0.1         	0           	Open  	;
+ 363             	314             	321             	270         	250         	0.4         	0           	Open  	;
+ 364             	314             	315             	80.5        	100         	0.4         	0           	Open  	;
+ 365             	315             	HYNeu           	216.6       	103         	0.1         	0           	Open  	;
+ 366             	318             	403             	309         	100         	0.4         	0           	Open  	;
+ 367             	319             	320             	87          	200         	0.4         	0           	Open  	;
+ 368             	319             	318             	67          	100         	0.4         	0           	Open  	;
+ 369             	320             	303             	65          	200         	0.4         	0           	Open  	;
+ 370             	321             	303             	25          	250         	0.4         	0           	Open  	;
+ 371             	322             	302             	139         	100         	0.4         	0           	Open  	;
+ 372             	323             	319             	83          	150         	0.4         	0           	Open  	;
+ 373             	324             	323             	111         	200         	0.4         	0           	Open  	;
+ 374             	325             	324             	78          	100         	0.4         	0           	Open  	;
+ 375             	325             	319             	97          	80          	4           	0           	Open  	;
+ 376             	327             	324             	94          	80          	4           	0           	Open  	;
+ 377             	328             	329             	137         	80          	4           	0           	Open  	;
+ 378             	328             	327             	67          	80          	4           	0           	Open  	;
+ 379             	329             	330             	81          	200         	0.4         	0           	Open  	;
+ 380             	330             	324             	187         	200         	4           	0           	Open  	;
+ 381             	331             	335             	61          	100         	0.4         	0           	Open  	;
+ 382             	333             	337             	251         	100         	0.4         	0           	Open  	;
+ 383             	333             	293             	100         	100         	0.4         	0           	Open  	;
+ 384             	335             	329             	89          	200         	0.4         	0           	Open  	;
+ 385             	337             	380             	178         	100         	0.4         	0           	Open  	;
+ 386             	338             	378             	161         	100         	0.4         	0           	Open  	;
+ 387             	338             	387A            	157         	125         	0.4         	0           	Open  	;
+ 388             	340             	338             	58          	100         	0.4         	0           	Open  	;
+ 389             	340             	289A            	157         	100         	0.4         	0           	Open  	;
+ 390             	341             	510             	68          	100         	0.4         	0           	Open  	;
+ 391             	343             	373             	321         	100         	0.4         	0           	Open  	;
+ 392             	343             	344             	19          	125         	0.4         	0           	Open  	;
+ 393             	344             	349             	53          	125         	0.4         	0           	Open  	;
+ 394             	345             	346             	10          	148         	0.1         	0           	Open  	;
+ 395             	345             	353             	203         	103         	0.1         	0           	Open  	;
+ 396             	346             	352             	135         	132         	0.1         	0           	Open  	;
+ 397             	348             	346             	60          	125         	0.4         	0           	Open  	;
+ 398             	349             	348             	33          	125         	0.4         	0           	Open  	;
+ 399             	352             	370             	235         	148         	0.1         	0           	Open  	;
+ 400             	353             	368             	79          	103         	0.1         	0           	Open  	;
+ 401             	354             	353             	60          	80          	4           	0           	Open  	;
+ 402             	354             	355             	108         	100         	0.4         	0           	Open  	;
+ 403             	355             	282             	66          	100         	0.4         	0           	Open  	;
+ 404             	358             	354             	51          	80          	4           	0           	Open  	;
+ 405             	360             	358             	145         	80          	0.4         	0           	Open  	;
+ 406             	360             	361             	16          	80          	4           	0           	Open  	;
+ 407             	361             	355             	40          	80          	4           	0           	Open  	;
+ 408             	364             	360             	90          	80          	0.4         	0           	Open  	;
+ 409             	364             	282             	81          	100         	0.4         	0           	Open  	;
+ 410             	365             	468             	26          	80          	4           	0           	Open  	;
+ 411             	367             	365             	85          	80          	4           	0           	Open  	;
+ 412             	368             	369             	70          	103         	0.1         	0           	Open  	;
+ 413             	369             	370             	25          	103         	0.1         	0           	Open  	;
+ 414             	369             	367             	65          	80          	0.4         	0           	Open  	;
+ 415             	370             	372             	157         	80          	4           	0           	Open  	;
+ 416             	370             	371             	173         	150         	0.4         	0           	Open  	;
+ 417             	371             	422             	104         	150         	0.4         	0           	Open  	;
+ 418             	372             	373             	138         	100         	0.4         	0           	Open  	;
+ 419             	373             	375             	23          	100         	0.4         	0           	Open  	;
+ 420             	375             	341             	152         	100         	0.4         	0           	Open  	;
+ 421             	376             	375             	55.3        	100         	0.4         	0           	Open  	;
+ 422             	377             	376             	107         	100         	0.4         	0           	Open  	;
+ 423             	378             	377             	39          	100         	0.4         	0           	Open  	;
+ 424             	379             	378             	132         	80          	4           	0           	Open  	;
+ 425             	380             	379             	36          	100         	0.4         	0           	Open  	;
+ 426             	380             	383             	106         	200         	0.4         	0           	Open  	;
+ 427             	381             	380             	38          	200         	4           	0           	Open  	;
+ 428             	383             	382             	95          	185         	0.1         	0           	Open  	;
+ 429             	385             	338             	89          	125         	4           	0           	Open  	;
+ 430             	385             	386             	69          	200         	4           	0           	Open  	;
+ 431             	385             	381             	160         	125         	4           	0           	Open  	;
+ 432             	386             	381             	69          	200         	4           	0           	Open  	;
+ 433             	387             	343             	23          	125         	0.4         	0           	Open  	;
+ 434             	387             	470             	67          	100         	0.4         	0           	Open  	;
+ 435             	397             	400             	150         	250         	0.4         	0           	Open  	;
+ 436             	399             	401             	401         	80          	4           	0           	Open  	;
+ 437             	399             	396             	73.7        	80          	4           	0           	Open  	;
+ 438             	396             	395             	59.8        	80          	4           	0           	Open  	;
+ 439             	395             	394             	114         	100         	0.4         	0           	Open  	;
+ 440             	394             	535             	73.6        	100         	0.4         	0           	Open  	;
+ 441             	535             	389             	179         	100         	0.4         	0           	Open  	;
+ 442             	389             	390             	80          	100         	0.4         	0           	Open  	;
+ 443             	390             	391             	67.9        	100         	0.4         	0           	Open  	;
+ 444             	391             	392             	61.4        	100         	0.4         	0           	Open  	;
+ 445             	392             	396             	123.7       	100         	0.4         	0           	Open  	;
+ 446             	394             	390             	180.6       	100         	0.4         	0           	Open  	;
+ 447             	395             	497             	65.8        	100         	0.4         	0           	Open  	;
+ 448             	497             	498             	128.2       	100         	0.4         	0           	Open  	;
+ 449             	497             	499             	322.6       	80          	4           	0           	Open  	;
+ 450             	498             	499             	254.4       	100         	0.4         	0           	Open  	;
+ 451             	513             	498             	157.8       	100         	0.4         	0           	Open  	;
+ 452             	513             	499             	396.7       	200         	0.4         	0           	Open  	;
+ 453             	455             	499             	73.1        	200         	0.4         	0           	Open  	;
+ 454             	400             	309             	167         	250         	0.4         	0           	Open  	;
+ 455             	401             	400             	8           	100         	0.4         	0           	Open  	;
+ 456             	403             	404             	68          	100         	0.4         	0           	Open  	;
+ 457             	404             	323             	75          	150         	0.4         	0           	Open  	;
+ 458             	404             	405             	145         	150         	0.4         	0           	Open  	;
+ 459             	405             	406             	33          	150         	0.4         	0           	Open  	;
+ 460             	405             	407             	96          	100         	0.4         	0           	Open  	;
+ 461             	405             	439             	206         	150         	0.4         	0           	Open  	;
+ 462             	406             	403             	257         	100         	0.4         	0           	Open  	;
+ 463             	407             	473             	139         	100         	0.4         	0           	Open  	;
+ 464             	408             	412             	94.5        	100         	0.4         	0           	Open  	;
+ 465             	409             	407             	24.2        	100         	0.4         	0           	Open  	;
+ 466             	409             	408             	8.7         	100         	0.4         	0           	Open  	;
+ 467             	410             	330             	70          	80          	0.4         	0           	Open  	;
+ 468             	410             	408             	98.5        	80          	1           	0           	Open  	;
+ 469             	411             	410             	95          	80          	1           	0           	Open  	;
+ 470             	412             	409             	129.3       	100         	0.4         	0           	Open  	;
+ 471             	413             	411             	173         	80          	0.4         	0           	Open  	;
+ 472             	413             	434             	65          	100         	0.4         	0           	Open  	;
+ 473             	418             	417             	122         	100         	0.4         	0           	Open  	;
+ 474             	418             	447             	155         	100         	0.4         	0           	Open  	;
+ 475             	422             	516             	75          	100         	0.4         	0           	Open  	;
+ 476             	423             	422             	74          	80          	4           	0           	Open  	;
+ 477             	425             	417             	111         	100         	0.4         	0           	Open  	;
+ 478             	425             	423             	33          	100         	0.4         	0           	Open  	;
+ 479             	426             	372             	124         	125         	0.4         	0           	Open  	;
+ 480             	426             	371             	247         	80          	4           	0           	Open  	;
+ 481             	427             	426             	85          	150         	0.4         	0           	Open  	;
+ 482             	427             	425             	215         	125         	0.4         	0           	Open  	;
+ 483             	428             	446             	25          	100         	0.4         	0           	Open  	;
+ 484             	428             	427             	123         	100         	0.4         	0           	Open  	;
+ 485             	429             	428             	225         	80          	4           	0           	Open  	;
+ 486             	430             	429             	65          	80          	0.4         	0           	Open  	;
+ 487             	430             	426             	156         	80          	4           	0           	Open  	;
+ 488             	431             	373             	118         	100         	0.4         	0           	Open  	;
+ 489             	431             	430             	38          	80          	0.4         	0           	Open  	;
+ 490             	434             	412             	92.5        	100         	0.4         	0           	Open  	;
+ 491             	436             	434             	70.2        	100         	0.4         	0           	Open  	;
+ 492             	437             	438             	16          	150         	0.4         	0           	Open  	;
+ 493             	438             	532             	28          	100         	0.4         	0           	Open  	;
+ 494             	439             	437             	158         	150         	0.4         	0           	Open  	;
+ 495             	439             	436             	58.4        	100         	0.4         	0           	Open  	;
+ 496             	440             	441             	101         	100         	0.4         	0           	Open  	;
+ 497             	440             	532             	179         	100         	0.4         	0           	Open  	;
+ 498             	440             	406             	137         	125         	0.4         	0           	Open  	;
+ 499             	441             	442             	60          	100         	0.4         	0           	Open  	;
+ 500             	442             	534             	293         	103         	0.1         	0           	Open  	;
+ 501             	446             	417             	200         	100         	0.4         	0           	Open  	;
+ 502             	447             	417             	257         	100         	0.4         	0           	Open  	;
+ 503             	467             	285             	248         	103         	0.1         	0           	Open  	;
+ 504             	468             	358             	131         	80          	4           	0           	Open  	;
+ 505             	470             	341             	99          	100         	0.4         	0           	Open  	;
+ 506             	471             	431             	227         	100         	0.4         	0           	Open  	;
+ 507             	473             	330             	18          	100         	0.4         	0           	Open  	;
+ 508             	474             	250             	45          	200         	0.4         	0           	Open  	;
+ 509             	476             	237             	80          	100         	0.4         	0           	Open  	;
+ 510             	477             	314             	114         	103         	0.1         	0           	Open  	;
+ 511             	478             	478A            	131.1       	100         	0.4         	0           	Open  	;
+ 512             	478A            	399             	220.6       	100         	0.4         	0           	Open  	;
+ 513             	478             	308             	66          	100         	0.4         	0           	Open  	;
+ 514             	480             	123             	66          	200         	0.4         	0           	Open  	;
+ 515             	501             	207             	121         	200         	0.4         	0           	Open  	;
+ 516             	501             	145             	139         	200         	0.4         	0           	Open  	;
+ 517             	501             	240A            	42          	100         	0.4         	0           	Open  	;
+ 518             	501             	145             	121         	80          	4           	0           	Open  	;
+ 519             	510             	377             	85          	80          	4           	0           	Open  	;
+ 520             	511             	340             	293         	80          	4           	0           	Open  	;
+ 521             	513             	397             	258         	250         	0.4         	0           	Open  	;
+ 522             	515             	261             	75          	100         	0.4         	0           	Open  	;
+ 523             	515             	188             	87          	150         	0.4         	0           	Open  	;
+ 524             	515             	262             	340         	100         	0.4         	0           	Open  	;
+ 525             	516             	418             	80          	100         	0.4         	0           	Open  	;
+ 526             	531             	RTWV            	218         	185         	0.1         	0           	Open  	;
+ 527             	532             	533             	90          	103         	0.1         	0           	Open  	;
+ 528             	533             	441             	157         	100         	0.4         	0           	Open  	;
+ 529             	534             	438             	102         	100         	0.4         	0           	Open  	;
+ 530             	538             	46              	69          	100         	0.4         	0           	Open  	;
+ 531             	538             	539             	101         	103         	0.1         	0           	Open  	;
+ 532             	539             	540             	68          	103         	0.1         	0           	Open  	;
+ 533             	540             	541             	10          	103         	0.1         	0           	Open  	;
+ 534             	541             	542             	128         	103         	0.1         	0           	Open  	;
+ 535             	541             	544             	49          	32.6        	0.4         	0           	Open  	;
+ 536             	542             	543             	68          	103         	0.1         	0           	Open  	;
+ 537             	543             	10              	61.5        	100         	0.4         	0           	Open  	;
+ 538             	114A            	115             	78.6        	100         	0.4         	0           	Open  	;
+ 539             	119A            	150B            	36          	100         	0.4         	0           	Open  	;
+ 540             	119A            	155             	109         	100         	0.4         	0           	Open  	;
+ 541             	139A            	139             	80          	100         	0.4         	0           	Open  	;
+ 542             	150A            	125             	100         	100         	0.4         	0           	Open  	;
+ 543             	150B            	150A            	41          	100         	0.4         	0           	Open  	;
+ 544             	157A            	157             	44          	150         	0.4         	0           	Open  	;
+ 545             	157B            	157A            	20          	100         	0.4         	0           	Open  	;
+ 546             	240A            	240             	39          	100         	0.4         	0           	Open  	;
+ 547             	240B            	239             	56          	100         	0.4         	0           	Open  	;
+ 548             	289A            	387A            	166         	100         	0.4         	0           	Open  	;
+ 549             	289A            	289             	97          	100         	0.4         	0           	Open  	;
+ 550             	382             	531             	175         	185         	0.1         	0           	Open  	;
+ 551             	382             	471             	151         	100         	0.4         	0           	Open  	;
+ 552             	387A            	387             	67          	125         	0.4         	0           	Open  	;
+ 553             	45A             	48              	96.8        	100         	0.4         	0           	Open  	;
+ 554             	45A             	ÜbergabeKoblach 	100         	185         	0.1         	0           	Open  	;
+ 555             	AmHof           	188             	89          	250         	0.4         	0           	Open  	;
+ 556             	HY346           	297             	111         	100         	0.4         	0           	Open  	;
+ 557             	33              	79              	133         	100         	0.4         	0           	Closed	;
+ 558             	34              	72              	53          	80          	4           	0           	Closed	;
+ 559             	69              	73              	94          	100         	0.4         	0           	Closed	;
+ 560             	120             	481             	48          	150         	0.4         	0           	Open  	;
+ 561             	158             	194             	120         	100         	0.4         	0           	Closed	;
+ 562             	197             	192             	105         	100         	0.1         	0           	Closed	;
+ 563             	254             	190A            	131         	80          	4           	0           	Closed	;
+ 564             	184             	163             	164         	100         	0.4         	0           	Closed	;
+ 565             	AmHof           	172             	176         	100         	0.4         	0           	Closed	;
+ 566             	Stiegquellen    	DUM4            	1           	100000      	0.1         	0           	Open  	;
+ DUM4            	GötznerMoos     	DUM9            	1           	10000       	0.001       	0           	Open  	;
+ 569             	22              	DUSI            	866         	60          	0.4         	0           	Open  	;
+ 570             	DUSI            	Schlatt         	686         	60          	0.4         	0           	Open  	;
+ 571             	Schlatt         	HBObererBerg    	1444        	50          	0.4         	0           	Open  	;
+ 573             	264             	232             	156         	80          	0.4         	0           	Open  	;
+ 574             	163             	164             	18          	150         	0.4         	0           	Open  	;
+ 575             	523A            	523             	6           	103         	0.1         	0           	Open  	;
+ 576             	Bulitta         	508             	11          	150         	0.1         	0           	Open  	;
+ 577             	214             	508             	16          	150         	0.4         	0           	CV    	;
+ 578             	214             	Bulitta         	16          	150         	0.1         	0           	CV    	;
+ 579             	525             	463             	222         	200         	0.1         	0           	Open  	;
+ 580             	Örflaquellen    	DUM1            	1           	10000       	0.001       	0           	Open  	;
+ 582             	100             	101             	39          	80          	0.4         	0           	Open  	;
+ 583             	514A            	514             	22          	180         	0.1         	0           	Open  	;
+ 585             	531             	414             	124         	100         	0.4         	0           	Open  	;
+ 586             	414             	432             	138         	65          	0.1         	0           	Open  	;
+ 587             	432             	383             	318         	80          	0.4         	0           	Open  	;
+ 589             	31              	DUM10           	10          	600         	0.1         	0           	CV    	;
+ 593             	EICHB_SCHW      	HBUntererBerg   	10          	30          	0.1         	0           	Open  	;
+ 594             	51              	EICHB_SCHW      	100         	600         	0.4         	0           	Closed	;
+ 596             	55              	216             	237         	100         	0.4         	0           	Closed	;
+ 598             	158             	160             	15          	100         	0.4         	0           	Open  	;
+ 599             	161             	160             	16          	100         	0.4         	0           	Open  	;
+ 600             	159             	158             	82          	80          	0.4         	0           	Open  	;
+ 11              	490A            	490             	100         	600         	0.4         	0           	Closed	;
+ 601             	493             	270             	15          	80          	0.4         	0           	Open  	;
+ 602             	504             	271             	40          	80          	0.4         	0           	Open  	;
+ 603             	222             	221             	46          	50          	0.4         	0           	Open  	;
+ 604             	227             	228             	10          	80          	0.4         	0           	Open  	;
+ 606             	DUM5            	DUM6            	1           	100000      	0.1         	0           	CV    	;
+ DUM1            	DUM3            	DUM2            	100         	1000        	0.001       	0           	CV    	;
+ DUM3            	DUM7            	DUM8            	1           	10000       	0.001       	0           	CV    	;
+ DUM6            	DUM11           	DUM12           	1           	10000       	0.0001      	0           	Open  	;
+ 608             	30              	1               	1           	10000       	0.0001      	0           	CV    	;
+ 572             	Kommingen       	20              	1           	600         	0.1         	0           	CV    	;
+ 588             	SENSOR_ObererBerg	518A            	1           	1           	1           	0           	CV    	;
+ 590             	SENSOR_Markt    	460             	1           	1           	1           	0           	CV    	;
+ 591             	SENSOR_Unterzone	188             	1           	1           	1           	0           	CV    	;
+ 592             	SENSOR_UntererBerg	267             	1           	1           	1           	0           	CV    	;
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+ 584             	490             	490A            	HEAD PC_Arbogast	SPEED 1	;
+ PM1             	1               	383             	HEAD PC_Moesle	;
+ 595             	HBUntererBerg   	51              	HEAD PC_UntererBerg	;
+ 597             	Bulitta         	55              	HEAD PC_Bulitta	;
+ PM2             	1               	383             	HEAD PC_Moesle	;
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+ 567             	DUM4            	DUM5            	10000       	FCV 	180         	0           	;
+ DUM5            	DUM9            	DUM7            	10000       	FCV 	1           	0           	;
+ 12              	EICHB_SCHW      	EICHB_SCHW2     	10000       	PRV 	48          	0           	;
+ 581             	DUM1            	DUM3            	600         	FCV 	4.5         	0           	;
+ VRT             	DUM10           	DUM11           	600         	FCV 	0           	0           	;
+ 605             	DUM6            	515A            	10000       	PSV 	0           	0           	;
+ 607             	DUM2            	217             	10000       	PSV 	0           	0           	;
+ DUM2            	DUM8            	22              	10000       	PSV 	0           	0           	;
+ DUM7            	DUM12           	RTWV            	10000       	PSV 	0           	0           	;
+ FCV_Kom         	20              	455             	600         	FCV 	0           	0           	;
+
+[TAGS]
+ LINK 	1               	nan*PE*nan
+ LINK 	2               	nan*PE*nan
+ LINK 	3               	nan*PE*nan
+ LINK 	4               	nan*PE*nan
+ LINK 	5               	nan*PE*nan
+ LINK 	6               	nan*PE*nan
+ LINK 	7               	nan*PE*nan
+ LINK 	8               	nan*PE*nan
+ LINK 	9               	nan*PE*nan
+ LINK 	10              	nan*PE*nan
+ LINK 	13              	nan*PE*nan
+ LINK 	14              	nan*PE*nan
+ LINK 	15              	nan*GG*nan
+ LINK 	16              	nan*PE*nan
+ LINK 	17              	nan*GG*nan
+ LINK 	18              	nan*PE*nan
+ LINK 	19              	nan*GGG*nan
+ LINK 	20              	nan*GGG*nan
+ LINK 	21              	nan*PE*nan
+ LINK 	22              	nan*GGG*nan
+ LINK 	23              	nan*GGG*nan
+ LINK 	24              	nan*PE*nan
+ LINK 	25              	nan*GG*nan
+ LINK 	26              	nan*GG*nan
+ LINK 	27              	nan*GG*nan
+ LINK 	28              	nan*GG*nan
+ LINK 	29              	nan*GG*nan
+ LINK 	30              	nan*GG*nan
+ LINK 	31              	nan*GG*nan
+ LINK 	32              	nan*PE*nan
+ LINK 	33              	nan*GGG*nan
+ LINK 	34              	nan*GGG*nan
+ LINK 	35              	nan*GGG*nan
+ LINK 	36              	nan*GGG*nan
+ LINK 	37              	nan*GG*nan
+ LINK 	38              	nan*GG*nan
+ LINK 	39              	nan*GG*nan
+ LINK 	40              	nan*GG*nan
+ LINK 	41              	nan*GGG*nan
+ LINK 	42              	nan*GGG*nan
+ LINK 	43              	nan*GG*nan
+ LINK 	44              	nan*PE*nan
+ LINK 	45              	nan*PE*nan
+ LINK 	46              	nan*GGG*nan
+ LINK 	47              	nan*GGG*nan
+ LINK 	48              	nan*GGG*nan
+ LINK 	49              	nan*GGG*nan
+ LINK 	50              	nan*St*nan
+ LINK 	51              	nan*St*nan
+ LINK 	52              	nan*St*nan
+ LINK 	53              	nan*St*nan
+ LINK 	54              	nan*GGG*nan
+ LINK 	55              	nan*GGG*nan
+ LINK 	56              	nan*GGG*nan
+ LINK 	57              	nan*St*nan
+ LINK 	58              	nan*St*nan
+ LINK 	59              	nan*GGG*nan
+ LINK 	60              	nan*GGG*nan
+ LINK 	61              	nan*GGG*nan
+ LINK 	62              	nan*GGG*nan
+ LINK 	63              	nan*GGG*nan
+ LINK 	64              	nan*GGG*nan
+ LINK 	65              	nan*St*nan
+ LINK 	66              	nan*St*nan
+ LINK 	67              	nan*St*nan
+ LINK 	68              	nan*St*nan
+ LINK 	69              	nan*St*nan
+ LINK 	70              	nan*St*nan
+ LINK 	71              	nan*GG*nan
+ LINK 	72              	nan*GGG*nan
+ LINK 	73              	nan*GGG*nan
+ LINK 	74              	nan*GG*nan
+ LINK 	75              	nan*GG*nan
+ LINK 	76              	nan*GGG*nan
+ LINK 	77              	nan*GG*nan
+ LINK 	78              	nan*GGG*nan
+ LINK 	79              	nan*GGG*nan
+ LINK 	80              	nan*GGG*nan
+ LINK 	81              	nan*GGG*nan
+ LINK 	82              	nan*GGG*nan
+ LINK 	83              	nan*PE*nan
+ LINK 	84              	nan*PE*nan
+ LINK 	85              	nan*PE*nan
+ LINK 	86              	nan*GGG*nan
+ LINK 	87              	nan*GGG*nan
+ LINK 	88              	nan*St*nan
+ LINK 	89              	nan*St*nan
+ LINK 	90              	nan*St*nan
+ LINK 	91              	nan*GGG*nan
+ LINK 	92              	nan*GGG*nan
+ LINK 	93              	nan*GGG*nan
+ LINK 	94              	nan*GGG*nan
+ LINK 	95              	nan*GGG*nan
+ LINK 	96              	nan*GGG*nan
+ LINK 	97              	nan*GGG*nan
+ LINK 	98              	nan*GGG*nan
+ LINK 	99              	nan*St*nan
+ LINK 	100             	nan*St*nan
+ LINK 	101             	nan*GGG*nan
+ LINK 	102             	nan*GG*nan
+ LINK 	103             	nan*GGG*nan
+ LINK 	104             	nan*GGG*nan
+ LINK 	105             	nan*GGG*nan
+ LINK 	106             	nan*St*nan
+ LINK 	107             	nan*GGG*nan
+ LINK 	108             	nan*GGG*nan
+ LINK 	109             	nan*St*nan
+ LINK 	110             	nan*GG*nan
+ LINK 	111             	nan*St*nan
+ LINK 	112             	nan*GGG*nan
+ LINK 	113             	ZS*GGG*nan
+ LINK 	114             	ZS*GGG*nan
+ LINK 	115             	nan*GGG*nan
+ LINK 	116             	nan*GGG*nan
+ LINK 	117             	nan*GGG*nan
+ LINK 	118             	nan*GGG*nan
+ LINK 	119             	nan*St*nan
+ LINK 	120             	nan*GGG*nan
+ LINK 	121             	nan*GGG*nan
+ LINK 	122             	nan*GGG*nan
+ LINK 	123             	nan*GG*nan
+ LINK 	124             	nan*GG*nan
+ LINK 	125             	nan*PE*nan
+ LINK 	126             	nan*PE*nan
+ LINK 	127             	nan*PE*nan
+ LINK 	128             	nan*GGG*nan
+ LINK 	129             	nan*St*nan
+ LINK 	130             	nan*PE*nan
+ LINK 	131             	nan*PE*nan
+ LINK 	132             	nan*PE*nan
+ LINK 	133             	nan*GGG*nan
+ LINK 	134             	nan*St*nan
+ LINK 	135             	nan*St*nan
+ LINK 	136             	nan*PE*nan
+ LINK 	137             	nan*PE*nan
+ LINK 	138             	nan*GGG*nan
+ LINK 	139             	nan*PE*nan
+ LINK 	140             	nan*PE*nan
+ LINK 	141             	nan*PE*nan
+ LINK 	142             	nan*PE*nan
+ LINK 	143             	nan*GGG*nan
+ LINK 	144             	nan*GGG*nan
+ LINK 	145             	nan*GG*nan
+ LINK 	146             	nan*PE*nan
+ LINK 	147             	nan*PE*nan
+ LINK 	148             	nan*GGG*nan
+ LINK 	149             	nan*GGG*nan
+ LINK 	150             	nan*GGG*nan
+ LINK 	151             	nan*GGG*nan
+ LINK 	152             	nan*GGG*nan
+ LINK 	153             	nan*GGG*nan
+ LINK 	154             	nan*GGG*nan
+ LINK 	155             	nan*GGG*nan
+ LINK 	156             	nan*GGG*nan
+ LINK 	157             	nan*GGG*nan
+ LINK 	158             	nan*GGG*nan
+ LINK 	159             	nan*GGG*nan
+ LINK 	160             	nan*GGG*nan
+ LINK 	161             	nan*GGG*nan
+ LINK 	162             	nan*GGG*nan
+ LINK 	163             	nan*GGG*nan
+ LINK 	164             	nan*GGG*nan
+ LINK 	165             	nan*GGG*nan
+ LINK 	166             	nan*GGG*nan
+ LINK 	167             	nan*GGG*nan
+ LINK 	168             	nan*GGG*nan
+ LINK 	169             	nan*GGG*nan
+ LINK 	170             	nan*GGG*nan
+ LINK 	171             	nan*GGG*nan
+ LINK 	172             	nan*GGG*nan
+ LINK 	173             	nan*GGG*nan
+ LINK 	174             	nan*GGG*nan
+ LINK 	175             	nan*GGG*nan
+ LINK 	176             	nan*GGG*nan
+ LINK 	177             	nan*GGG*nan
+ LINK 	178             	nan*GGG*nan
+ LINK 	179             	nan*GGG*nan
+ LINK 	180             	nan*GGG*nan
+ LINK 	181             	nan*GGG*nan
+ LINK 	182             	nan*GGG*nan
+ LINK 	183             	nan*GGG*nan
+ LINK 	184             	nan*GGG*nan
+ LINK 	185             	nan*GGG*nan
+ LINK 	186             	nan*GGG*nan
+ LINK 	187             	nan*GGG*nan
+ LINK 	188             	nan*GGG*nan
+ LINK 	189             	nan*GGG*nan
+ LINK 	190             	nan*GGG*nan
+ LINK 	191             	nan*GGG*nan
+ LINK 	192             	nan*GGG*nan
+ LINK 	193             	nan*GGG*nan
+ LINK 	194             	nan*GGG*nan
+ LINK 	195             	nan*GGG*nan
+ LINK 	196             	nan*GGG*nan
+ LINK 	197             	nan*GGG*nan
+ LINK 	198             	nan*GGG*nan
+ LINK 	199             	nan*GGG*nan
+ LINK 	200             	nan*GGG*nan
+ LINK 	201             	nan*GGG*nan
+ LINK 	202             	nan*GGG*nan
+ LINK 	203             	nan*GGG*nan
+ LINK 	204             	nan*GGG*nan
+ LINK 	205             	nan*GGG*nan
+ LINK 	206             	nan*St*nan
+ LINK 	207             	nan*GGG*nan
+ LINK 	208             	nan*St*nan
+ LINK 	209             	nan*St*nan
+ LINK 	210             	nan*GGG*nan
+ LINK 	211             	nan*PE*nan
+ LINK 	212             	nan*GGG*nan
+ LINK 	213             	nan*GGG*nan
+ LINK 	214             	nan*PE*nan
+ LINK 	215             	nan*GGG*nan
+ LINK 	216             	nan*PE*nan
+ LINK 	217             	nan*St*nan
+ LINK 	218             	nan*GGG*nan
+ LINK 	219             	nan*GGG*nan
+ LINK 	220             	nan*GGG*nan
+ LINK 	221             	nan*GGG*nan
+ LINK 	222             	nan*GGG*nan
+ LINK 	223             	nan*GGG*nan
+ LINK 	224             	nan*GGG*nan
+ LINK 	225             	nan*GGG*nan
+ LINK 	226             	nan*GGG*nan
+ LINK 	227             	nan*GGG*nan
+ LINK 	228             	nan*GGG*nan
+ LINK 	229             	nan*GGG*nan
+ LINK 	230             	nan*GGG*nan
+ LINK 	231             	nan*GGG*nan
+ LINK 	232             	nan*GGG*nan
+ LINK 	233             	nan*GGG*nan
+ LINK 	234             	nan*GGG*nan
+ LINK 	235             	nan*GGG*nan
+ LINK 	236             	nan*St*nan
+ LINK 	237             	nan*GG*nan
+ LINK 	238             	nan*GGG*nan
+ LINK 	239             	nan*GGG*nan
+ LINK 	240             	nan*GGG*nan
+ LINK 	241             	nan*GGG*nan
+ LINK 	242             	nan*St*nan
+ LINK 	243             	nan*St*nan
+ LINK 	244             	nan*St*nan
+ LINK 	245             	nan*St*nan
+ LINK 	246             	nan*GGG*nan
+ LINK 	247             	nan*GGG*nan
+ LINK 	248             	nan*GGG*nan
+ LINK 	249             	nan*GGG*nan
+ LINK 	250             	nan*GGG*nan
+ LINK 	251             	nan*GGG*nan
+ LINK 	252             	nan*GGG*nan
+ LINK 	253             	nan*GGG*nan
+ LINK 	254             	nan*GGG*nan
+ LINK 	255             	nan*GG*nan
+ LINK 	256             	nan*GGG*nan
+ LINK 	257             	nan*GGG*nan
+ LINK 	258             	nan*GGG*nan
+ LINK 	259             	nan*GGG*nan
+ LINK 	260             	nan*GGG*nan
+ LINK 	261             	nan*GG*nan
+ LINK 	262             	nan*GG*nan
+ LINK 	263             	nan*GGG*nan
+ LINK 	264             	nan*GGG*nan
+ LINK 	265             	nan*GGG*nan
+ LINK 	266             	nan*GGG*nan
+ LINK 	267             	nan*GGG*nan
+ LINK 	268             	nan*GGG*nan
+ LINK 	269             	nan*GG*nan
+ LINK 	270             	nan*GG*nan
+ LINK 	271             	nan*GGG*nan
+ LINK 	272             	nan*GG*nan
+ LINK 	273             	nan*St*nan
+ LINK 	274             	nan*GG*nan
+ LINK 	275             	nan*GG*nan
+ LINK 	276             	nan*GGG*nan
+ LINK 	277             	nan*GGG*nan
+ LINK 	278             	nan*GG*nan
+ LINK 	279             	nan*GGG*nan
+ LINK 	280             	nan*GG*nan
+ LINK 	281             	nan*GG*nan
+ LINK 	282             	nan*GG*nan
+ LINK 	283             	nan*St*nan
+ LINK 	284             	nan*St*nan
+ LINK 	285             	nan*GG*nan
+ LINK 	286             	nan*PE*nan
+ LINK 	287             	nan*GGG*nan
+ LINK 	288             	nan*St*nan
+ LINK 	289             	nan*GG*nan
+ LINK 	290             	nan*St*nan
+ LINK 	291             	nan*GGG*nan
+ LINK 	292             	nan*GGG*nan
+ LINK 	293             	nan*GGG*nan
+ LINK 	294             	nan*GGG*nan
+ LINK 	295             	nan*GGG*nan
+ LINK 	296             	nan*GGG*nan
+ LINK 	297             	nan*GG*nan
+ LINK 	298             	nan*GG*nan
+ LINK 	299             	nan*GGG*nan
+ LINK 	300             	nan*GGG*nan
+ LINK 	301             	nan*GGG*nan
+ LINK 	302             	nan*GGG*nan
+ LINK 	303             	nan*GGG*nan
+ LINK 	304             	nan*GGG*nan
+ LINK 	305             	nan*GGG*nan
+ LINK 	306             	nan*GGG*nan
+ LINK 	307             	nan*GGG*nan
+ LINK 	308             	nan*GGG*nan
+ LINK 	309             	nan*GGG*nan
+ LINK 	310             	nan*PE*nan
+ LINK 	311             	nan*GGG*nan
+ LINK 	312             	nan*PE*nan
+ LINK 	313             	nan*PE*nan
+ LINK 	314             	nan*GGG*nan
+ LINK 	315             	nan*PE*nan
+ LINK 	316             	nan*GGG*nan
+ LINK 	317             	nan*GGG*nan
+ LINK 	318             	nan*PE*nan
+ LINK 	319             	nan*St*nan
+ LINK 	320             	nan*GG*nan
+ LINK 	321             	nan*GGG*nan
+ LINK 	322             	nan*GGG*nan
+ LINK 	323             	nan*GG*nan
+ LINK 	324             	nan*GG*nan
+ LINK 	325             	nan*GG*nan
+ LINK 	326             	nan*GG*nan
+ LINK 	327             	ZS*St*nan
+ LINK 	328             	nan*GG*nan
+ LINK 	329             	nan*GGG*nan
+ LINK 	330             	nan*PE*nan
+ LINK 	331             	nan*GGG*nan
+ LINK 	332             	nan*GGG*nan
+ LINK 	333             	nan*PE*nan
+ LINK 	334             	nan*GGG*nan
+ LINK 	335             	nan*GGG*nan
+ LINK 	336             	nan*GGG*nan
+ LINK 	337             	nan*GGG*nan
+ LINK 	338             	nan*GGG*nan
+ LINK 	339             	nan*PE*nan
+ LINK 	340             	nan*St*nan
+ LINK 	341             	nan*GG*nan
+ LINK 	342             	nan*GG*nan
+ LINK 	343             	nan*GGG*nan
+ LINK 	344             	nan*GGG*nan
+ LINK 	345             	nan*GGG*nan
+ LINK 	346             	nan*GGG*nan
+ LINK 	347             	nan*GGG*nan
+ LINK 	348             	nan*PE*nan
+ LINK 	349             	nan*GGG*nan
+ LINK 	350             	nan*PE*nan
+ LINK 	351             	nan*PE*nan
+ LINK 	352             	nan*PE*nan
+ LINK 	353             	nan*GGG*nan
+ LINK 	354             	nan*GGG*nan
+ LINK 	355             	nan*GGG*nan
+ LINK 	356             	nan*GGG*nan
+ LINK 	357             	nan*PE*nan
+ LINK 	358             	nan*PE*nan
+ LINK 	359             	nan*GGG*nan
+ LINK 	360             	nan*PE*nan
+ LINK 	361             	nan*PE*nan
+ LINK 	362             	nan*PE*nan
+ LINK 	363             	nan*GGG*nan
+ LINK 	364             	nan*GGG*nan
+ LINK 	365             	nan*PE*nan
+ LINK 	366             	nan*GGG*nan
+ LINK 	367             	nan*GGG*nan
+ LINK 	368             	nan*GGG*nan
+ LINK 	369             	nan*GGG*nan
+ LINK 	370             	nan*GGG*nan
+ LINK 	371             	nan*GGG*nan
+ LINK 	372             	nan*GGG*nan
+ LINK 	373             	nan*GGG*nan
+ LINK 	374             	nan*GGG*nan
+ LINK 	375             	nan*GG*nan
+ LINK 	376             	nan*GG*nan
+ LINK 	377             	nan*GG*nan
+ LINK 	378             	nan*GG*nan
+ LINK 	379             	nan*GGG*nan
+ LINK 	380             	nan*GG*nan
+ LINK 	381             	nan*GGG*nan
+ LINK 	382             	nan*GGG*nan
+ LINK 	383             	nan*GGG*nan
+ LINK 	384             	nan*GGG*nan
+ LINK 	385             	nan*GGG*nan
+ LINK 	386             	nan*GGG*nan
+ LINK 	387             	nan*GGG*nan
+ LINK 	388             	nan*GGG*nan
+ LINK 	389             	nan*GGG*nan
+ LINK 	390             	nan*GGG*nan
+ LINK 	391             	nan*GGG*nan
+ LINK 	392             	nan*GGG*nan
+ LINK 	393             	nan*GGG*nan
+ LINK 	394             	nan*PE*nan
+ LINK 	395             	nan*PE*nan
+ LINK 	396             	nan*PE*nan
+ LINK 	397             	nan*GGG*nan
+ LINK 	398             	nan*GGG*nan
+ LINK 	399             	nan*PE*nan
+ LINK 	400             	nan*PE*nan
+ LINK 	401             	nan*GG*nan
+ LINK 	402             	nan*GGG*nan
+ LINK 	403             	nan*GGG*nan
+ LINK 	404             	nan*GG*nan
+ LINK 	405             	nan*GGG*nan
+ LINK 	406             	nan*GG*nan
+ LINK 	407             	nan*GG*nan
+ LINK 	408             	nan*GGG*nan
+ LINK 	409             	nan*GGG*nan
+ LINK 	410             	nan*GG*nan
+ LINK 	411             	nan*GG*nan
+ LINK 	412             	nan*PE*nan
+ LINK 	413             	nan*PE*nan
+ LINK 	414             	nan*GGG*nan
+ LINK 	415             	nan*GG*nan
+ LINK 	416             	nan*GGG*nan
+ LINK 	417             	nan*GGG*nan
+ LINK 	418             	nan*GGG*nan
+ LINK 	419             	nan*GGG*nan
+ LINK 	420             	nan*GGG*nan
+ LINK 	421             	nan*GGG*nan
+ LINK 	422             	nan*GGG*nan
+ LINK 	423             	nan*GGG*nan
+ LINK 	424             	nan*St*nan
+ LINK 	425             	nan*GGG*nan
+ LINK 	426             	nan*GGG*nan
+ LINK 	427             	nan*GG*nan
+ LINK 	428             	nan*PE*nan
+ LINK 	429             	nan*GG*nan
+ LINK 	430             	nan*GG*nan
+ LINK 	431             	nan*GG*nan
+ LINK 	432             	nan*GG*nan
+ LINK 	433             	nan*GGG*nan
+ LINK 	434             	nan*GGG*nan
+ LINK 	435             	nan*GGG*nan
+ LINK 	436             	nan*St*nan
+ LINK 	437             	nan*St*nan
+ LINK 	438             	nan*St*nan
+ LINK 	439             	nan*GGG*nan
+ LINK 	440             	nan*GGG*nan
+ LINK 	441             	nan*GGG*nan
+ LINK 	442             	nan*GGG*nan
+ LINK 	443             	nan*GGG*nan
+ LINK 	444             	nan*GGG*nan
+ LINK 	445             	nan*GGG*nan
+ LINK 	446             	nan*GGG*nan
+ LINK 	447             	nan*GGG*nan
+ LINK 	448             	nan*GGG*nan
+ LINK 	449             	nan*St*nan
+ LINK 	450             	nan*GGG*nan
+ LINK 	451             	nan*GGG*nan
+ LINK 	452             	nan*GGG*nan
+ LINK 	453             	nan*GGG*nan
+ LINK 	454             	nan*GGG*nan
+ LINK 	455             	nan*GGG*nan
+ LINK 	456             	nan*GGG*nan
+ LINK 	457             	nan*GGG*nan
+ LINK 	458             	nan*GGG*nan
+ LINK 	459             	nan*GGG*nan
+ LINK 	460             	nan*GGG*nan
+ LINK 	461             	nan*GGG*nan
+ LINK 	462             	nan*GGG*nan
+ LINK 	463             	nan*GGG*nan
+ LINK 	464             	nan*GGG*nan
+ LINK 	465             	nan*GGG*nan
+ LINK 	466             	nan*GGG*nan
+ LINK 	467             	nan*GGG*nan
+ LINK 	468             	nan*GG*nan
+ LINK 	469             	nan*GGG*nan
+ LINK 	470             	nan*GGG*nan
+ LINK 	471             	nan*GGG*nan
+ LINK 	472             	nan*GGG*nan
+ LINK 	473             	nan*GGG*nan
+ LINK 	474             	nan*GGG*nan
+ LINK 	475             	nan*GGG*nan
+ LINK 	476             	nan*GG*nan
+ LINK 	477             	nan*GGG*nan
+ LINK 	478             	nan*GGG*nan
+ LINK 	479             	nan*GGG*nan
+ LINK 	480             	nan*GG*nan
+ LINK 	481             	nan*GGG*nan
+ LINK 	482             	nan*GGG*nan
+ LINK 	483             	nan*GGG*nan
+ LINK 	484             	nan*GGG*nan
+ LINK 	485             	nan*GG*nan
+ LINK 	486             	nan*GGG*nan
+ LINK 	487             	nan*GG*nan
+ LINK 	488             	nan*GGG*nan
+ LINK 	489             	nan*GGG*nan
+ LINK 	490             	nan*GGG*nan
+ LINK 	491             	nan*GGG*nan
+ LINK 	492             	nan*GGG*nan
+ LINK 	493             	nan*GGG*nan
+ LINK 	494             	nan*GGG*nan
+ LINK 	495             	nan*GGG*nan
+ LINK 	496             	nan*GGG*nan
+ LINK 	497             	nan*GGG*nan
+ LINK 	498             	nan*GGG*nan
+ LINK 	499             	nan*GGG*nan
+ LINK 	500             	nan*PE*nan
+ LINK 	501             	nan*GGG*nan
+ LINK 	502             	nan*GGG*nan
+ LINK 	503             	nan*PE*nan
+ LINK 	504             	nan*GG*nan
+ LINK 	505             	nan*GGG*nan
+ LINK 	506             	nan*GGG*nan
+ LINK 	507             	nan*GGG*nan
+ LINK 	508             	nan*GGG*nan
+ LINK 	509             	nan*GGG*nan
+ LINK 	510             	nan*PE*nan
+ LINK 	511             	nan*GGG*nan
+ LINK 	512             	nan*GGG*nan
+ LINK 	513             	nan*GGG*nan
+ LINK 	514             	nan*GGG*nan
+ LINK 	515             	nan*GGG*nan
+ LINK 	516             	nan*GGG*nan
+ LINK 	517             	nan*GGG*nan
+ LINK 	518             	nan*GG*nan
+ LINK 	519             	nan*GG*nan
+ LINK 	520             	nan*St*nan
+ LINK 	521             	nan*GGG*nan
+ LINK 	522             	nan*GGG*nan
+ LINK 	523             	nan*GGG*nan
+ LINK 	524             	nan*GGG*nan
+ LINK 	525             	nan*GGG*nan
+ LINK 	526             	nan*PE*nan
+ LINK 	527             	nan*PE*nan
+ LINK 	528             	nan*GGG*nan
+ LINK 	529             	nan*GGG*nan
+ LINK 	530             	nan*GGG*nan
+ LINK 	531             	nan*PE*nan
+ LINK 	532             	nan*PE*nan
+ LINK 	533             	nan*PE*nan
+ LINK 	534             	nan*PE*nan
+ LINK 	535             	nan*PEHD*nan
+ LINK 	536             	nan*PE*nan
+ LINK 	537             	nan*GGG*nan
+ LINK 	538             	nan*GGG*nan
+ LINK 	539             	nan*GGG*nan
+ LINK 	540             	nan*GGG*nan
+ LINK 	541             	nan*GGG*nan
+ LINK 	542             	nan*GGG*nan
+ LINK 	543             	nan*GGG*nan
+ LINK 	544             	nan*GGG*nan
+ LINK 	545             	nan*GGG*nan
+ LINK 	546             	nan*GGG*nan
+ LINK 	547             	nan*GGG*nan
+ LINK 	548             	nan*GGG*nan
+ LINK 	549             	nan*GGG*nan
+ LINK 	550             	nan*PE*nan
+ LINK 	551             	nan*GGG*nan
+ LINK 	552             	nan*GGG*nan
+ LINK 	553             	nan*GGG*nan
+ LINK 	554             	nan*PE*nan
+ LINK 	555             	nan*GG*nan
+ LINK 	556             	nan*GGG*nan
+ LINK 	557             	ZS*GGG*nan
+ LINK 	558             	ZS*St*nan
+ LINK 	559             	ZS*GGG*nan
+ LINK 	560             	ZS*GGG*nan
+ LINK 	561             	ZS*GGG*nan
+ LINK 	562             	ZS*PE*nan
+ LINK 	563             	ZS*St*nan
+ LINK 	564             	ZS*GGG*nan
+ LINK 	565             	ZS*GGG*nan
+ LINK 	574             	nan*GGG*nan
+ LINK 	11              	nan*PE*nan
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+ PM1             	Closed
+ 595             	Closed
+ 597             	Closed
+ PM2             	Closed
+ DUM7            	Open
+
+[PATTERNS]
+;ID              	Multipliers
+;ID              	Multipliers
+ ObererBergS     	0.04        	0.03        	0.05        	0.05        	0.01        	0.05        
+ ObererBergS     	0.12        	0.13        	0.12        	0.17        	0.07        	0.15        
+ ObererBergS     	0.11        	0.11        	0.13        	0.07        	0.12        	0.10        
+ ObererBergS     	0.11        	0.13        	0.09        	0.09        	0.11        	0.08        
+;
+ ObererBerg      	0.04        	0.03        	0.05        	0.05        	0.01        	0.05        
+ ObererBerg      	0.12        	0.13        	0.12        	0.17        	0.07        	0.15        
+ ObererBerg      	0.11        	0.11        	0.13        	0.07        	0.12        	0.10        
+ ObererBerg      	0.11        	0.13        	0.09        	0.09        	0.11        	0.08        
+;
+ UntererBergS    	0.40        	0.29        	0.21        	0.21        	0.25        	0.38        
+ UntererBergS    	1.14        	1.51        	1.50        	1.44        	1.41        	1.29        
+ UntererBergS    	1.31        	1.33        	1.14        	1.07        	1.07        	1.22        
+ UntererBergS    	1.47        	1.47        	1.36        	1.18        	1.04        	0.68        
+;
+ UntererBerg     	0.40        	0.29        	0.21        	0.21        	0.25        	0.38        
+ UntererBerg     	1.14        	1.51        	1.50        	1.44        	1.41        	1.29        
+ UntererBerg     	1.31        	1.33        	1.14        	1.07        	1.07        	1.22        
+ UntererBerg     	1.47        	1.47        	1.36        	1.18        	1.04        	0.68        
+;
+ MarktS          	5.01        	4.63        	4.43        	4.48        	4.77        	5.22        
+ MarktS          	6.96        	8.43        	10.72       	10.99       	9.10        	8.65        
+ MarktS          	8.37        	8.07        	7.57        	7.54        	7.47        	7.65        
+ MarktS          	8.28        	8.33        	8.23        	6.90        	6.46        	5.63        
+;
+ Markt           	5.01        	4.63        	4.43        	4.48        	4.77        	5.22        
+ Markt           	6.96        	8.43        	10.72       	10.99       	9.10        	8.65        
+ Markt           	8.37        	8.07        	7.57        	7.54        	7.47        	7.65        
+ Markt           	8.28        	8.33        	8.23        	6.90        	6.46        	5.63        
+;
+ UnterzoneS      	9.42        	7.98        	7.34        	6.91        	7.57        	9.09        
+ UnterzoneS      	14.69       	17.87       	18.90       	18.81       	18.78       	18.63       
+ UnterzoneS      	18.42       	19.10       	17.96       	16.87       	17.22       	18.20       
+ UnterzoneS      	19.40       	19.26       	18.14       	16.55       	14.95       	12.01       
+;
+ Unterzone       	9.42        	7.98        	7.34        	6.91        	7.57        	9.09        
+ Unterzone       	14.69       	17.87       	18.90       	18.81       	18.78       	18.63       
+ Unterzone       	18.42       	19.10       	17.96       	16.87       	17.22       	18.20       
+ Unterzone       	19.40       	19.26       	18.14       	16.55       	14.95       	12.01       
+;
+ ObererBergW     	0.07        	0.06        	0.07        	0.06        	0.08        	0.08        
+ ObererBergW     	0.25        	0.21        	0.28        	0.24        	0.24        	0.24        
+ ObererBergW     	0.25        	0.24        	0.22        	0.19        	0.17        	0.26        
+ ObererBergW     	0.25        	0.26        	0.20        	0.19        	0.19        	0.12        
+;
+ UntererBergW    	0.60        	0.43        	0.37        	0.36        	0.35        	0.60        
+ UntererBergW    	1.43        	1.77        	1.69        	1.67        	1.62        	1.55        
+ UntererBergW    	1.61        	1.56        	1.34        	1.19        	1.25        	1.59        
+ UntererBergW    	1.74        	1.69        	1.41        	1.22        	1.19        	0.86        
+;
+ MarktW          	5.30        	4.65        	4.51        	4.79        	4.89        	5.49        
+ MarktW          	7.25        	8.48        	9.04        	9.03        	9.12        	9.10        
+ MarktW          	8.86        	8.63        	7.87        	7.52        	7.56        	8.08        
+ MarktW          	8.32        	7.87        	7.09        	6.98        	6.61        	6.00        
+;
+ UnterzoneW      	11.74       	9.06        	6.76        	6.73        	6.97        	8.84        
+ UnterzoneW      	15.57       	17.41       	18.78       	19.12       	19.05       	19.52       
+ UnterzoneW      	19.72       	19.62       	18.28       	18.96       	20.17       	21.04       
+ UnterzoneW      	22.10       	23.03       	18.41       	16.41       	16.07       	13.89       
+;
+ Moesle          	0           	0           	0           	0           	0           	0           
+ Moesle          	1           	1           	1           	1           	1           	1           
+ Moesle          	1           	1           	1           	1           	1           	1           
+ Moesle          	1           	1           	1           	1           	1           
+
+[CURVES]
+;ID              	X-Value     	Y-Value
+;PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: 
+ PC_Arbogast     	2.75        	61.5        
+;PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: 
+ PC_Moesle       	20          	80          
+;PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: 
+ PC_UntererBerg  	1.6         	80          
+;PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: 
+ PC_Bulitta      	4.4         	85          
+;PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: PUMP: 
+ T_Bullita       	2.2         	35          
+ T_Bullita       	6.4         	160         
+
+[CONTROLS]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[RULES]
+RULE 1
+IF TANK AmHof LEVEL > 1.99
+THEN PUMP PM1 STATUS = CLOSED
+RULE 2
+IF TANK AmHof LEVEL < 1.96
+THEN PUMP PM1 STATUS = OPEN
+RULE 3
+IF TANK AmHof LEVEL > 1.99
+THEN VALVE VRT SETTING = 0
+AND VALVE FCV_Kom SETTING = 0
+RULE 4
+IF TANK AmHof LEVEL < 1.7
+THEN VALVE VRT SETTING = 10
+RULE 5
+IF TANK AmHof LEVEL < 1
+THEN VALVE FCV_Kom SETTING = 10
+RULE 6
+IF TANK AmHof LEVEL > 0.99
+THEN PUMP PM2 STATUS = CLOSED
+RULE 7
+IF TANK AmHof LEVEL < 0.5
+THEN PUMP PM2 STATUS = OPEN
+RULE 8
+IF TANK HBObererBerg LEVEL < 1.9
+THEN PIPE 1 STATUS = OPEN 
+RULE 9
+IF TANK HBObererBerg LEVEL > 1.99
+THEN PIPE 1 STATUS = CLOSED 
+AND PIPE 571 STATUS = CLOSED
+RULE 10
+IF TANK HBUntererBerg LEVEL < 1.9
+THEN PIPE 593 STATUS = OPEN 
+RULE 11
+IF TANK HBUntererBerg LEVEL > 1.99
+THEN PIPE 593 STATUS = CLOSED 
+RULE 12
+IF TANK Arbogast LEVEL > 1.99
+THEN PUMP 584 STATUS = CLOSED 
+RULE 13
+IF TANK Arbogast LEVEL < 1
+THEN PUMP 584 STATUS = OPEN
+RULE 14
+IF TANK Bulitta LEVEL > 1.99
+THEN PIPE 579 STATUS = CLOSED
+AND PIPE 31 STATUS = CLOSED
+RULE 15
+IF TANK Bulitta LEVEL < 1.5
+THEN PIPE 579 STATUS = OPEN
+RULE 16
+IF TANK Bulitta LEVEL < 1
+THEN PIPE 31 STATUS = OPEN
+RULE 17
+IF TANK HBObererBerg LEVEL < 0.8
+THEN PIPE 571 STATUS = OPEN
+RULE 18
+IF TANK SENSOR_ObererBerg LEVEL < 19
+THEN PIPE 571 STATUS = OPEN
+AND PUMP 595  STATUS = OPEN
+RULE 19
+IF TANK SENSOR_UntererBerg LEVEL < 19.99
+THEN PIPE 571 STATUS = OPEN
+AND PUMP 597  STATUS = OPEN
+AND PIPE 579 STATUS = OPEN
+AND PIPE 31 STATUS = OPEN
+RULE 20
+IF TANK SENSOR_Unterzone LEVEL < 19.99
+THEN PUMP PM1 STATUS = OPEN
+AND VALVE FCV_Kom SETTING = 10
+AND VALVE VRT SETTING = 10
+AND PUMP PM2 STATUS = OPEN
+
+
+
+
+
+
+[ENERGY]
+ Global Efficiency  	75
+ Global Price       	0
+ Demand Charge      	0
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+
+
+[REACTIONS]
+ Order Bulk            	1
+ Order Tank            	1
+ Order Wall            	1
+ Global Bulk           	0
+ Global Wall           	0
+ Limiting Potential    	0
+ Roughness Correlation 	0
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	72:00 
+ Hydraulic Timestep 	0:15 
+ Quality Timestep   	0:05 
+ Pattern Timestep   	1:00 
+ Pattern Start      	0:00 
+ Report Timestep    	1:00 
+ Report Start       	0:00 
+ Start ClockTime    	12 am
+ Statistic          	NONE
+
+[REPORT]
+ Status             	No
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	LPS
+ Headloss           	D-W
+ Specific Gravity   	1
+ Viscosity          	1
+ Trials             	100
+ Accuracy           	0.0001
+ CHECKFREQ          	2
+ MAXCHECK           	10
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	Moesle
+ Demand Multiplier  	1
+ Emitter Exponent   	0.5
+ Quality            	Age mg/L
+ Diffusivity        	1
+ Tolerance          	0.01
+
+[COORDINATES]
+;Node            	X-Coord         	Y-Coord
+ 218             	-50363.40       	244312.94       
+ 269             	-50478.23       	244584.97       
+ 270             	-50442.78       	244537.12       
+ 272             	-50477.07       	244438.63       
+ 277             	-50349.38       	244352.69       
+ 449             	-49978.05       	244773.62       
+ 491             	-50017.38       	244744.36       
+ 504             	-50465.52       	244532.35       
+ 519             	-50173.92       	244661.42       
+ 521             	-50195.31       	244675.86       
+ 537             	-50322.15       	244381.32       
+ 515A            	-49538.25       	245145.03       
+ 516A            	-49890.08       	244858.63       
+ 517A            	-49926.19       	244816.27       
+ 518A            	-49828.95       	244821.31       
+ 520A            	-50242.50       	244595.97       
+ EICHB_SCHW2     	-50304.38       	244578.62       
+ EICHB_SCHW      	-50296.33       	244579.66       
+ HY10            	-50378.77       	244560.16       
+ 177             	-51484.03       	244148.56       
+ 177A            	-51329.57       	244123.40       
+ 178             	-51398.25       	244248.48       
+ 180             	-51284.94       	244218.51       
+ 181             	-51239.05       	244327.10       
+ 182             	-51162.66       	244308.52       
+ 183             	-51050.58       	244192.90       
+ 216             	-51039.74       	244141.68       
+ 217             	-50936.17       	244052.60       
+ 219             	-50462.90       	244343.06       
+ 220             	-50507.28       	244333.19       
+ 220A            	-50625.48       	244375.08       
+ 222             	-50647.18       	244308.28       
+ 223             	-50724.29       	244390.91       
+ 224             	-50867.58       	244211.82       
+ 225             	-50930.20       	244199.47       
+ 226             	-50740.34       	244284.41       
+ 228             	-50896.67       	244275.19       
+ 229             	-50903.14       	244266.65       
+ 230             	-50906.03       	244278.73       
+ 231             	-50861.68       	244410.47       
+ 232             	-51091.30       	244384.69       
+ 263             	-51109.69       	244611.90       
+ 264             	-51110.80       	244539.83       
+ 266             	-50861.71       	244442.36       
+ 265             	-50835.55       	244434.55       
+ 267             	-50824.51       	244580.87       
+ 268             	-50819.28       	244430.40       
+ 495             	-50378.33       	244380.19       
+ 502             	-51088.49       	244092.52       
+ 503             	-50982.39       	244168.31       
+ 509             	-51169.94       	244515.51       
+ 523             	-51090.15       	244215.43       
+ 525             	-51073.27       	244097.50       
+ 524             	-51039.93       	244235.20       
+ 526             	-51154.52       	244359.58       
+ 527             	-51026.63       	244443.35       
+ 528             	-51078.48       	244544.84       
+ 536             	-50323.33       	244380.13       
+ 71              	-52235.64       	243853.37       
+ 72              	-52251.37       	243760.09       
+ 74              	-52306.34       	243827.20       
+ 75              	-52317.93       	243818.04       
+ 78              	-52227.25       	243749.85       
+ 80              	-52122.63       	243683.14       
+ 81              	-52053.43       	243759.97       
+ 82              	-51932.13       	243746.45       
+ 83              	-52006.53       	243818.79       
+ 84              	-52058.00       	243892.37       
+ 86              	-52098.64       	243813.17       
+ 87              	-51957.52       	243861.16       
+ 88              	-51890.77       	243855.14       
+ 89              	-51860.48       	243854.60       
+ 90              	-51766.00       	243869.10       
+ 91              	-51886.32       	243914.68       
+ 93              	-51669.52       	243887.72       
+ 95              	-51472.18       	244033.68       
+ 96              	-51541.58       	244003.88       
+ 97              	-51607.13       	243993.15       
+ 98              	-51604.97       	243975.36       
+ 99              	-51647.08       	243950.26       
+ 100             	-51580.97       	243937.77       
+ 102             	-51678.35       	244068.84       
+ 103             	-51722.63       	244082.68       
+ 104             	-51764.79       	244085.73       
+ 105             	-51784.54       	244086.09       
+ 106             	-51858.77       	244062.07       
+ 107             	-51909.24       	244049.10       
+ 108             	-51781.64       	243968.58       
+ 109             	-51712.17       	243976.98       
+ 110             	-52083.10       	243919.08       
+ 111             	-52111.47       	243929.98       
+ 112             	-52109.23       	243978.06       
+ 113             	-52021.30       	244108.32       
+ 114             	-52148.20       	243994.71       
+ 162             	-51971.27       	244175.11       
+ 164             	-51757.38       	244275.89       
+ 167             	-51883.42       	244216.45       
+ 169             	-51884.23       	244142.72       
+ 171             	-51660.42       	244272.11       
+ 172             	-51607.29       	244265.51       
+ 189             	-52022.25       	244237.17       
+ 190             	-52034.46       	244250.20       
+ 213             	-52064.33       	244134.07       
+ 457             	-52364.76       	243093.37       
+ 458             	-52094.47       	243194.47       
+ 460             	-51433.01       	244062.96       
+ 465             	-51612.35       	244000.34       
+ 483             	-51961.68       	244046.09       
+ 490             	-52042.53       	243356.29       
+ 514             	-51847.04       	243719.47       
+ 520             	-51891.10       	243737.08       
+ 114A            	-52197.84       	244097.01       
+ 190A            	-51990.91       	244397.07       
+ 457A            	-52226.95       	243122.11       
+ 90A             	-51769.46       	243924.98       
+ 90B             	-51809.90       	243859.20       
+ HY96            	-52004.69       	244339.50       
+ HY96A           	-51965.74       	244392.74       
+ HY96B           	-51894.43       	244376.16       
+ 2               	-52809.12       	243130.64       
+ 3               	-52766.66       	243175.09       
+ 4               	-52717.98       	243226.87       
+ 5               	-52671.00       	243276.94       
+ 6               	-52691.10       	243102.16       
+ 7               	-52622.45       	243140.53       
+ 8               	-52567.05       	243182.94       
+ 9               	-52510.47       	243230.66       
+ 10              	-52620.96       	243330.27       
+ 11              	-52571.22       	243383.51       
+ 12              	-52515.85       	243444.05       
+ 13              	-52605.50       	243438.31       
+ 14              	-52669.45       	243371.27       
+ 15              	-52743.80       	243426.72       
+ 16              	-52706.46       	243478.57       
+ 17              	-52457.30       	243280.96       
+ 18              	-52399.67       	243337.55       
+ 19              	-52355.46       	243385.10       
+ 21              	-52293.01       	243453.37       
+ 23              	-52472.25       	243491.09       
+ 24              	-52431.33       	243534.32       
+ 25              	-52476.50       	243581.40       
+ 26              	-52482.02       	243575.30       
+ 33              	-52259.09       	243642.81       
+ 34              	-52277.28       	243714.02       
+ 35              	-52566.15       	243604.76       
+ 36              	-52609.12       	243628.80       
+ 37              	-52651.93       	243568.24       
+ 38              	-52692.03       	243505.44       
+ 39              	-52781.15       	243536.55       
+ 40              	-52653.30       	243658.81       
+ 41              	-52848.82       	243590.68       
+ 42              	-53010.92       	243543.43       
+ 43              	-52877.42       	243706.82       
+ 44              	-52978.90       	243458.11       
+ 45              	-53012.43       	243392.07       
+ 46              	-52894.84       	243390.09       
+ 47              	-52930.00       	243339.16       
+ 48              	-52977.87       	243281.84       
+ 49              	-52987.87       	243702.28       
+ 52              	-52857.76       	243837.60       
+ 53              	-52811.46       	243831.18       
+ 54              	-52780.36       	243826.88       
+ 58              	-52720.44       	243817.00       
+ 60              	-52766.68       	243824.98       
+ 62              	-52674.21       	243809.03       
+ 63              	-52686.38       	243811.12       
+ 64              	-52548.54       	243868.96       
+ 65              	-52502.26       	243843.21       
+ 66              	-52742.80       	243719.61       
+ 67              	-52485.65       	243825.16       
+ 68              	-52405.21       	243767.75       
+ 69              	-52381.97       	243774.07       
+ 73              	-52301.91       	243822.05       
+ 77              	-52400.57       	243890.65       
+ 79              	-52146.71       	243701.07       
+ 115             	-52261.99       	244076.18       
+ 116             	-52272.87       	244073.03       
+ 118             	-52313.55       	244072.17       
+ 119             	-52308.68       	244104.29       
+ 120             	-52336.48       	243946.45       
+ 122             	-52462.10       	243950.85       
+ 123             	-52543.25       	243936.85       
+ 125             	-52535.65       	244016.20       
+ 126             	-52622.63       	243951.01       
+ 127             	-52618.36       	243999.36       
+ 128             	-52607.48       	244110.43       
+ 129             	-52705.23       	243951.90       
+ 130             	-52757.58       	243979.67       
+ 131             	-52746.40       	244004.72       
+ 133             	-52819.70       	243989.15       
+ 134             	-52821.74       	243972.85       
+ 135             	-52835.24       	243942.35       
+ 136             	-52911.65       	243981.64       
+ 137             	-52986.90       	244097.96       
+ 138             	-52917.44       	244065.69       
+ 139             	-53154.59       	244243.10       
+ 140             	-53126.78       	244217.84       
+ 145             	-52905.55       	244239.37       
+ 146             	-52919.08       	244234.30       
+ 147             	-52800.37       	244172.93       
+ 149             	-52503.10       	244267.18       
+ 150             	-52513.86       	244214.16       
+ 151             	-52604.74       	244231.84       
+ 152             	-52695.25       	244251.74       
+ 153             	-52736.60       	244134.79       
+ 154             	-52382.01       	244249.62       
+ 155             	-52415.63       	244209.50       
+ 156             	-52308.55       	244146.74       
+ 157             	-52297.36       	244225.77       
+ 159             	-52227.35       	244313.52       
+ 161             	-52272.88       	244253.18       
+ 163             	-51747.89       	244287.21       
+ 184             	-51644.05       	244395.44       
+ 186             	-51683.24       	244405.63       
+ 188             	-51552.53       	244333.97       
+ 192             	-52101.03       	244309.00       
+ 194             	-52164.88       	244197.61       
+ 195             	-52325.72       	244296.71       
+ 196             	-52277.73       	244416.27       
+ 197             	-52184.29       	244373.05       
+ 198             	-52476.59       	244332.00       
+ 199             	-52541.12       	244365.49       
+ 200             	-52439.74       	244369.70       
+ 201             	-52618.47       	244395.36       
+ 202             	-52666.61       	244416.47       
+ 206             	-53267.19       	244344.56       
+ 207             	-52976.96       	244418.02       
+ 211             	-53282.59       	244357.74       
+ 234             	-53370.40       	244520.64       
+ 235             	-52937.67       	244461.91       
+ 236             	-52951.53       	244473.07       
+ 237             	-52843.26       	244616.67       
+ 238             	-52857.24       	244625.30       
+ 239             	-52748.24       	244532.01       
+ 240             	-52822.31       	244435.39       
+ 241             	-52729.05       	244448.00       
+ 242             	-52577.85       	244604.35       
+ 243             	-52565.97       	244577.44       
+ 244             	-52524.78       	244574.32       
+ 245             	-52517.20       	244560.73       
+ 246             	-52584.56       	244458.77       
+ 247             	-52401.69       	244489.19       
+ 248             	-52355.22       	244613.25       
+ 249             	-52223.03       	244638.10       
+ 250             	-52209.26       	244626.20       
+ 252             	-52270.76       	244566.47       
+ 253             	-52075.64       	244554.08       
+ 254             	-51964.98       	244525.52       
+ 256             	-51872.49       	244503.08       
+ 259             	-51538.51       	244601.61       
+ 260             	-51638.27       	244458.52       
+ 261             	-51606.29       	244439.19       
+ 262             	-51320.38       	244638.79       
+ 281             	-51414.06       	244689.06       
+ 282             	-51373.75       	244771.32       
+ 285             	-51476.02       	244723.49       
+ 289             	-51717.18       	244657.84       
+ 290             	-52334.18       	244639.86       
+ 291             	-52263.99       	244734.88       
+ 292             	-52273.08       	244731.08       
+ 293             	-52193.26       	244774.66       
+ 294             	-52269.13       	244721.60       
+ 295             	-52639.40       	244639.77       
+ 297             	-52695.02       	244686.81       
+ 299             	-52653.66       	244771.45       
+ 301             	-52824.88       	244681.78       
+ 302             	-52788.15       	244770.10       
+ 303             	-52754.10       	244774.57       
+ 304             	-53165.15       	244550.80       
+ 308             	-53502.81       	244825.61       
+ 309             	-53089.94       	244972.17       
+ 311             	-53098.72       	244842.94       
+ 313             	-53052.19       	244803.30       
+ 314             	-53001.79       	244926.42       
+ 315             	-52960.24       	244989.79       
+ 318             	-52725.83       	244872.53       
+ 319             	-52683.73       	244911.69       
+ 320             	-52726.79       	244833.61       
+ 321             	-52778.02       	244782.45       
+ 322             	-52889.41       	244741.12       
+ 323             	-52642.06       	244979.95       
+ 324             	-52557.62       	244909.43       
+ 325             	-52605.06       	244847.92       
+ 327             	-52497.84       	244830.53       
+ 328             	-52461.07       	244800.88       
+ 329             	-52359.86       	244892.32       
+ 330             	-52383.03       	244964.27       
+ 331             	-52364.54       	244776.95       
+ 333             	-52254.61       	244852.84       
+ 335             	-52317.45       	244815.04       
+ 337             	-52058.17       	245005.35       
+ 338             	-51857.69       	244901.93       
+ 340             	-51852.46       	244851.42       
+ 341             	-51628.29       	245016.20       
+ 343             	-51620.10       	244846.67       
+ 344             	-51601.59       	244842.37       
+ 345             	-51453.61       	244790.76       
+ 346             	-51462.81       	244793.69       
+ 348             	-51523.07       	244812.96       
+ 349             	-51554.66       	244823.06       
+ 352             	-51403.75       	244909.83       
+ 353             	-51360.29       	244971.37       
+ 354             	-51314.48       	244933.22       
+ 355             	-51346.29       	244831.47       
+ 358             	-51265.74       	244936.21       
+ 360             	-51236.93       	244801.68       
+ 361             	-51269.64       	244807.86       
+ 364             	-51297.01       	244734.25       
+ 365             	-51223.03       	245078.27       
+ 367             	-51253.67       	245143.10       
+ 368             	-51329.34       	245041.14       
+ 369             	-51304.60       	245106.72       
+ 370             	-51309.40       	245130.15       
+ 371             	-51201.60       	245258.43       
+ 372             	-51460.72       	245170.03       
+ 373             	-51597.66       	245169.66       
+ 375             	-51620.48       	245167.26       
+ 376             	-51684.14       	245151.53       
+ 377             	-51761.36       	245074.88       
+ 378             	-51780.90       	245041.88       
+ 379             	-51866.94       	245086.12       
+ 380             	-51887.22       	245107.95       
+ 381             	-51902.70       	245053.73       
+ 382             	-51915.28       	245259.28       
+ 383             	-51940.75       	245213.54       
+ 385             	-51949.08       	244923.17       
+ 386             	-51925.89       	244988.45       
+ 387             	-51642.06       	244851.78       
+ 389             	-53852.78       	245021.74       
+ 390             	-53781.07       	245038.84       
+ 391             	-53724.70       	245076.66       
+ 392             	-53747.23       	245133.80       
+ 394             	-53829.42       	245212.46       
+ 395             	-53721.28       	245237.11       
+ 396             	-53663.91       	245224.91       
+ 397             	-53376.12       	245105.90       
+ 399             	-53593.92       	245220.10       
+ 400             	-53240.51       	245043.32       
+ 401             	-53243.69       	245036.56       
+ 403             	-52665.65       	245078.43       
+ 404             	-52606.19       	245045.49       
+ 405             	-52529.92       	245161.10       
+ 406             	-52557.75       	245178.07       
+ 407             	-52460.92       	245096.01       
+ 408             	-52442.53       	245113.95       
+ 409             	-52450.36       	245117.75       
+ 410             	-52410.14       	245028.64       
+ 411             	-52365.91       	245110.22       
+ 412             	-52397.95       	245233.08       
+ 413             	-52295.46       	245271.75       
+ 417             	-51219.58       	245492.90       
+ 418             	-51098.62       	245482.67       
+ 422             	-51156.45       	245340.43       
+ 423             	-51230.22       	245349.72       
+ 425             	-51227.81       	245382.17       
+ 426             	-51441.81       	245291.05       
+ 427             	-51430.22       	245375.25       
+ 428             	-51413.44       	245497.01       
+ 429             	-51580.24       	245364.28       
+ 430             	-51594.61       	245313.26       
+ 431             	-51613.56       	245286.78       
+ 434             	-52352.39       	245306.41       
+ 436             	-52415.55       	245335.09       
+ 437             	-52457.54       	245507.78       
+ 438             	-52473.07       	245506.59       
+ 439             	-52471.79       	245350.74       
+ 440             	-52499.32       	245302.04       
+ 441             	-52593.25       	245336.69       
+ 442             	-52649.42       	245357.84       
+ 446             	-51408.63       	245521.88       
+ 447             	-51041.42       	245626.12       
+ 455             	-53681.23       	245632.73       
+ 467             	-51567.49       	244502.36       
+ 468             	-51235.58       	245057.77       
+ 470             	-51636.51       	244918.07       
+ 471             	-51759.59       	245357.08       
+ 473             	-52396.37       	244974.63       
+ 474             	-52173.01       	244599.74       
+ 476             	-52787.17       	244562.89       
+ 477             	-53044.79       	244821.39       
+ 478             	-53499.37       	244890.81       
+ 478A            	-53502.89       	245021.26       
+ 480             	-52602.90       	243950.17       
+ 481             	-52288.44       	243942.81       
+ 497             	-53722.25       	245292.99       
+ 498             	-53681.84       	245360.19       
+ 499             	-53652.57       	245580.69       
+ 501             	-52870.78       	244360.66       
+ 510             	-51696.40       	245021.45       
+ 511             	-51949.28       	244572.99       
+ 513             	-53594.81       	245231.85       
+ 515             	-51543.11       	244404.29       
+ 516             	-51129.80       	245406.12       
+ 531             	-51947.08       	245438.96       
+ 532             	-52473.32       	245478.14       
+ 533             	-52562.61       	245488.85       
+ 534             	-52555.18       	245525.73       
+ 535             	-53900.64       	245194.15       
+ 538             	-52855.89       	243438.81       
+ 539             	-52777.40       	243375.00       
+ 540             	-52808.19       	243320.80       
+ 541             	-52806.58       	243311.21       
+ 542             	-52716.60       	243327.80       
+ 543             	-52663.78       	243285.72       
+ 544             	-52843.01       	243343.98       
+ 119A            	-52453.71       	244108.86       
+ 139A            	-53104.14       	244305.19       
+ 150A            	-52530.29       	244115.91       
+ 150B            	-52489.48       	244111.98       
+ 157A            	-52313.18       	244195.70       
+ 157B            	-52331.02       	244204.75       
+ 240A            	-52845.52       	244404.32       
+ 240B            	-52782.80       	244486.53       
+ 289A            	-51773.29       	244717.71       
+ 387A            	-51709.38       	244867.43       
+ 45A             	-53051.56       	243344.70       
+ RTWV            	-51815.88       	245596.26       
+ HY346           	-52726.14       	244573.05       
+ ÜbergabeKoblach 	-53113.42       	243266.13       
+ HYNeu           	-52881.90       	245181.97       
+ 459             	-51972.70       	243506.64       
+ DUM4            	-49527.90       	245152.92       
+ 22              	-47984.73       	243856.78       
+ DUM9            	-47976.77       	243841.94       
+ 523A            	-51086.36       	244210.55       
+ 508             	-51261.73       	244090.15       
+ 463             	-51250.01       	244099.11       
+ 214             	-51257.11       	244101.54       
+ DUM1            	-50934.74       	244051.96       
+ 101             	-51551.21       	243914.97       
+ 514A            	-51833.78       	243736.60       
+ 490A            	-52045.21       	243354.46       
+ 414             	-52037.66       	245523.06       
+ 432             	-52134.44       	245424.31       
+ DUM10           	-51810.43       	245602.81       
+ 51              	-50291.66       	244591.34       
+ 55              	-51271.93       	244110.61       
+ 160             	-52273.56       	244264.84       
+ 158             	-52260.89       	244257.06       
+ 493             	-50431.94       	244527.87       
+ 271             	-50501.92       	244516.98       
+ 221             	-50638.13       	244263.27       
+ 227             	-50887.38       	244269.08       
+ DUM5            	-49531.52       	245150.30       
+ DUM6            	-49534.33       	245148.17       
+ DUM3            	-50935.33       	244052.26       
+ DUM2            	-50935.62       	244052.39       
+ DUM8            	-47981.43       	243851.61       
+ DUM7            	-47979.46       	243846.77       
+ DUM11           	-51812.26       	245600.30       
+ DUM12           	-51813.51       	245598.92       
+ 1               	-51955.40       	245242.28       
+ 20              	-53703.00       	245666.56       
+ Stiegquellen    	-49524.84       	245157.51       
+ GötznerMoos     	-47972.50       	243831.83       
+ Örflaquellen    	-50934.22       	244051.61       
+ 30              	-51957.70       	245246.57       
+ 31              	-51808.37       	245605.44       
+ Kommingen       	-53716.88       	245685.27       
+ HBObererBerg    	-49752.81       	244962.94       
+ Schlatt         	-48510.41       	244838.76       
+ DUSI            	-48304.96       	244624.65       
+ HBUntererBerg   	-50306.28       	244587.28       
+ Bulitta         	-51271.45       	244094.53       
+ Arbogast        	-52359.57       	243232.28       
+ AmHof           	-51482.87       	244284.75       
+ SENSOR_ObererBerg	-49767.90       	244832.09       
+ SENSOR_UntererBerg	-50825.17       	244656.50       
+ SENSOR_Markt    	-51357.39       	243985.76       
+ SENSOR_Unterzone	-51481.33       	244386.74       
+
+[VERTICES]
+;Link            	X-Coord         	Y-Coord
+ 599             	-52273.88       	244263.55       
+ 11              	-52042.31       	243354.71       
+ PM2             	-51943.03       	245231.55       
+
+[LABELS]
+;X-Coord           Y-Coord          Label & Anchor Node
+
+[BACKDROP]
+ DIMENSIONS     	-54197.07       	242966.40       	-47675.64       	245759.70       
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]
