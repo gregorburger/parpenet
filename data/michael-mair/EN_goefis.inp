@@ -1,0 +1,1414 @@
+[TITLE]
+
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ 11              	564         	0.063807    	Niederzone      	;
+ 12              	558         	0.057277    	Niederzone      	;
+ 13              	550         	0.055018    	Niederzone      	;
+ 14              	532         	0.046229    	Niederzone      	;
+ 15              	528         	0.028651    	Niederzone      	;
+ 16              	525         	0.028651    	Niederzone      	;
+ 17              	557         	0.055018    	Niederzone      	;
+ 18              	548         	0.055018    	Niederzone      	;
+ 19              	528         	0.043969    	Niederzone      	;
+ 20              	537         	0.03744     	Niederzone      	;
+ 21              	533         	0.028651    	Niederzone      	;
+ 22              	549         	0.046502    	Niederzone      	;
+ 23              	480         	0.046229    	Niederzone      	;
+ 24              	500         	0.013332    	Niederzone      	;
+ 25              	470         	0           	Niederzone      	;
+ 27              	522         	0           	Niederzone      	;
+ 28              	490         	0.046229    	Niederzone      	;
+ 29              	490         	0.028651    	Niederzone      	;
+ 30              	490         	0           	Niederzone      	;
+ 31              	516.2       	0           	Niederzone      	;
+ 32              	518.1       	0.028353    	Niederzone      	;
+ 33              	518.1       	0           	Niederzone      	;
+ 34              	528.4       	0.028353    	Niederzone      	;
+ 35              	531.6       	0           	Niederzone      	;
+ 36              	517.7       	0           	Niederzone      	;
+ 37              	519.5       	0.035727    	Niederzone      	;
+ 38              	521.4       	0           	Niederzone      	;
+ 39              	521.7       	0           	Niederzone      	;
+ 56              	471.2       	0           	Niederzone      	;
+ 57              	469.7       	0.038582    	Niederzone      	;
+ 61              	478.1       	0.0045434   	Niederzone      	;
+ 62              	506.5       	0.0031283   	Niederzone      	;
+ 63              	538.2       	0           	Niederzone      	;
+ 64              	529.3       	0.010775    	Niederzone      	;
+ 65              	521.7       	0.050474    	Niederzone      	;
+ 66              	528.3       	0           	Niederzone      	;
+ 67              	503.8       	0           	Niederzone      	;
+ 68              	502.22      	0.039699    	Niederzone      	;
+ 11A             	560         	0           	Niederzone      	;
+ 12A             	557         	0           	Niederzone      	;
+ 12B             	557         	0           	Niederzone      	;
+ 13A             	545         	0           	Niederzone      	;
+ 14A             	545         	0           	Niederzone      	;
+ 16A             	520         	0           	Niederzone      	;
+ 16B             	510         	0           	Niederzone      	;
+ 17A             	557         	0           	Niederzone      	;
+ 18A             	536.11      	0           	Niederzone      	;
+ 19A             	532.6       	0           	Niederzone      	;
+ 20A             	545.72      	0           	Niederzone      	;
+ 22A             	553         	0           	Niederzone      	;
+ 22B             	540.04      	0.0048165   	Niederzone      	;
+ 22C             	540.8       	0.0048165   	Niederzone      	;
+ 22D             	536.2       	0.0079448   	Niederzone      	;
+ 22E             	530.5       	0.0031283   	Niederzone      	;
+ 22F             	531.5       	0           	Niederzone      	;
+ 22G             	534.6       	0.012761    	Niederzone      	;
+ 24A             	498.2       	0           	Niederzone      	;
+ 25A             	471.2       	0           	Niederzone      	;
+ 27A             	530         	0           	Niederzone      	;
+ 28A             	490         	0           	Niederzone      	;
+ 28B             	520         	0           	Niederzone      	;
+ 29A             	490         	0           	Niederzone      	;
+ 30A             	490         	0           	Niederzone      	;
+ 30B             	490         	0.046229    	Niederzone      	;
+ 30C             	490         	0           	Niederzone      	;
+ 30D             	484         	0           	Niederzone      	;
+ 30E             	485         	0           	Niederzone      	;
+ 30F             	489.2       	0           	Niederzone      	;
+ GWPWS           	473         	0           	Niederzone      	;
+ GWPWT           	483.3       	0           	Niederzone      	;
+ 3               	638         	0.10034     	Hochzone        	;
+ 4               	605         	0.10034     	Hochzone        	;
+ 5               	595         	0.1471      	Hochzone        	;
+ 6               	618         	0.10034     	Hochzone        	;
+ 7               	590         	0.14825     	Hochzone        	;
+ 8               	592         	0.01253     	Hochzone        	;
+ 9               	585         	0.075276    	Hochzone        	;
+ 10              	563         	0.088958    	Hochzone        	;
+ 40              	595         	0           	Hochzone        	;
+ 41              	596.8       	0.06385     	Hochzone        	;
+ 42              	591.2       	0           	Hochzone        	;
+ 43              	593.2       	0           	Hochzone        	;
+ 44              	596         	0.031925    	Hochzone        	;
+ 45              	597.5       	0           	Hochzone        	;
+ 46              	594.6       	0           	Hochzone        	;
+ 47              	595.9       	0.031925    	Hochzone        	;
+ 48              	594.4       	0           	Hochzone        	;
+ 49              	582         	0           	Hochzone        	;
+ 50              	575.7       	0           	Hochzone        	;
+ 51              	592.5       	0.031925    	Hochzone        	;
+ 52              	581.3       	0.031925    	Hochzone        	;
+ 53              	588.8       	0.013682    	Hochzone        	;
+ 54              	575.8       	0.013682    	Hochzone        	;
+ 55              	574         	0           	Hochzone        	;
+ 3A              	647         	0           	Hochzone        	;
+ 40A             	593         	0           	Hochzone        	;
+ 40B             	590         	0           	Hochzone        	;
+ 40C             	588         	0           	Hochzone        	;
+ 44A             	595         	0           	Hochzone        	;
+ 4A              	605         	0           	Hochzone        	;
+ 4B              	595         	0           	Hochzone        	;
+ 4C              	597         	0           	Hochzone        	;
+ 4D              	596         	0           	Hochzone        	;
+ 51A             	585         	0           	Hochzone        	;
+ 5A              	592         	0           	Hochzone        	;
+ 5B              	592         	0           	Hochzone        	;
+ 5C              	595.5       	0           	Hochzone        	;
+ 6A              	612         	0           	Hochzone        	;
+ 6B              	625         	0           	Hochzone        	;
+ 6C              	598         	0           	Hochzone        	;
+ 6D              	608         	0           	Hochzone        	;
+ 7A              	588         	0           	Hochzone        	;
+ 7B              	589         	0           	Hochzone        	;
+ 7C              	589         	0           	Hochzone        	;
+ 7D              	590         	0           	Hochzone        	;
+ 8A              	590.4       	0           	Hochzone        	;
+ 8B              	584.2       	0.0079693   	Hochzone        	;
+ 8C              	584.3       	0           	Hochzone        	;
+ 8D              	580.2       	0           	Hochzone        	;
+ 8E              	570         	0           	Hochzone        	;
+ 9A              	580         	0           	Hochzone        	;
+ 9B              	568         	0           	Hochzone        	;
+ 9C              	581         	0           	Hochzone        	;
+ 9D              	578         	0           	Hochzone        	;
+ 7E              	589.4       	0           	Hochzone        	;
+ 1               	483         	0           	Niederzone      	;
+ 2               	473         	0           	Niederzone      	;
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+ R1              	473         	                	;
+ R2              	483         	                	;
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve
+ HB1-NZ          	593.5       	2.4         	0           	2.5         	14.3        	0           	                	;
+ HB2-HZ          	647         	2.2         	0           	3           	11.28       	0           	                	;
+ SENSOR_HZ       	618         	20          	0           	20          	1           	0           	                	;
+ SENSOR_NZ       	564         	20          	0           	20          	1           	0           	                	;
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ 1               	HB1-NZ          	11              	223.688     	200         	0.4         	0           	Open  	;
+ 2               	11              	27A             	835.1962    	125         	0.4         	0           	Open  	;
+ 3               	11              	11A             	411.5899    	200         	0.4         	0           	Open  	;
+ 4               	11A             	12              	75.4862     	200         	0.4         	0           	Open  	;
+ 5               	12              	17A             	117.363     	200         	0.4         	0           	Open  	;
+ 6               	17A             	17              	34.6691     	200         	0.4         	0           	Open  	;
+ 7               	17              	18              	158.2164    	125         	0.4         	0           	Open  	;
+ 8               	18              	18A             	117.107     	125         	0.4         	0           	Open  	;
+ 9               	19              	24              	174.9303    	150         	0.4         	0           	Open  	;
+ 10              	11A             	17A             	168.0417    	125         	0.4         	0           	Open  	;
+ 11              	12              	12A             	26.9352     	150         	0.4         	0           	Open  	;
+ 12              	12A             	13              	168.9675    	150         	0.4         	0           	Open  	;
+ 13              	13              	14A             	67.0117     	150         	0.4         	0           	Open  	;
+ 14              	14A             	14              	221.287     	150         	0.4         	0           	Open  	;
+ 15              	14              	15              	77.3684     	150         	0.4         	0           	Open  	;
+ 16              	15              	21              	232.6775    	100         	0.4         	0           	Open  	;
+ 17              	18              	20A             	107.6258    	100         	0.4         	0           	Open  	;
+ 18              	20              	14              	229.9563    	100         	0.4         	0           	Open  	;
+ 19              	13              	13A             	37.4082     	100         	0.4         	0           	Open  	;
+ 20              	13A             	20              	87.1645     	80          	0.4         	0           	Open  	;
+ 21              	12A             	12B             	43.3008     	100         	0.4         	0           	Open  	;
+ 22              	12B             	14A             	236.5221    	100         	0.4         	0           	Open  	;
+ 23              	11A             	12B             	68.9148     	100         	0.4         	0           	Open  	;
+ 24              	17              	22A             	79.5382     	125         	0.4         	0           	Open  	;
+ 25              	22              	22B             	110.0071    	100         	0.4         	0           	Open  	;
+ 26              	15              	16              	206.2989    	150         	0.4         	0           	Open  	;
+ 27              	16              	16A             	171.9707    	125         	0.4         	0           	Open  	;
+ 28              	16A             	16B             	210.284     	125         	0.4         	0           	Open  	;
+ 29              	16B             	28              	463.0879    	125         	0.4         	0           	Open  	;
+ 30              	28              	28A             	44.3647     	80          	0.4         	0           	Open  	;
+ 31              	28A             	28B             	381.0453    	100         	0.4         	0           	Open  	;
+ 32              	28B             	39              	80.7334     	80          	0.4         	0           	Open  	;
+ 33              	27              	27A             	110.4461    	100         	0.4         	0           	Open  	;
+ 34              	28              	29              	104.242     	125         	0.4         	0           	Open  	;
+ 35              	29              	29A             	95.4682     	80          	0.4         	0           	Open  	;
+ 36              	29A             	30              	697.868     	93.6        	0.4         	0           	Open  	;
+ 37              	20              	21              	51.4219     	100         	0.4         	0           	Open  	;
+ 38              	29              	30A             	251.0025    	125         	0.4         	0           	Open  	;
+ 39              	30A             	30B             	139.9289    	125         	0.4         	0           	Open  	;
+ 40              	30B             	30C             	46.546      	125         	0.4         	0           	Open  	;
+ 41              	30B             	30              	524.0058    	93.6        	0.4         	0           	Open  	;
+ 42              	GWPWT           	30E             	127.3883    	125         	0.4         	0           	Open  	;
+ 43              	30E             	30F             	113.0155    	125         	0.4         	0           	Open  	;
+ 44              	30F             	31              	244.4747    	125         	0.4         	0           	Open  	;
+ 45              	31              	32              	31.4286     	125         	0.4         	0           	Open  	;
+ 46              	32              	33              	14.6823     	125         	0.4         	0           	Open  	;
+ 47              	33              	34              	200.1376    	125         	0.4         	0           	Open  	;
+ 48              	34              	35              	92.6282     	125         	0.4         	0           	Open  	;
+ 49              	35              	27A             	61.1673     	125         	0.4         	0           	Open  	;
+ 50              	32              	36              	48.0705     	100         	0.4         	0           	Open  	;
+ 51              	36              	37              	120.0409    	100         	0.4         	0           	Open  	;
+ 52              	37              	38              	42.3944     	100         	0.4         	0           	Open  	;
+ 53              	39              	27              	28.5086     	100         	0.4         	0           	Open  	;
+ 54              	39              	38              	102.3883    	100         	0.4         	0           	Open  	;
+ 55              	21              	19A             	270.5737    	80          	0.4         	0           	Open  	;
+ 56              	19A             	19              	145.2515    	100         	0.4         	0           	Open  	;
+ 57              	24              	24A             	184.785     	150         	0.4         	0           	Open  	;
+ 58              	24A             	25              	455.2439    	150         	0.4         	0           	Open  	;
+ 59              	25              	25A             	101.4969    	150         	0.4         	0           	Open  	;
+ 60              	GWPWS           	25A             	83.5094     	150         	0.4         	0           	Open  	;
+ 61              	56              	57              	105.6009    	80          	0.4         	0           	Open  	;
+ 62              	61              	62              	124.6477    	26          	0.4         	0           	Open  	;
+ 63              	56              	61              	93.1049     	80          	0.4         	0           	Open  	;
+ 64              	22A             	22              	80.1382     	125         	0.4         	0           	Open  	;
+ 65              	63              	22A             	123.1631    	125         	0.4         	0           	Open  	;
+ 66              	64              	63              	46.1281     	125         	0.4         	0           	Open  	;
+ 67              	64              	65              	208.3564    	125         	0.4         	0           	Open  	;
+ 68              	65              	24              	125.6361    	125         	0.4         	0           	Open  	;
+ 69              	18A             	19              	79.9285     	125         	0.4         	0           	Open  	;
+ 70              	18A             	66              	81.4288     	80          	0.4         	0           	Open  	;
+ 71              	66              	65              	66.514      	80          	0.4         	0           	Open  	;
+ 72              	68              	67              	107.6706    	125         	0.4         	0           	Open  	;
+ 73              	24A             	67              	122.4919    	125         	0.4         	0           	Open  	;
+ 74              	20A             	20              	396.4356    	100         	0.4         	0           	Open  	;
+ 75              	22B             	22C             	45.3406     	125         	0.4         	0           	Open  	;
+ 76              	22C             	22D             	72.228      	125         	0.4         	0           	Open  	;
+ 77              	22D             	22E             	101.9589    	125         	0.4         	0           	Open  	;
+ 78              	22G             	23              	1560.1835   	100         	0.4         	0           	Open  	;
+ 79              	22E             	22F             	25.3385     	125         	0.4         	0           	Open  	;
+ 80              	22F             	22G             	134.4498    	125         	0.4         	0           	Open  	;
+ 89              	30D             	30C             	261.5336    	125         	0.4         	0           	Open  	;
+ 90              	GWPWT           	30D             	62.843      	125         	0.4         	0           	Open  	;
+ HZ2             	4B              	55              	68.1575     	125         	0.4         	0           	Open  	;
+ HZ3             	9               	8               	131.4369    	125         	0.4         	0           	Open  	;
+ HZ4             	8               	5               	73.9772     	125         	0.4         	0           	Open  	;
+ HZ5             	5               	4               	111.9802    	125         	0.4         	0           	Open  	;
+ HZ6             	4               	3               	289.0776    	125         	0.4         	0           	Open  	;
+ HZ7             	3               	3A              	65.8421     	125         	0.4         	0           	Open  	;
+ HZ8             	9B              	10              	100.3661    	100         	0.4         	0           	Open  	;
+ HZ9             	4B              	4C              	40.357      	100         	0.4         	0           	Open  	;
+ HZ10            	4A              	4               	75.5184     	80          	0.4         	0           	Open  	;
+ HZ11            	5               	5C              	83.4622     	125         	0.4         	0           	Open  	;
+ HZ12            	5A              	5B              	109.1657    	100         	0.4         	0           	Open  	;
+ HZ13            	4               	6A              	178.9384    	80          	0.4         	0           	Open  	;
+ HZ14            	6A              	6               	186.0576    	80          	0.4         	0           	Open  	;
+ HZ15            	6               	6B              	83.8534     	80          	0.4         	0           	Open  	;
+ HZ16            	6B              	3               	186.6967    	100         	0.4         	0           	Open  	;
+ HZ17            	6B              	6A              	233.613     	100         	0.4         	0           	Open  	;
+ HZ18            	5A              	40A             	17.926      	125         	0.4         	0           	Open  	;
+ HZ19            	40A             	40              	116.544     	100         	0.4         	0           	Open  	;
+ HZ20            	40              	41              	140.27      	100         	0.4         	0           	Open  	;
+ HZ21            	41              	42              	103.5195    	100         	0.4         	0           	Open  	;
+ HZ22            	42              	43              	129.1917    	100         	0.4         	0           	Open  	;
+ HZ23            	5C              	5A              	61.6197     	125         	0.4         	0           	Open  	;
+ HZ24            	46              	47              	78.3101     	100         	0.4         	0           	Open  	;
+ HZ25            	47              	48              	44.6237     	100         	0.4         	0           	Open  	;
+ HZ26            	48              	49              	85.3428     	100         	0.4         	0           	Open  	;
+ HZ27            	49              	50              	75.3597     	100         	0.4         	0           	Open  	;
+ HZ28            	51              	52              	191.3661    	100         	0.4         	0           	Open  	;
+ HZ29            	49              	52              	16.2524     	100         	0.4         	0           	Open  	;
+ HZ30            	8A              	8B              	88.1927     	100         	0.4         	0           	Open  	;
+ HZ31            	50              	8E              	136.4609    	100         	0.4         	0           	Open  	;
+ HZ32            	8C              	8D              	116.8812    	125         	0.4         	0           	Open  	;
+ HZ33            	8D              	8E              	126.7464    	125         	0.4         	0           	Open  	;
+ HZ34            	52              	8D              	33.642      	100         	0.4         	0           	Open  	;
+ HZ35            	8A              	8C              	128.3399    	125         	0.4         	0           	Open  	;
+ HZ36            	53              	54              	140.8985    	100         	0.4         	0           	Open  	;
+ HZ37            	55              	9               	83.9023     	125         	0.4         	0           	Open  	;
+ HZ38            	54              	55              	149.6972    	100         	0.4         	0           	Open  	;
+ HZ39            	4C              	53              	144.7755    	100         	0.4         	0           	Open  	;
+ HZ40            	9A              	9C              	150.281     	100         	0.4         	0           	Open  	;
+ HZ41            	9C              	9D              	40.4057     	100         	0.4         	0           	Open  	;
+ HZ42            	3A              	HB2-HZ          	12.1649     	125         	0.4         	0           	Open  	;
+ HZ43            	9B              	9D              	96.0698     	100         	0.4         	0           	Open  	;
+ HZ44            	45              	51              	99.9393     	100         	0.4         	0           	Open  	;
+ HZ45            	8E              	10              	201.7755    	125         	0.4         	0           	Open  	;
+ HZ46            	6A              	6C              	66.8512     	100         	0.4         	0           	Open  	;
+ HZ47            	6C              	7D              	111.0709    	100         	0.4         	0           	Open  	;
+ HZ48            	7               	7D              	103.9681    	100         	0.4         	0           	Open  	;
+ HZ49            	6C              	6D              	208.5426    	100         	0.4         	0           	Open  	;
+ HZ50            	6D              	6               	177.7       	61.2        	0.4         	0           	Open  	;
+ HZ51            	40              	40B             	119.2157    	100         	0.4         	0           	Open  	;
+ HZ52            	40B             	40C             	97.6909     	100         	0.4         	0           	Open  	;
+ HZ53            	40C             	7B              	94.8409     	100         	0.4         	0           	Open  	;
+ HZ54            	40B             	5B              	86.3142     	32.6        	0.4         	0           	Open  	;
+ HZ55            	40C             	7E              	74.2711     	32.6        	0.4         	0           	Open  	;
+ HZ56            	7C              	7D              	68.2424     	100         	0.4         	0           	Open  	;
+ HZ57            	7E              	7               	44.1315     	100         	0.4         	0           	Open  	;
+ HZ58            	5B              	7C              	106.4725    	100         	0.4         	0           	Open  	;
+ HZ59            	7B              	7A              	307.243     	100         	0.4         	0           	Open  	;
+ HZ60            	7               	7B              	76.8856     	100         	0.4         	0           	Open  	;
+ HZ61            	4C              	4D              	86.8788     	100         	0.4         	0           	Open  	;
+ HZ62            	4D              	4A              	98.2581     	80          	0.4         	0           	Open  	;
+ HZ63            	8B              	51A             	32.9609     	100         	0.4         	0           	Open  	;
+ HZ64            	8C              	51A             	51.3081     	100         	0.4         	0           	Open  	;
+ HZ65            	43              	44              	80.8442     	100         	0.4         	0           	Open  	;
+ HZ66            	44              	46              	113.4521    	100         	0.4         	0           	Open  	;
+ HZ67            	44              	44A             	18.2222     	100         	0.4         	0           	Open  	;
+ HZ68            	44A             	40A             	72.651      	100         	0.4         	0           	Open  	;
+ HZ69            	44A             	45              	47.43       	100         	0.4         	0           	Open  	;
+ HZ70            	8A              	8               	20.6044     	125         	0.4         	0           	Open  	;
+ HZ71            	9A              	9               	112.848     	100         	0.4         	0           	Open  	;
+ 92              	7E              	7C              	33.3794     	100         	0.4         	0           	Open  	;
+ 93              	R2              	1               	10          	600         	0.4         	0           	CV    	;
+ 81              	SENSOR_HZ       	6               	10          	600         	0.1         	0           	CV    	;
+ 82              	SENSOR_NZ       	11              	10          	600         	0.1         	0           	CV    	;
+ 83              	R1              	2               	1           	10000       	0.0001      	0           	CV    	;
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+ P1-1            	1               	GWPWT           	HEAD PC1	SPEED 1	;
+ P2-1            	2               	GWPWS           	HEAD PC2	SPEED 1	;
+ PUMPE-HB1-1     	HB1-NZ          	4B              	HEAD PC_PUMPE-HB1	SPEED 1	;
+ P1-2            	1               	GWPWT           	HEAD PC1	;
+ P2-2            	2               	GWPWS           	HEAD PC2	;
+ PUMPE-HB1-2     	HB1-NZ          	4B              	HEAD PC_PUMPE-HB1	;
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+ 91              	25A             	56              	80          	PRV 	80          	0           	;
+
+[TAGS]
+ LINK 	1               	nan*GGG*nan
+ LINK 	2               	nan*GGG*nan
+ LINK 	3               	nan*GGG*nan
+ LINK 	4               	nan*GGG*nan
+ LINK 	5               	nan*GGG*nan
+ LINK 	6               	nan*GGG*nan
+ LINK 	7               	nan*G*nan
+ LINK 	8               	nan*G*nan
+ LINK 	9               	nan*GGG*nan
+ LINK 	10              	nan*G*nan
+ LINK 	11              	nan*GGG*nan
+ LINK 	12              	nan*GGG*nan
+ LINK 	13              	nan*GGG*nan
+ LINK 	14              	nan*GGG*nan
+ LINK 	15              	nan*GGG*nan
+ LINK 	16              	nan*GGG*nan
+ LINK 	17              	nan*GGG*nan
+ LINK 	18              	nan*GGG*nan
+ LINK 	19              	nan*GGG*nan
+ LINK 	20              	nan*G*nan
+ LINK 	21              	nan*GGG*nan
+ LINK 	22              	nan*AZ*nan
+ LINK 	23              	nan*AZ*nan
+ LINK 	24              	nan*AZ*nan
+ LINK 	25              	nan*G*nan
+ LINK 	26              	nan*GGG*nan
+ LINK 	27              	nan*GGG*nan
+ LINK 	28              	nan*GGG*nan
+ LINK 	29              	nan*GGG*nan
+ LINK 	30              	nan*G*nan
+ LINK 	31              	nan*G*nan
+ LINK 	32              	nan*G*nan
+ LINK 	33              	nan*GGG*nan
+ LINK 	34              	nan*GGG*nan
+ LINK 	35              	nan*G*nan
+ LINK 	36              	nan*PVC*nan
+ LINK 	37              	nan*GGG*nan
+ LINK 	38              	nan*GGG*nan
+ LINK 	39              	nan*GGG*nan
+ LINK 	40              	nan*GGG*nan
+ LINK 	41              	nan*PVC*nan
+ LINK 	42              	nan*GGG*nan
+ LINK 	43              	nan*GGG*nan
+ LINK 	44              	nan*GGG*nan
+ LINK 	45              	nan*GGG*nan
+ LINK 	46              	nan*GGG*nan
+ LINK 	47              	nan*GGG*nan
+ LINK 	48              	nan*GGG*nan
+ LINK 	49              	nan*GGG*nan
+ LINK 	50              	nan*GGG*nan
+ LINK 	51              	nan*GGG*nan
+ LINK 	52              	nan*GGG*nan
+ LINK 	53              	nan*GGG*nan
+ LINK 	54              	nan*GGG*nan
+ LINK 	55              	nan*G*nan
+ LINK 	56              	nan*GGG*nan
+ LINK 	57              	nan*GGG*nan
+ LINK 	58              	nan*GGG*nan
+ LINK 	59              	nan*GGG*nan
+ LINK 	60              	nan*GGG*nan
+ LINK 	61              	nan*GGG*nan
+ LINK 	62              	nan*PE*nan
+ LINK 	63              	nan*GGG*nan
+ LINK 	64              	nan*G*nan
+ LINK 	65              	nan*GGG*nan
+ LINK 	66              	nan*GGG*nan
+ LINK 	67              	nan*GGG*nan
+ LINK 	68              	nan*GGG*nan
+ LINK 	69              	nan*GGG*nan
+ LINK 	70              	nan*GGG*nan
+ LINK 	71              	nan*GGG*nan
+ LINK 	72              	nan*GGG*nan
+ LINK 	73              	nan*GGG*nan
+ LINK 	74              	nan*G*nan
+ LINK 	75              	nan*G*nan
+ LINK 	76              	nan*G*nan
+ LINK 	77              	nan*G*nan
+ LINK 	78              	nan*G*nan
+ LINK 	79              	nan*G*nan
+ LINK 	80              	nan*G*nan
+ LINK 	89              	nan*GGG*nan
+ LINK 	90              	nan*GGG*nan
+ LINK 	HZ2             	nan*GGG*nan
+ LINK 	HZ3             	nan*G*nan
+ LINK 	HZ4             	nan*G*nan
+ LINK 	HZ5             	nan*G*nan
+ LINK 	HZ6             	nan*G*nan
+ LINK 	HZ7             	nan*G*nan
+ LINK 	HZ8             	nan*GGG*nan
+ LINK 	HZ9             	nan*GGG*nan
+ LINK 	HZ10            	nan*G*nan
+ LINK 	HZ11            	nan*G*nan
+ LINK 	HZ12            	nan*GGG*nan
+ LINK 	HZ13            	nan*G*nan
+ LINK 	HZ14            	nan*G*nan
+ LINK 	HZ15            	nan*G*nan
+ LINK 	HZ16            	nan*GGG*nan
+ LINK 	HZ17            	nan*GGG*nan
+ LINK 	HZ18            	nan*GGG*nan
+ LINK 	HZ19            	nan*GGG*nan
+ LINK 	HZ20            	nan*GGG*nan
+ LINK 	HZ21            	nan*GGG*nan
+ LINK 	HZ22            	nan*GGG*nan
+ LINK 	HZ23            	nan*G*nan
+ LINK 	HZ24            	nan*GGG*nan
+ LINK 	HZ25            	nan*GGG*nan
+ LINK 	HZ26            	nan*GGG*nan
+ LINK 	HZ27            	nan*GGG*nan
+ LINK 	HZ28            	nan*GGG*nan
+ LINK 	HZ29            	nan*GGG*nan
+ LINK 	HZ30            	nan*GGG*nan
+ LINK 	HZ31            	nan*GGG*nan
+ LINK 	HZ32            	nan*GGG*nan
+ LINK 	HZ33            	nan*GGG*nan
+ LINK 	HZ34            	nan*GGG*nan
+ LINK 	HZ35            	nan*GGG*nan
+ LINK 	HZ36            	nan*GGG*nan
+ LINK 	HZ37            	nan*G*nan
+ LINK 	HZ38            	nan*GGG*nan
+ LINK 	HZ39            	nan*GGG*nan
+ LINK 	HZ40            	nan*GGG*nan
+ LINK 	HZ41            	nan*GGG*nan
+ LINK 	HZ42            	nan*GGG*nan
+ LINK 	HZ43            	nan*GGG*nan
+ LINK 	HZ44            	nan*GGG*nan
+ LINK 	HZ45            	nan*GGG*nan
+ LINK 	HZ46            	nan*GGG*nan
+ LINK 	HZ47            	nan*GGG*nan
+ LINK 	HZ48            	nan*GGG*nan
+ LINK 	HZ49            	nan*GGG*nan
+ LINK 	HZ50            	nan*PE*nan
+ LINK 	HZ51            	nan*GGG*nan
+ LINK 	HZ52            	nan*GGG*nan
+ LINK 	HZ53            	nan*GGG*nan
+ LINK 	HZ54            	nan*GGG*nan
+ LINK 	HZ55            	nan*PE*nan
+ LINK 	HZ56            	nan*GGG*nan
+ LINK 	HZ57            	nan*GGG*nan
+ LINK 	HZ58            	nan*GGG*nan
+ LINK 	HZ59            	nan*GGG*nan
+ LINK 	HZ60            	nan*GGG*nan
+ LINK 	HZ61            	nan*GGG*nan
+ LINK 	HZ62            	nan*G*nan
+ LINK 	HZ63            	nan*GGG*nan
+ LINK 	HZ64            	nan*GGG*nan
+ LINK 	HZ65            	nan*GGG*nan
+ LINK 	HZ66            	nan*GGG*nan
+ LINK 	HZ67            	nan*GGG*nan
+ LINK 	HZ68            	nan*GGG*nan
+ LINK 	HZ69            	nan*GGG*nan
+ LINK 	HZ70            	nan*GGG*nan
+ LINK 	HZ71            	nan*GGG*nan
+ LINK 	92              	nan*GGG*nan
+ LINK 	93              	nan*GGG*nan
+ LINK 	81              	nan*GGG*nan
+ LINK 	82              	nan*GGG*nan
+ LINK 	P1-1            	nan*GGG*nan
+ LINK 	P2-1            	nan*GGG*nan
+ LINK 	PUMPE-HB1-1     	nan*GGG*nan
+ LINK 	P1-2            	nan*GGG*nan
+ LINK 	P2-2            	nan*GGG*nan
+ LINK 	PUMPE-HB1-2     	nan*GGG*nan
+ LINK 	91              	nan*GGG*nan
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+ P1-1            	Closed
+ PUMPE-HB1-1     	Closed
+ P1-2            	Closed
+ P2-2            	Closed
+ PUMPE-HB1-2     	Closed
+
+[PATTERNS]
+;ID              	Multipliers
+;ID              	Multipliers
+ NiederzoneS     	2.76        	2.39        	2.09        	2.03        	1.99        	2.42        
+ NiederzoneS     	4.00        	4.91        	5.23        	5.27        	4.97        	5.08        
+ NiederzoneS     	5.10        	4.95        	4.92        	4.49        	4.58        	4.92        
+ NiederzoneS     	5.31        	5.34        	5.06        	4.48        	4.10        	3.36        
+;
+ Niederzone      	2.76        	2.39        	2.09        	2.03        	1.99        	2.42        
+ Niederzone      	4.00        	4.91        	5.23        	5.27        	4.97        	5.08        
+ Niederzone      	5.10        	4.95        	4.92        	4.49        	4.58        	4.92        
+ Niederzone      	5.31        	5.34        	5.06        	4.48        	4.10        	3.36        
+;
+ HochzoneS       	1.02        	1.08        	0.97        	0.77        	0.90        	1.04        
+ HochzoneS       	1.21        	2.50        	3.77        	3.88        	3.98        	3.43        
+ HochzoneS       	2.24        	1.96        	1.75        	1.74        	2.77        	3.69        
+ HochzoneS       	3.54        	3.77        	3.29        	2.83        	2.20        	1.69        
+;
+ Hochzone        	1.02        	1.08        	0.97        	0.77        	0.90        	1.04        
+ Hochzone        	1.21        	2.50        	3.77        	3.88        	3.98        	3.43        
+ Hochzone        	2.24        	1.96        	1.75        	1.74        	2.77        	3.69        
+ Hochzone        	3.54        	3.77        	3.29        	2.83        	2.20        	1.69        
+;
+ NiederzoneW     	2.63        	2.12        	1.94        	1.90        	1.95        	2.28        
+ NiederzoneW     	4.00        	4.74        	4.92        	4.88        	4.74        	4.66        
+ NiederzoneW     	4.78        	4.74        	4.52        	4.27        	4.37        	4.81        
+ NiederzoneW     	4.96        	4.65        	4.23        	3.58        	3.50        	3.10        
+;
+ HochzoneW       	0.87        	0.50        	0.50        	0.46        	0.34        	0.22        
+ HochzoneW       	0.59        	2.04        	4.53        	4.78        	2.54        	1.15        
+ HochzoneW       	1.62        	2.03        	1.18        	0.58        	0.88        	2.31        
+ HochzoneW       	4.26        	4.38        	2.20        	0.86        	0.94        	1.14        
+
+[CURVES]
+;ID              	X-Value     	Y-Value
+;PUMP: PUMP: PUMP: PUMP: PUMP: 
+ PC1             	0           	228         
+ PC1             	8.33        	146         
+ PC1             	11.67       	73          
+;PUMP: PUMP: PUMP: PUMP: PUMP: 
+ PC_PUMPE-HB1    	6.54        	86.06       
+;PUMP: PUMP: PUMP: PUMP: PUMP: 
+ PC2             	0           	190         
+ PC2             	17.9        	150         
+ PC2             	25          	100         
+
+[CONTROLS]
+
+
+
+
+
+[RULES]
+RULE 1 
+IF TANK HB1-NZ LEVEL > 2.49 
+THEN LINK P2-1 STATUS = CLOSED 
+RULE 2 
+IF TANK HB1-NZ LEVEL < 1.5 
+THEN LINK P2-1 STATUS = OPEN 
+RULE 3 
+IF TANK HB1-NZ LEVEL > 1.5 
+THEN LINK P1-1 STATUS = CLOSED 
+RULE 4 
+IF TANK HB1-NZ LEVEL < 1.25 
+THEN LINK P1-1 STATUS = OPEN 
+RULE 5 
+IF TANK HB2-HZ LEVEL > 2.99 
+THEN LINK PUMPE-HB1-1 STATUS = CLOSED 
+RULE 6 
+IF TANK HB2-HZ LEVEL < 1.8 
+THEN LINK PUMPE-HB1-1 STATUS = OPEN 
+RULE 7 
+IF TANK SENSOR_HZ LEVEL < 1.9 
+THEN LINK PUMPE-HB1-2 STATUS = OPEN 
+RULE 8 
+IF TANK SENSOR_NZ LEVEL < 1.9 
+THEN LINK P1-2 STATUS = OPEN 
+RULE 9 
+IF TANK SENSOR_NZ LEVEL < 1.9 
+THEN LINK P2-2 STATUS = OPEN 
+
+
+
+
+
+
+[ENERGY]
+ Global Efficiency  	75
+ Global Price       	0
+ Demand Charge      	0
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+
+
+[REACTIONS]
+ Order Bulk            	1
+ Order Tank            	1
+ Order Wall            	1
+ Global Bulk           	0
+ Global Wall           	0
+ Limiting Potential    	0
+ Roughness Correlation 	0
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	75:00 
+ Hydraulic Timestep 	0:15 
+ Quality Timestep   	0:05 
+ Pattern Timestep   	1:00 
+ Pattern Start      	0:00 
+ Report Timestep    	1:00 
+ Report Start       	0:00 
+ Start ClockTime    	12 am
+ Statistic          	NONE
+
+[REPORT]
+ Status             	Yes
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	LPS
+ Headloss           	D-W
+ Specific Gravity   	1
+ Viscosity          	1
+ Trials             	100
+ Accuracy           	0.001
+ CHECKFREQ          	2
+ MAXCHECK           	10
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	1
+ Demand Multiplier  	1
+ Emitter Exponent   	0.5
+ Quality            	Age mg/L
+ Diffusivity        	1
+ Tolerance          	0.01
+
+[COORDINATES]
+;Node            	X-Coord         	Y-Coord
+ 11              	-52977.77       	233730.26       
+ 12              	-53069.71       	233293.79       
+ 13              	-52938.77       	233422.86       
+ 14              	-52723.58       	233573.65       
+ 15              	-52650.09       	233549.44       
+ 16              	-52486.37       	233480.20       
+ 17              	-53142.61       	233189.41       
+ 18              	-53052.48       	233060.78       
+ 19              	-52875.83       	232980.93       
+ 20              	-52822.28       	233392.83       
+ 21              	-52773.40       	233376.86       
+ 22              	-53259.86       	233081.39       
+ 23              	-54665.55       	232540.92       
+ 24              	-52945.18       	232821.94       
+ 25              	-52912.00       	232257.67       
+ 27              	-52368.38       	234388.76       
+ 28              	-52079.80       	234129.36       
+ 29              	-51981.32       	234160.60       
+ 30              	-51591.40       	234198.83       
+ 31              	-52314.55       	234752.08       
+ 32              	-52331.90       	234725.87       
+ 33              	-52339.84       	234713.62       
+ 34              	-52415.68       	234529.01       
+ 35              	-52454.53       	234445.32       
+ 36              	-52326.86       	234678.07       
+ 37              	-52337.50       	234558.59       
+ 38              	-52344.56       	234516.98       
+ 39              	-52363.35       	234416.70       
+ 56              	-52823.34       	232231.60       
+ 57              	-52925.28       	232258.43       
+ 61              	-52754.22       	232263.09       
+ 62              	-52730.87       	232325.87       
+ 63              	-53142.69       	233063.02       
+ 64              	-53155.23       	233018.65       
+ 65              	-53027.73       	232875.26       
+ 66              	-52991.77       	232927.90       
+ 67              	-52975.16       	232745.58       
+ 68              	-53080.14       	232768.55       
+ 11A             	-53095.41       	233363.97       
+ 12A             	-53048.85       	233310.83       
+ 12B             	-53034.60       	233351.38       
+ 13A             	-52904.89       	233407.00       
+ 14A             	-52909.22       	233483.00       
+ 16A             	-52356.41       	233591.33       
+ 16B             	-52183.72       	233702.58       
+ 17A             	-53152.15       	233221.33       
+ 18A             	-52953.32       	232998.89       
+ 19A             	-52835.60       	233120.02       
+ 20A             	-53031.08       	233163.90       
+ 22A             	-53199.29       	233133.86       
+ 22B             	-53362.18       	233078.44       
+ 22C             	-53375.07       	233035.66       
+ 22D             	-53381.17       	232963.77       
+ 22E             	-53437.01       	232880.39       
+ 22F             	-53455.29       	232862.85       
+ 22G             	-53538.87       	232760.43       
+ 24A             	-52927.80       	232639.97       
+ 25A             	-52811.94       	232245.05       
+ 27A             	-52478.24       	234389.11       
+ 28A             	-52123.94       	234133.84       
+ 28B             	-52291.04       	234380.80       
+ 29A             	-51907.04       	234100.87       
+ 30A             	-51795.89       	234325.43       
+ 30B             	-51846.13       	234418.63       
+ 30C             	-51890.14       	234433.78       
+ 30D             	-51945.30       	234683.72       
+ 30E             	-52025.15       	234790.63       
+ 30F             	-52101.57       	234867.07       
+ GWPWS           	-52736.93       	232208.33       
+ GWPWT           	-52005.04       	234689.72       
+ 3               	-53182.62       	234203.53       
+ 4               	-53291.97       	233938.38       
+ 5               	-53352.90       	233844.49       
+ 6               	-53396.47       	234273.59       
+ 7               	-53631.13       	234140.23       
+ 8               	-53334.18       	233775.46       
+ 9               	-53210.34       	233736.17       
+ 10              	-53246.90       	233306.88       
+ 40              	-53618.60       	233916.05       
+ 41              	-53711.52       	233827.50       
+ 42              	-53660.23       	233741.79       
+ 43              	-53601.64       	233840.43       
+ 44              	-53525.74       	233827.76       
+ 45              	-53461.91       	233830.72       
+ 46              	-53516.71       	233716.05       
+ 47              	-53529.14       	233639.16       
+ 48              	-53544.17       	233597.27       
+ 49              	-53480.89       	233553.06       
+ 50              	-53524.41       	233491.55       
+ 51              	-53448.35       	233735.00       
+ 52              	-53465.06       	233549.61       
+ 53              	-53053.92       	233908.52       
+ 54              	-53028.88       	233807.82       
+ 55              	-53127.49       	233743.63       
+ 3A              	-53158.83       	234264.84       
+ 40A             	-53503.92       	233898.38       
+ 40B             	-53631.37       	233967.81       
+ 40C             	-53672.61       	234056.18       
+ 44A             	-53507.58       	233826.28       
+ 4A              	-53231.72       	233910.27       
+ 4B              	-53146.31       	233808.97       
+ 4C              	-53169.15       	233828.19       
+ 4D              	-53256.39       	233826.65       
+ 51A             	-53409.23       	233694.25       
+ 5A              	-53486.35       	233894.82       
+ 5B              	-53546.53       	233977.60       
+ 5C              	-53428.80       	233874.21       
+ 6A              	-53381.88       	234089.23       
+ 6B              	-53339.17       	234284.18       
+ 6C              	-53442.97       	234079.48       
+ 6D              	-53508.94       	234224.55       
+ 7A              	-53996.47       	234142.55       
+ 7B              	-53707.46       	234143.21       
+ 7C              	-53595.29       	234072.20       
+ 7D              	-53544.62       	234117.68       
+ 8A              	-53333.89       	233754.86       
+ 8B              	-53378.64       	233706.53       
+ 8C              	-53385.88       	233648.56       
+ 8D              	-53432.07       	233543.21       
+ 8E              	-53413.19       	233420.01       
+ 9A              	-53251.02       	233633.63       
+ 9B              	-53196.82       	233393.42       
+ 9C              	-53177.38       	233507.64       
+ 9D              	-53209.78       	233483.50       
+ 7E              	-53613.32       	234100.28       
+ 1               	-51958.77       	234748.81       
+ 2               	-52708.56       	232195.55       
+ R1              	-52698.82       	232191.22       
+ R2              	-51951.58       	234754.89       
+ HB1-NZ          	-53145.74       	233816.22       
+ HB2-HZ          	-53158.26       	234276.99       
+ SENSOR_HZ       	-53407.77       	234288.64       
+ SENSOR_NZ       	-52945.01       	233731.75       
+
+[VERTICES]
+;Link            	X-Coord         	Y-Coord
+ 1               	-53125.52       	233747.34       
+ 1               	-53125.46       	233745.57       
+ 1               	-53068.23       	233749.65       
+ 1               	-53058.14       	233747.38       
+ 1               	-53056.69       	233747.08       
+ 1               	-53015.66       	233738.92       
+ 1               	-53011.04       	233738.51       
+ 1               	-52996.04       	233735.53       
+ 1               	-52983.30       	233733.00       
+ 1               	-52978.39       	233730.61       
+ 2               	-52974.89       	233732.28       
+ 2               	-52964.90       	233741.34       
+ 2               	-52963.97       	233742.19       
+ 2               	-52911.42       	233795.55       
+ 2               	-52805.05       	233905.41       
+ 2               	-52705.53       	234015.00       
+ 2               	-52626.57       	234105.14       
+ 2               	-52610.67       	234127.05       
+ 2               	-52592.31       	234162.40       
+ 2               	-52540.49       	234274.72       
+ 2               	-52511.43       	234337.46       
+ 2               	-52498.00       	234360.75       
+ 2               	-52489.01       	234371.78       
+ 2               	-52484.73       	234378.74       
+ 3               	-52977.77       	233729.41       
+ 3               	-52987.34       	233718.14       
+ 3               	-52997.55       	233707.17       
+ 3               	-53000.85       	233705.77       
+ 3               	-53025.11       	233680.52       
+ 3               	-53029.83       	233674.62       
+ 3               	-53048.97       	233650.36       
+ 3               	-53051.41       	233647.30       
+ 3               	-53053.07       	233642.99       
+ 3               	-53054.27       	233639.81       
+ 3               	-53057.50       	233630.58       
+ 3               	-53058.13       	233595.79       
+ 3               	-53059.79       	233566.11       
+ 3               	-53064.37       	233545.01       
+ 3               	-53081.93       	233498.22       
+ 3               	-53095.41       	233469.49       
+ 3               	-53116.78       	233430.84       
+ 4               	-53074.04       	233297.61       
+ 5               	-53073.27       	233289.73       
+ 5               	-53073.78       	233287.18       
+ 5               	-53080.65       	233274.98       
+ 5               	-53088.54       	233267.86       
+ 5               	-53087.78       	233266.08       
+ 5               	-53102.79       	233255.66       
+ 5               	-53119.58       	233247.01       
+ 5               	-53119.33       	233244.47       
+ 5               	-53142.74       	233232.26       
+ 5               	-53148.59       	233231.50       
+ 6               	-53154.03       	233214.60       
+ 6               	-53147.21       	233198.12       
+ 7               	-53109.81       	233146.08       
+ 7               	-53097.39       	233123.66       
+ 7               	-53079.76       	233088.42       
+ 8               	-53033.26       	233045.38       
+ 9               	-52897.47       	232916.53       
+ 9               	-52907.55       	232887.58       
+ 9               	-52921.48       	232866.74       
+ 9               	-52926.04       	232861.26       
+ 9               	-52939.56       	232840.22       
+ 10              	-53097.95       	233362.70       
+ 10              	-53123.66       	233289.38       
+ 10              	-53159.27       	233250.82       
+ 10              	-53164.11       	233241.93       
+ 10              	-53155.20       	233222.09       
+ 12              	-53003.81       	233344.14       
+ 12              	-52998.73       	233338.04       
+ 12              	-52987.53       	233347.70       
+ 12              	-52986.77       	233351.77       
+ 12              	-52956.74       	233389.91       
+ 12              	-52952.67       	233398.04       
+ 14              	-52890.07       	233516.47       
+ 14              	-52853.65       	233549.82       
+ 14              	-52768.34       	233572.60       
+ 14              	-52739.91       	233575.65       
+ 16              	-52673.76       	233503.20       
+ 16              	-52697.73       	233478.78       
+ 16              	-52713.24       	233455.29       
+ 16              	-52722.64       	233430.40       
+ 16              	-52746.61       	233370.75       
+ 17              	-53038.49       	233084.42       
+ 17              	-53030.88       	233127.06       
+ 18              	-52805.36       	233459.99       
+ 18              	-52777.63       	233459.05       
+ 18              	-52764.47       	233464.69       
+ 18              	-52751.31       	233476.90       
+ 18              	-52745.20       	233494.75       
+ 20              	-52864.58       	233388.13       
+ 20              	-52839.67       	233389.54       
+ 21              	-53048.93       	233315.45       
+ 22              	-53031.40       	233349.98       
+ 22              	-53009.92       	233402.57       
+ 22              	-52979.84       	233481.24       
+ 22              	-52969.89       	233503.33       
+ 22              	-52918.21       	233483.69       
+ 22              	-52916.94       	233487.17       
+ 23              	-53092.87       	233364.73       
+ 23              	-53084.22       	233362.95       
+ 23              	-53071.02       	233371.57       
+ 23              	-53051.52       	233360.07       
+ 24              	-53166.67       	233162.12       
+ 25              	-53276.04       	233067.69       
+ 25              	-53289.72       	233063.67       
+ 25              	-53305.40       	233064.07       
+ 25              	-53352.04       	233078.13       
+ 26              	-52537.24       	233508.36       
+ 26              	-52532.03       	233501.11       
+ 26              	-52537.42       	233488.76       
+ 26              	-52526.00       	233472.60       
+ 26              	-52520.93       	233472.28       
+ 26              	-52489.22       	233484.32       
+ 27              	-52450.21       	233506.64       
+ 27              	-52405.24       	233537.71       
+ 28              	-52355.55       	233595.94       
+ 28              	-52330.19       	233616.28       
+ 28              	-52308.73       	233623.87       
+ 28              	-52291.89       	233626.08       
+ 28              	-52276.72       	233634.78       
+ 28              	-52259.51       	233652.16       
+ 28              	-52244.97       	233664.85       
+ 28              	-52228.69       	233674.09       
+ 28              	-52201.12       	233689.26       
+ 29              	-52167.99       	233721.99       
+ 29              	-52134.07       	233768.93       
+ 29              	-52100.58       	233819.61       
+ 29              	-52084.63       	233848.80       
+ 29              	-52077.96       	233869.14       
+ 29              	-52076.30       	233899.29       
+ 29              	-52078.33       	233932.02       
+ 29              	-52085.73       	233997.82       
+ 29              	-52092.58       	234043.13       
+ 29              	-52095.55       	234076.00       
+ 29              	-52090.37       	234092.27       
+ 29              	-52078.89       	234116.87       
+ 30              	-52114.69       	234132.90       
+ 31              	-52111.67       	234186.38       
+ 31              	-52114.59       	234193.39       
+ 31              	-52248.39       	234224.92       
+ 31              	-52251.31       	234230.75       
+ 31              	-52233.20       	234278.05       
+ 31              	-52232.03       	234289.72       
+ 31              	-52233.78       	234297.90       
+ 31              	-52240.21       	234313.08       
+ 31              	-52265.91       	234343.44       
+ 31              	-52288.70       	234361.54       
+ 33              	-52370.69       	234388.46       
+ 33              	-52415.62       	234383.42       
+ 33              	-52426.11       	234383.71       
+ 33              	-52434.89       	234384.40       
+ 34              	-52056.69       	234134.07       
+ 34              	-52033.93       	234138.88       
+ 34              	-52020.98       	234141.47       
+ 34              	-51999.51       	234149.79       
+ 35              	-51947.50       	234136.75       
+ 36              	-51900.76       	234095.30       
+ 36              	-51884.99       	234088.29       
+ 36              	-51865.12       	234091.80       
+ 36              	-51844.09       	234100.56       
+ 36              	-51815.46       	234104.64       
+ 36              	-51791.51       	234102.89       
+ 36              	-51775.15       	234085.96       
+ 36              	-51761.71       	234080.12       
+ 36              	-51751.78       	234077.79       
+ 36              	-51682.84       	233983.20       
+ 36              	-51658.89       	233995.46       
+ 36              	-51641.94       	233966.27       
+ 36              	-51536.19       	233984.95       
+ 36              	-51523.34       	233986.71       
+ 36              	-51557.81       	234024.66       
+ 36              	-51585.27       	234120.99       
+ 36              	-51590.53       	234144.34       
+ 38              	-51962.03       	234168.96       
+ 38              	-51940.38       	234184.68       
+ 38              	-51912.44       	234212.24       
+ 38              	-51892.45       	234236.28       
+ 38              	-51855.18       	234280.63       
+ 38              	-51829.83       	234304.48       
+ 38              	-51805.40       	234320.94       
+ 39              	-51797.57       	234328.37       
+ 39              	-51821.41       	234332.15       
+ 39              	-51820.65       	234351.79       
+ 39              	-51828.07       	234352.15       
+ 39              	-51827.63       	234366.96       
+ 39              	-51849.02       	234370.27       
+ 40              	-51847.25       	234419.05       
+ 41              	-51816.93       	234407.83       
+ 41              	-51795.22       	234403.74       
+ 41              	-51773.27       	234405.33       
+ 41              	-51760.96       	234399.72       
+ 41              	-51738.97       	234404.36       
+ 41              	-51717.15       	234395.78       
+ 41              	-51729.71       	234360.20       
+ 41              	-51729.35       	234358.75       
+ 41              	-51728.70       	234356.54       
+ 41              	-51689.27       	234367.38       
+ 41              	-51677.00       	234366.79       
+ 41              	-51648.95       	234355.11       
+ 41              	-51610.39       	234349.28       
+ 41              	-51596.96       	234362.70       
+ 41              	-51539.70       	234316.58       
+ 41              	-51540.28       	234309.57       
+ 41              	-51552.55       	234273.38       
+ 41              	-51565.41       	234253.52       
+ 41              	-51589.94       	234224.92       
+ 42              	-52036.75       	234696.34       
+ 43              	-52049.03       	234831.87       
+ 43              	-52053.58       	234839.35       
+ 43              	-52085.48       	234851.34       
+ 44              	-52134.36       	234839.76       
+ 44              	-52173.38       	234812.07       
+ 44              	-52209.87       	234794.77       
+ 44              	-52254.97       	234775.81       
+ 44              	-52289.86       	234757.66       
+ 46              	-52333.07       	234722.84       
+ 47              	-52350.38       	234697.49       
+ 47              	-52352.51       	234694.28       
+ 47              	-52357.87       	234682.16       
+ 47              	-52371.51       	234643.24       
+ 47              	-52371.57       	234642.72       
+ 47              	-52373.59       	234637.54       
+ 47              	-52377.97       	234626.29       
+ 47              	-52386.01       	234604.62       
+ 47              	-52393.37       	234584.73       
+ 47              	-52394.14       	234582.58       
+ 47              	-52395.22       	234579.65       
+ 47              	-52397.17       	234575.23       
+ 47              	-52404.23       	234558.35       
+ 47              	-52409.04       	234546.92       
+ 47              	-52412.97       	234536.65       
+ 48              	-52432.20       	234484.93       
+ 48              	-52438.23       	234471.48       
+ 49              	-52466.30       	234422.84       
+ 49              	-52470.74       	234411.12       
+ 50              	-52331.75       	234722.31       
+ 50              	-52330.62       	234710.16       
+ 51              	-52328.84       	234655.47       
+ 51              	-52328.89       	234654.86       
+ 51              	-52328.95       	234638.08       
+ 51              	-52330.74       	234619.60       
+ 51              	-52331.11       	234616.96       
+ 51              	-52332.40       	234608.45       
+ 52              	-52338.83       	234538.87       
+ 53              	-52364.51       	234413.04       
+ 53              	-52365.46       	234410.74       
+ 53              	-52367.48       	234395.87       
+ 54              	-52362.59       	234417.60       
+ 54              	-52356.82       	234439.93       
+ 54              	-52353.34       	234454.33       
+ 54              	-52350.74       	234473.44       
+ 54              	-52348.97       	234494.57       
+ 54              	-52347.01       	234505.91       
+ 55              	-52783.15       	233341.15       
+ 55              	-52790.44       	233324.83       
+ 55              	-52794.26       	233276.58       
+ 55              	-52799.82       	233247.42       
+ 55              	-52806.77       	233220.34       
+ 55              	-52824.14       	233166.19       
+ 55              	-52835.26       	233148.83       
+ 55              	-52828.31       	233135.99       
+ 56              	-52843.05       	233099.65       
+ 56              	-52846.63       	233085.30       
+ 56              	-52850.12       	233067.90       
+ 56              	-52854.95       	233043.07       
+ 56              	-52861.06       	233017.43       
+ 57              	-52946.19       	232802.23       
+ 57              	-52942.64       	232779.53       
+ 57              	-52934.42       	232743.89       
+ 57              	-52923.32       	232693.87       
+ 57              	-52922.69       	232676.89       
+ 57              	-52925.96       	232650.62       
+ 58              	-52964.83       	232483.11       
+ 58              	-52982.24       	232329.35       
+ 58              	-52975.50       	232316.77       
+ 58              	-52974.51       	232287.45       
+ 58              	-52978.11       	232258.06       
+ 59              	-52892.39       	232256.74       
+ 59              	-52872.43       	232255.44       
+ 59              	-52839.40       	232253.09       
+ 59              	-52817.89       	232247.99       
+ 62              	-52754.22       	232263.09       
+ 62              	-52712.71       	232265.09       
+ 62              	-52710.20       	232267.41       
+ 62              	-52704.43       	232319.59       
+ 63              	-52827.37       	232247.24       
+ 63              	-52822.67       	232249.74       
+ 63              	-52803.04       	232246.51       
+ 63              	-52776.14       	232253.38       
+ 65              	-53142.69       	233063.02       
+ 65              	-53176.67       	233080.29       
+ 65              	-53162.47       	233123.76       
+ 65              	-53195.54       	233129.53       
+ 66              	-53150.76       	233037.40       
+ 66              	-53143.90       	233059.74       
+ 67              	-53155.63       	233016.93       
+ 67              	-53162.93       	232987.61       
+ 67              	-53128.05       	232964.26       
+ 67              	-53105.53       	232945.64       
+ 67              	-53071.14       	232909.47       
+ 68              	-53027.73       	232875.26       
+ 68              	-53039.03       	232855.00       
+ 68              	-53037.89       	232850.26       
+ 68              	-53036.29       	232849.75       
+ 68              	-52970.86       	232825.25       
+ 68              	-52954.27       	232823.63       
+ 68              	-52951.88       	232822.58       
+ 69              	-52948.50       	232996.09       
+ 69              	-52918.28       	232988.80       
+ 69              	-52883.74       	232983.59       
+ 70              	-52953.32       	232998.89       
+ 70              	-52957.70       	232988.91       
+ 70              	-52966.00       	232967.72       
+ 70              	-52974.09       	232952.68       
+ 70              	-52976.86       	232949.48       
+ 70              	-52990.06       	232932.83       
+ 71              	-52996.64       	232913.78       
+ 71              	-53003.05       	232913.04       
+ 72              	-53031.16       	232755.11       
+ 72              	-52991.49       	232748.67       
+ 72              	-52983.28       	232746.35       
+ 73              	-52935.27       	232641.33       
+ 73              	-52936.68       	232670.81       
+ 73              	-52952.82       	232693.08       
+ 73              	-52967.29       	232721.53       
+ 73              	-52974.46       	232734.22       
+ 74              	-53001.43       	233160.30       
+ 74              	-52968.57       	233141.28       
+ 74              	-52947.14       	233145.68       
+ 74              	-52920.09       	233141.88       
+ 74              	-52895.25       	233234.78       
+ 74              	-52880.02       	233294.44       
+ 74              	-52874.41       	233305.85       
+ 74              	-52846.36       	233319.86       
+ 74              	-52828.86       	233384.37       
+ 74              	-52825.93       	233388.96       
+ 75              	-53366.92       	233071.70       
+ 75              	-53373.36       	233050.81       
+ 76              	-53380.19       	232995.35       
+ 77              	-53386.62       	232943.92       
+ 77              	-53392.66       	232932.26       
+ 78              	-53552.30       	232734.56       
+ 78              	-53570.39       	232715.67       
+ 78              	-53688.21       	232683.52       
+ 78              	-53790.35       	232702.81       
+ 78              	-53835.78       	232711.25       
+ 78              	-53873.99       	232714.87       
+ 78              	-53908.97       	232713.66       
+ 78              	-54003.06       	232727.73       
+ 78              	-54072.63       	232741.79       
+ 78              	-54085.90       	232737.77       
+ 78              	-54133.35       	232757.06       
+ 78              	-54195.67       	232789.21       
+ 78              	-54233.07       	232805.68       
+ 78              	-54273.28       	232835.02       
+ 78              	-54268.86       	232839.44       
+ 78              	-54332.80       	232922.22       
+ 78              	-54349.68       	232935.88       
+ 78              	-54376.63       	232936.68       
+ 78              	-54395.93       	232934.27       
+ 78              	-54415.23       	232927.44       
+ 78              	-54447.80       	232910.97       
+ 78              	-54460.67       	232900.12       
+ 78              	-54586.93       	232899.31       
+ 78              	-54597.79       	232846.67       
+ 78              	-54603.82       	232843.46       
+ 78              	-54615.08       	232794.43       
+ 78              	-54614.68       	232790.41       
+ 78              	-54625.94       	232738.17       
+ 78              	-54615.08       	232730.94       
+ 78              	-54630.76       	232642.94       
+ 78              	-54643.23       	232575.03       
+ 78              	-54664.54       	232566.19       
+ 80              	-53475.89       	232844.66       
+ 80              	-53528.57       	232788.81       
+ 89              	-51926.75       	234668.42       
+ 89              	-51918.05       	234605.39       
+ 89              	-51904.43       	234519.35       
+ 90              	-51984.22       	234696.46       
+ HZ2             	-53144.55       	233802.75       
+ HZ2             	-53127.45       	233747.35       
+ HZ3             	-53212.29       	233736.69       
+ HZ3             	-53245.23       	233749.13       
+ HZ3             	-53252.17       	233752.02       
+ HZ3             	-53266.65       	233758.39       
+ HZ3             	-53266.94       	233758.47       
+ HZ3             	-53275.81       	233762.53       
+ HZ3             	-53284.76       	233765.71       
+ HZ3             	-53304.44       	233771.66       
+ HZ3             	-53305.87       	233772.09       
+ HZ3             	-53308.21       	233770.96       
+ HZ3             	-53320.64       	233775.00       
+ HZ3             	-53321.71       	233775.33       
+ HZ3             	-53324.66       	233775.52       
+ HZ4             	-53341.37       	233805.93       
+ HZ4             	-53356.17       	233839.62       
+ HZ5             	-53298.14       	233926.72       
+ HZ6             	-53264.93       	233993.95       
+ HZ6             	-53252.24       	234027.01       
+ HZ6             	-53244.93       	234046.23       
+ HZ6             	-53233.77       	234058.53       
+ HZ6             	-53234.93       	234065.07       
+ HZ6             	-53196.84       	234161.17       
+ HZ7             	-53162.61       	234251.50       
+ HZ8             	-53229.81       	233328.66       
+ HZ9             	-53162.11       	233805.95       
+ HZ9             	-53165.56       	233825.32       
+ HZ10            	-53244.44       	233912.37       
+ HZ10            	-53290.38       	233922.98       
+ HZ11            	-53360.83       	233842.09       
+ HZ12            	-53484.34       	233913.26       
+ HZ12            	-53537.95       	233960.36       
+ HZ13            	-53296.49       	233939.70       
+ HZ13            	-53332.34       	233979.78       
+ HZ13            	-53346.68       	234002.60       
+ HZ14            	-53384.56       	234095.82       
+ HZ14            	-53398.02       	234173.47       
+ HZ15            	-53396.10       	234298.01       
+ HZ15            	-53374.17       	234297.63       
+ HZ16            	-53335.32       	234289.56       
+ HZ16            	-53298.15       	234256.61       
+ HZ16            	-53259.54       	234232.67       
+ HZ16            	-53249.93       	234233.43       
+ HZ16            	-53239.54       	234221.90       
+ HZ17            	-53334.69       	234252.71       
+ HZ17            	-53329.88       	234217.08       
+ HZ17            	-53327.48       	234181.45       
+ HZ17            	-53326.68       	234157.03       
+ HZ17            	-53327.48       	234109.39       
+ HZ17            	-53336.29       	234106.99       
+ HZ17            	-53345.91       	234102.99       
+ HZ17            	-53360.73       	234096.58       
+ HZ19            	-53585.37       	233915.45       
+ HZ19            	-53607.12       	233916.99       
+ HZ20            	-53647.11       	233907.69       
+ HZ20            	-53669.29       	233895.52       
+ HZ20            	-53691.10       	233871.30       
+ HZ20            	-53706.36       	233853.94       
+ HZ20            	-53714.40       	233844.12       
+ HZ21            	-53706.23       	233804.35       
+ HZ21            	-53697.32       	233782.77       
+ HZ21            	-53695.27       	233779.09       
+ HZ21            	-53690.57       	233776.94       
+ HZ21            	-53690.06       	233776.21       
+ HZ21            	-53668.46       	233746.71       
+ HZ22            	-53653.66       	233765.90       
+ HZ22            	-53638.61       	233768.82       
+ HZ22            	-53637.00       	233768.36       
+ HZ22            	-53625.41       	233793.78       
+ HZ22            	-53618.62       	233807.44       
+ HZ22            	-53609.40       	233806.57       
+ HZ23            	-53455.42       	233887.84       
+ HZ24            	-53519.58       	233691.43       
+ HZ24            	-53521.53       	233675.91       
+ HZ24            	-53522.01       	233670.70       
+ HZ24            	-53524.08       	233654.09       
+ HZ24            	-53526.71       	233645.45       
+ HZ24            	-53527.45       	233643.14       
+ HZ24            	-53527.37       	233642.27       
+ HZ25            	-53538.54       	233616.66       
+ HZ25            	-53542.21       	233606.64       
+ HZ26            	-53511.07       	233578.70       
+ HZ26            	-53510.65       	233576.03       
+ HZ26            	-53508.04       	233565.62       
+ HZ26            	-53485.20       	233562.91       
+ HZ26            	-53482.01       	233553.99       
+ HZ26            	-53481.30       	233553.30       
+ HZ27            	-53490.54       	233539.67       
+ HZ27            	-53503.86       	233521.43       
+ HZ28            	-53448.58       	233711.32       
+ HZ28            	-53442.71       	233708.27       
+ HZ28            	-53441.20       	233698.27       
+ HZ28            	-53443.85       	233680.36       
+ HZ28            	-53449.22       	233636.07       
+ HZ28            	-53454.74       	233609.20       
+ HZ28            	-53463.48       	233577.05       
+ HZ28            	-53465.06       	233549.61       
+ HZ29            	-53479.86       	233552.47       
+ HZ30            	-53338.27       	233754.66       
+ HZ30            	-53339.63       	233753.11       
+ HZ30            	-53355.02       	233751.54       
+ HZ30            	-53368.31       	233751.69       
+ HZ30            	-53377.03       	233750.71       
+ HZ30            	-53377.05       	233748.51       
+ HZ31            	-53524.41       	233491.55       
+ HZ31            	-53520.46       	233484.66       
+ HZ31            	-53519.75       	233484.50       
+ HZ31            	-53519.22       	233484.45       
+ HZ31            	-53503.40       	233480.96       
+ HZ31            	-53495.51       	233478.67       
+ HZ31            	-53478.14       	233468.52       
+ HZ31            	-53476.79       	233467.14       
+ HZ31            	-53476.12       	233466.60       
+ HZ31            	-53467.44       	233457.92       
+ HZ31            	-53466.85       	233456.24       
+ HZ31            	-53464.01       	233455.74       
+ HZ31            	-53459.96       	233453.36       
+ HZ31            	-53446.44       	233437.86       
+ HZ32            	-53391.83       	233643.05       
+ HZ32            	-53401.84       	233628.92       
+ HZ32            	-53413.62       	233608.32       
+ HZ33            	-53434.83       	233501.16       
+ HZ33            	-53426.00       	233448.18       
+ HZ34            	-53441.27       	233544.27       
+ HZ35            	-53333.50       	233713.11       
+ HZ35            	-53341.16       	233686.62       
+ HZ35            	-53353.53       	233672.49       
+ HZ36            	-53017.33       	233880.64       
+ HZ36            	-53017.32       	233876.62       
+ HZ36            	-53036.39       	233858.95       
+ HZ36            	-53037.13       	233858.31       
+ HZ36            	-53036.70       	233855.39       
+ HZ36            	-53025.07       	233842.13       
+ HZ36            	-53013.79       	233828.27       
+ HZ36            	-53028.30       	233809.00       
+ HZ37            	-53127.49       	233743.63       
+ HZ37            	-53159.43       	233744.88       
+ HZ37            	-53181.62       	233740.00       
+ HZ37            	-53191.29       	233737.41       
+ HZ37            	-53191.77       	233737.22       
+ HZ37            	-53198.64       	233735.93       
+ HZ38            	-53022.12       	233779.94       
+ HZ38            	-53022.70       	233777.67       
+ HZ38            	-53056.54       	233750.17       
+ HZ38            	-53057.60       	233746.59       
+ HZ38            	-53057.64       	233745.51       
+ HZ38            	-53068.47       	233747.73       
+ HZ38            	-53125.86       	233743.52       
+ HZ39            	-53135.16       	233838.99       
+ HZ39            	-53100.38       	233856.67       
+ HZ39            	-53085.81       	233867.60       
+ HZ40            	-53244.54       	233608.32       
+ HZ40            	-53225.10       	233562.98       
+ HZ40            	-53212.14       	233535.90       
+ HZ43            	-53215.67       	233421.68       
+ HZ44            	-53459.71       	233811.35       
+ HZ44            	-53457.48       	233806.68       
+ HZ44            	-53456.20       	233761.64       
+ HZ44            	-53455.98       	233757.54       
+ HZ44            	-53455.45       	233740.31       
+ HZ45            	-53329.38       	233361.63       
+ HZ45            	-53285.78       	233326.89       
+ HZ45            	-53265.75       	233318.65       
+ HZ46            	-53394.60       	234076.00       
+ HZ47            	-53445.38       	234079.65       
+ HZ47            	-53505.35       	234090.60       
+ HZ48            	-53629.49       	234145.14       
+ HZ48            	-53624.34       	234154.64       
+ HZ48            	-53605.93       	234147.45       
+ HZ48            	-53588.46       	234139.85       
+ HZ48            	-53569.19       	234130.03       
+ HZ48            	-53545.32       	234117.78       
+ HZ49            	-53440.47       	234139.74       
+ HZ49            	-53438.09       	234148.04       
+ HZ49            	-53439.17       	234160.72       
+ HZ49            	-53466.87       	234157.17       
+ HZ49            	-53474.30       	234157.17       
+ HZ49            	-53476.47       	234180.87       
+ HZ49            	-53475.85       	234186.59       
+ HZ49            	-53507.11       	234198.66       
+ HZ49            	-53510.79       	234200.14       
+ HZ51            	-53625.78       	233925.40       
+ HZ51            	-53674.03       	233941.66       
+ HZ51            	-53675.34       	233951.01       
+ HZ52            	-53651.92       	234018.61       
+ HZ53            	-53692.33       	234091.89       
+ HZ53            	-53707.54       	234133.03       
+ HZ54            	-53584.81       	233979.45       
+ HZ55            	-53646.13       	234080.48       
+ HZ56            	-53566.77       	234094.68       
+ HZ57            	-53624.28       	234117.60       
+ HZ58            	-53586.89       	234058.53       
+ HZ59            	-53716.66       	234144.93       
+ HZ59            	-53844.93       	234182.91       
+ HZ59            	-53882.46       	234192.40       
+ HZ59            	-53900.51       	234189.55       
+ HZ59            	-53933.29       	234177.21       
+ HZ59            	-53965.12       	234161.07       
+ HZ60            	-53658.23       	234143.98       
+ HZ60            	-53701.93       	234141.60       
+ HZ61            	-53177.51       	233826.91       
+ HZ61            	-53221.07       	233825.59       
+ HZ62            	-53251.61       	233874.15       
+ HZ62            	-53239.39       	233872.83       
+ HZ65            	-53580.46       	233838.36       
+ HZ65            	-53579.48       	233841.74       
+ HZ65            	-53577.39       	233842.65       
+ HZ65            	-53577.03       	233842.56       
+ HZ65            	-53526.14       	233827.72       
+ HZ66            	-53525.83       	233827.41       
+ HZ66            	-53527.13       	233822.45       
+ HZ66            	-53529.14       	233814.81       
+ HZ66            	-53530.64       	233803.01       
+ HZ66            	-53530.53       	233797.24       
+ HZ66            	-53528.81       	233786.58       
+ HZ66            	-53525.85       	233772.56       
+ HZ66            	-53523.28       	233758.65       
+ HZ66            	-53521.86       	233751.06       
+ HZ66            	-53518.97       	233733.00       
+ HZ66            	-53518.71       	233729.26       
+ HZ66            	-53517.24       	233718.82       
+ HZ67            	-53525.74       	233827.76       
+ HZ67            	-53525.39       	233827.68       
+ HZ67            	-53520.77       	233827.33       
+ HZ68            	-53508.93       	233863.17       
+ HZ68            	-53508.94       	233868.70       
+ HZ68            	-53509.08       	233872.92       
+ HZ68            	-53507.45       	233879.85       
+ HZ68            	-53505.13       	233892.58       
+ HZ69            	-53486.06       	233826.22       
+ HZ69            	-53485.16       	233827.55       
+ HZ69            	-53484.60       	233828.16       
+ HZ69            	-53483.01       	233829.89       
+ HZ69            	-53467.05       	233830.76       
+ HZ70            	-53334.01       	233767.42       
+ HZ71            	-53240.42       	233640.70       
+ HZ71            	-53211.61       	233731.56       
+ P1-2            	-51973.17       	234718.77       
+ P2-2            	-52712.40       	232204.06       
+ PUMPE-HB1-2     	-53146.79       	233812.64       
+
+[LABELS]
+;X-Coord           Y-Coord          Label & Anchor Node
+
+[BACKDROP]
+ DIMENSIONS     	-54819.26       	232058.93       	-51437.70       	235000.80       
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]
