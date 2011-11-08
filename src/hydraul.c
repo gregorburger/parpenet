@@ -56,6 +56,7 @@ AUTHOR:     L. Rossman
 #include "funcs.h"
 #define  EXTERN  extern
 #include "vars.h"
+#include "csrmatrix.h"
 
 #define   QZERO  1.e-6  /* Equivalent to zero flow */
 #define   CBIG   1.e8   /* Big coefficient         */
@@ -94,6 +95,7 @@ int  openhyd()
 {
    int  i;
    int  errcode = 0;
+   csr = csr_matrix_new(Njuncs, Nlinks, Link);
    ERRCODE(createsparse());     /* See SMATRIX.C  */
    ERRCODE(allocmatrix());      /* Allocate solution matrices */
    for (i=1; i<=Nlinks; i++)    /* Initialize flows */
@@ -281,16 +283,12 @@ int  allocmatrix()
 */
 {
    int errcode = 0;
-   Aii = (double *) calloc(Nnodes+1,sizeof(double));
-   Aij = (double *) calloc(Ncoeffs+1,sizeof(double));
    F   = (double *) calloc(Nnodes+1,sizeof(double));
    E   = (double *) calloc(Nnodes+1,sizeof(double));
    P   = (double *) calloc(Nlinks+1,sizeof(double));
    Y   = (double *) calloc(Nlinks+1,sizeof(double));
    X   = (double *) calloc(MAX((Nnodes+1),(Nlinks+1)),sizeof(double));
    OldStat = (char *) calloc(Nlinks+Ntanks+1, sizeof(char));
-   ERRCODE(MEMCHECK(Aii));
-   ERRCODE(MEMCHECK(Aij));
    ERRCODE(MEMCHECK(F));
    ERRCODE(MEMCHECK(E));
    ERRCODE(MEMCHECK(P));
@@ -310,8 +308,7 @@ void  freematrix()
 **--------------------------------------------------------------
 */
 {
-   free(Aii);
-   free(Aij);
+   csr_matrix_free(csr);
    free(F);
    free(E);
    free(P);
@@ -1160,7 +1157,9 @@ int  netsolve(int *iter, double *relerr)
       ** Solution for H is returned in F from call to linsolve().
       */
       newcoeffs();
-      errcode = linsolve(Njuncs,Aii,Aij,F);
+
+      csr_matrix_solve(csr, &F[1], &H[1]);
+      //errcode = linsolve(Njuncs, Aii, Aij,F);
 
       /* Take action depending on error code */
       if (errcode < 0) break;    /* Memory allocation problem */
@@ -1168,13 +1167,10 @@ int  netsolve(int *iter, double *relerr)
       {
          /* If control valve causing problem, fix its status & continue, */
          /* otherwise end the iterations with no solution.               */
-         if (badvalve(Order[errcode])) continue;
+         if (badvalve(errcode)) continue;
          else break;
       }
 
-      /* Update current solution. */
-      /* (Row[i] = row of solution matrix corresponding to node i). */
-      for (i=1; i<=Njuncs; i++) H[i] = F[Row[i]];   /* Update heads */
       newerr = newflows();                          /* Update flows */
       *relerr = newerr;
 
@@ -1225,7 +1221,7 @@ int  netsolve(int *iter, double *relerr)
    if (errcode < 0) errcode = 101;      /* Memory allocation error */
    else if (errcode > 0)
    {
-      writehyderr(Order[errcode]);      /* Ill-conditioned eqns. error */
+      writehyderr(errcode);      /* Ill-conditioned eqns. error */
       errcode = 110;
    }
 
@@ -1800,8 +1796,7 @@ void   newcoeffs()
 **--------------------------------------------------------------
 */
 {
-   memset(Aii,0,(Nnodes+1)*sizeof(double));   /* Reset coeffs. to 0 */
-   memset(Aij,0,(Ncoeffs+1)*sizeof(double));
+   csr_matrix_zero(csr);
    memset(F,0,(Nnodes+1)*sizeof(double));
    memset(X,0,(Nnodes+1)*sizeof(double));
    memset(P,0,(Nlinks+1)*sizeof(double));
@@ -1857,19 +1852,24 @@ void  linkcoeffs()
       /* (Use covention that flow out of node is (-), flow into node is (+)) */
       X[n1] -= Q[k];
       X[n2] += Q[k];
-      Aij[Ndx[k]] -= P[k];              /* Off-diagonal coeff. */
+      if (n1 <= Njuncs && n2 <= Njuncs) {
+         ////Aij[Ndx[k]] -= P[k];              /* Off-diagonal coeff. */
+         csr_matrix_link_add(csr, k-1, -P[k]);
+      }
       if (n1 <= Njuncs)                 /* Node n1 is junction */
       {
-         Aii[Row[n1]] += P[k];          /* Diagonal coeff. */
-         F[Row[n1]] += Y[k];            /* RHS coeff.      */
+         //Aii[n1] += P[k];          /* Diagonal coeff. */
+         csr_matrix_diagonal_add(csr, n1-1, P[k]);
+         F[n1] += Y[k];            /* RHS coeff.      */
       }
-      else F[Row[n2]] += (P[k]*H[n1]);  /* Node n1 is a tank   */
+      else F[n2] += (P[k]*H[n1]);  /* Node n1 is a tank   */
       if (n2 <= Njuncs)                 /* Node n2 is junction */
       {
-         Aii[Row[n2]] += P[k];          /* Diagonal coeff. */
-         F[Row[n2]] -= Y[k];            /* RHS coeff.      */
+         //Aii[n2] += P[k];          /* Diagonal coeff. */
+         csr_matrix_diagonal_add(csr, n2-1, P[k]);
+         F[n2] -= Y[k];            /* RHS coeff.      */
       }
-      else  F[Row[n1]] += (P[k]*H[n2]); /* Node n2 is a tank   */
+      else  F[n1] += (P[k]*H[n2]); /* Node n2 is a tank   */
    }
 }                        /* End of linkcoeffs */
 
@@ -1891,7 +1891,7 @@ void  nodecoeffs()
    for (i=1; i<=Njuncs; i++)
    {
       X[i] -= D[i];
-      F[Row[i]] += X[i];
+      F[i] += X[i];
    }
 }                        /* End of nodecoeffs */
 
@@ -1955,8 +1955,9 @@ void  emittercoeffs()
       if (p < RQtol) p = 1.0/RQtol;
       else p = 1.0/p;
       y = SGN(q)*z*p;
-      Aii[Row[i]] += p;
-      F[Row[i]] += y + p*Node[i].El; 
+      //Aii[i] += p;
+      csr_matrix_diagonal_add(csr, i-1, p);
+      F[i] += y + p*Node[i].El;
       X[i] -= q;
    }
 }
@@ -2317,8 +2318,8 @@ void  prvcoeff(int k, int n1, int n2)
 {
    int   i,j;                       /* Rows of solution matrix */
    double hset;                      /* Valve head setting      */
-   i  = Row[n1];                    /* Matrix rows of nodes    */
-   j  = Row[n2];
+   i  = n1;                    /* Matrix rows of nodes    */
+   j  = n2;
    hset   = Node[n2].El + K[k];     /* Valve setting           */
 
    if (S[k] == ACTIVE)
@@ -2331,7 +2332,8 @@ void  prvcoeff(int k, int n1, int n2)
       P[k] = 0.0;
       Y[k] = Q[k] + X[n2];       /* Force flow balance   */
       F[j] += (hset*CBIG);       /* Force head = hset    */
-      Aii[j] += CBIG;            /*   at downstream node */
+      //Aii[j] += CBIG;            /*   at downstream node */
+      csr_matrix_diagonal_add(csr, j-1, CBIG);
       if (X[n2] < 0.0) F[i] += X[n2];
       return;
    }
@@ -2341,9 +2343,12 @@ void  prvcoeff(int k, int n1, int n2)
       compute matrix coeffs. using the valvecoeff() function.                  //(2.00.11 - LR)
    */
    valvecoeff(k);  /*pipecoeff(k);*/                                           //(2.00.11 - LR)
-   Aij[Ndx[k]] -= P[k];
-   Aii[i] += P[k];
-   Aii[j] += P[k];
+   //Aij[Ndx[k]] -= P[k];
+   csr_matrix_link_add(csr, k-1, -P[k]);
+   //Aii[i] += P[k];
+   csr_matrix_diagonal_add(csr, i-1, P[k]);
+   //Aii[j] += P[k];
+   csr_matrix_diagonal_add(csr, j-1, P[k]);
    F[i] += (Y[k]-Q[k]);
    F[j] -= (Y[k]-Q[k]);
 }                        /* End of prvcoeff */
@@ -2363,8 +2368,8 @@ void  psvcoeff(int k, int n1, int n2)
 {
    int   i,j;                       /* Rows of solution matrix */
    double hset;                      /* Valve head setting      */
-   i  = Row[n1];                    /* Matrix rows of nodes    */
-   j  = Row[n2];
+   i  = n1;                    /* Matrix rows of nodes    */
+   j  = n2;
    hset   = Node[n1].El + K[k];     /* Valve setting           */
 
    if (S[k] == ACTIVE)
@@ -2377,7 +2382,8 @@ void  psvcoeff(int k, int n1, int n2)
       P[k] = 0.0;
       Y[k] = Q[k] - X[n1];              /* Force flow balance   */
       F[i] += (hset*CBIG);              /* Force head = hset    */
-      Aii[i] += CBIG;                   /*   at upstream node   */
+      //Aii[i] += CBIG;                   /*   at upstream node   */
+      csr_matrix_diagonal_add(csr, i-1, CBIG);
       if (X[n1] > 0.0) F[j] += X[n1];
       return;
    }
@@ -2387,9 +2393,12 @@ void  psvcoeff(int k, int n1, int n2)
       compute matrix coeffs. using the valvecoeff() function.                  //(2.00.11 - LR)
    */
    valvecoeff(k);  /*pipecoeff(k);*/                                           //(2.00.11 - LR)
-   Aij[Ndx[k]] -= P[k];
-   Aii[i] += P[k];
-   Aii[j] += P[k];
+   //Aij[Ndx[k]] -= P[k];
+   csr_matrix_link_add(csr, k-1, -P[k]);
+   //Aii[i] += P[k];
+   csr_matrix_diagonal_add(csr, i-1, P[k]);
+   //Aii[j] += P[k];
+   csr_matrix_diagonal_add(csr, j-1, P[k]);
    F[i] += (Y[k]-Q[k]);
    F[j] -= (Y[k]-Q[k]);
 }                        /* End of psvcoeff */
@@ -2410,8 +2419,8 @@ void  fcvcoeff(int k, int n1, int n2)
    int   i,j;                   /* Rows in solution matrix */
    double q;                     /* Valve flow setting      */
    q = K[k];
-   i = Row[n1];
-   j = Row[n2];
+   i = n1;
+   j = n2;
 
    /*
       If valve active, break network at valve and treat  
@@ -2426,9 +2435,12 @@ void  fcvcoeff(int k, int n1, int n2)
       F[j] += q;
       /*P[k] = 0.0;*/
       P[k] = 1.0/CBIG;                                                         //(2.00.11 - LR)
-      Aij[Ndx[k]] -= P[k];                                                     //(2.00.11 - LR)
-      Aii[i] += P[k];                                                          //(2.00.11 - LR)
-      Aii[j] += P[k];                                                          //(2.00.11 - LR)
+      //Aij[Ndx[k]] -= P[k];                                                     //(2.00.11 - LR)
+      csr_matrix_link_add(csr, k-1, -P[k]);
+      //Aii[i] += P[k];                                                          //(2.00.11 - LR)
+      csr_matrix_diagonal_add(csr, i-1, P[k]);
+      //Aii[j] += P[k];                                                          //(2.00.11 - LR)
+      csr_matrix_diagonal_add(csr, j-1, P[k]);
       Y[k] = Q[k] - q;
    }
    /*
@@ -2437,9 +2449,12 @@ void  fcvcoeff(int k, int n1, int n2)
    else 
    {
       valvecoeff(k);  //pipecoeff(k);                                          //(2.00.11 - LR)
-      Aij[Ndx[k]] -= P[k];
-      Aii[i] += P[k];
-      Aii[j] += P[k];
+      //Aij[Ndx[k]] -= P[k];
+      csr_matrix_link_add(csr, k-1, -P[k]);
+      //Aii[i] += P[k];
+      csr_matrix_diagonal_add(csr, i-1, P[k]);
+      //Aii[j] += P[k];
+      csr_matrix_diagonal_add(csr, j-1, P[k]);
       F[i] += (Y[k]-Q[k]);
       F[j] -= (Y[k]-Q[k]);
    }

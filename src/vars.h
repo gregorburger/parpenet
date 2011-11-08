@@ -179,14 +179,10 @@ EXTERN Padjlist *Adjlist;              /* Node adjacency lists         */
 **       The following arrays are used to efficiently manage this sparsity:
 */
 
-EXTERN double   *Aii,        /* Diagonal coeffs. of A               */
-                *Aij,        /* Non-zero, off-diagonal coeffs. of A */
-                *F;          /* Right hand side coeffs.             */
+EXTERN double   *F;          /* Right hand side coeffs.             */
 EXTERN double   *P,          /* Inverse headloss derivatives        */
                 *Y;          /* Flow correction factors             */
-EXTERN int      *Order,      /* Node-to-row of A                    */
-                *Row,        /* Row-to-node of A                    */
-                *Ndx;        /* Index of link's coeff. in Aij       */
+EXTERN int      *Ndx;        /* Index of link's coeff. in Aij       */
 /*
 ** The following arrays store the positions of the non-zero coeffs.    
 ** of the lower triangular portion of A whose values are stored in Aij:
@@ -194,3 +190,9 @@ EXTERN int      *Order,      /* Node-to-row of A                    */
 EXTERN int      *XLNZ,       /* Start position of each column in NZSUB  */
                 *NZSUB,      /* Row index of each coeff. in each column */
                 *LNZ;        /* Position of each coeff. in Aij array    */
+
+/*
+** The csr_arry matrix variable for MKL parallel pardiso solver
+*/
+#include "csrmatrix.h"
+EXTERN csr_matrix csr;

@@ -2651,14 +2651,9 @@ void initpointers()
    Patlist  = NULL;
    Curvelist = NULL;
    Adjlist  = NULL;
-   Aii      = NULL;
-   Aij      = NULL;
    F        = NULL;
    P        = NULL;
    Y        = NULL;
-   Order    = NULL;
-   Row      = NULL;
-   Ndx      = NULL;
    XLNZ     = NULL;
    NZSUB    = NULL;
    LNZ      = NULL;

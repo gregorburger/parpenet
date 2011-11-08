@@ -73,7 +73,7 @@ int  createsparse()
    /* in factorized solution matrix. At same time, adjacency   */
    /* list is updated with links representing non-zero coeffs. */
    Ncoeffs = Nlinks;
-   ERRCODE(reordernodes());
+   //ERRCODE(reordernodes());
 
    /* Allocate memory for sparse storage of positions of non-zero */
    /* coeffs. and store these positions in vector NZSUB. */
@@ -105,12 +105,8 @@ int  allocsparse()
 {
    int errcode = 0;
    Adjlist = (Padjlist *) calloc(Nnodes+1,  sizeof(Padjlist));
-   Order  = (int *)   calloc(Nnodes+1,  sizeof(int));
-   Row    = (int *)   calloc(Nnodes+1,  sizeof(int));
    Ndx    = (int *)   calloc(Nlinks+1,  sizeof(int));
    ERRCODE(MEMCHECK(Adjlist));
-   ERRCODE(MEMCHECK(Order));
-   ERRCODE(MEMCHECK(Row));
    ERRCODE(MEMCHECK(Ndx));
    return(errcode);
 }
@@ -127,8 +123,6 @@ void  freesparse()
 {
    freelists();
    free(Adjlist);
-   free(Order);
-   free(Row);
    free(Ndx);
    free(XLNZ);
    free(NZSUB);
@@ -294,7 +288,7 @@ void  countdegree()
             if (alink->node > 0) Degree[i]++;
 }
 
-
+#if 0
 int   reordernodes()
 /*
 **--------------------------------------------------------------
@@ -352,7 +346,6 @@ int  mindegree(int k, int n)
    }
    return(imin);
 }                        /* End of mindegree */
-
 
 int  growlist(int knode)
 /*
@@ -424,7 +417,7 @@ int  newlink(Padjlist alink)
    }
    return(1);
 }                        /* End of newlink */
-
+#endif
 
 int  linked(int i, int j)
 /*
@@ -494,10 +487,10 @@ int  storesparse(int n)
    for (i=1; i<=n; i++)             /* column */
    {
        m = 0;
-       ii = Order[i];
+       ii = i;
        for (alink = Adjlist[ii]; alink != NULL; alink = alink->next)
        {
-          j = Row[alink->node];    /* row */
+          j = alink->node;    /* row */
           l = alink->link;
           if (j > i && j <= n)
           {
