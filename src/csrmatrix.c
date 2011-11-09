@@ -23,14 +23,15 @@ struct csr_matrix_t {
 };
 
 // declarations internal api
-static int get_nnz(int njuncs, int nlinks, Slink *links);
-static void set_rowIndex(csr_matrix matrix, int nlinks, Slink *links);
-static void set_columns(csr_matrix matrix, int nlinks, Slink *links);
-static void set_link_offsets(csr_matrix matrix, int nlinks, Slink *links);
+static int get_nnz(int njuncs, int nlinks, Slink *links, int *paralinks);
+static void set_rowIndex(csr_matrix matrix, int nlinks, Slink *links, int *paralinks);
+static void set_columns(csr_matrix matrix, int nlinks, Slink *links, int *paralinks);
+static void set_link_offsets(csr_matrix matrix, int nlinks, Slink *links, int *paralinks);
 static void init_pardiso(csr_matrix matrix);
 static int is_sorted(csr_matrix matrix);
 static int is_upper(csr_matrix matrix);
 static void sort(csr_matrix matrix);
+static void set_paralinks(int nlinks, Slink *links, int *paralinks);
 
 //external API
 csr_matrix csr_matrix_new(int njuncs, int nlinks, Slink *links) {
@@ -38,21 +39,29 @@ csr_matrix csr_matrix_new(int njuncs, int nlinks, Slink *links) {
 
    matrix = malloc(sizeof(struct csr_matrix_t));
    matrix->n = njuncs;
-   matrix->nnz = get_nnz(njuncs, nlinks, links);
+   printf("\nmatrix size: %d\n", matrix->n);
+   printf("\nnumber of equations: %d\n", nlinks);
+
+   int *paralinks = malloc(nlinks  * sizeof(int));
+   set_paralinks(nlinks, links, paralinks);
+
+   matrix->nnz = get_nnz(njuncs, nlinks, links, paralinks);
    matrix->columns = malloc(matrix->nnz*sizeof(int));
    matrix->values = malloc(matrix->nnz*sizeof(double));
    matrix->rowIndex = malloc((matrix->n+1)*sizeof(int));
    matrix->link_offset = malloc(nlinks*sizeof(int));
 
 
-   set_rowIndex(matrix, nlinks, links);
-   set_columns(matrix, nlinks, links);
+   set_rowIndex(matrix, nlinks, links, paralinks);
+   set_columns(matrix, nlinks, links, paralinks);
 
    sort(matrix);
-   set_link_offsets(matrix, nlinks, links);
+   set_link_offsets(matrix, nlinks, links, paralinks);
    assert(is_sorted(matrix));
    assert(is_upper(matrix));
    init_pardiso(matrix);
+
+   free(paralinks);
 
    return matrix;
 }
@@ -93,9 +102,11 @@ void csr_matrix_link_add(csr_matrix matrix, int i, double v) {
 
 void csr_matrix_solve(csr_matrix matrix, double *F, double *X) {
    int opt, error;
-   opt = MKL_DSS_POSITIVE_DEFINITE;
+   opt = MKL_DSS_POSITIVE_DEFINITE + MKL_DSS_MSG_LVL_INFO;
    error = dss_factor_real(matrix->handle, opt, matrix->values);
-   opt = MKL_DSS_DEFAULTS;
+   assert(error == MKL_DSS_SUCCESS);
+   opt = MKL_DSS_DEFAULTS + MKL_DSS_REFINEMENT_OFF + MKL_DSS_MSG_LVL_INFO;
+   //opt = MKL_DSS_DEFAULTS;
    int nrhs = 1;
    error = dss_solve_real(matrix->handle, opt, F, nrhs, X);
    assert(error == MKL_DSS_SUCCESS);
@@ -117,16 +128,16 @@ void csr_matrix_dump(csr_matrix matrix) {
 
 // BEGIN INTERNAL API
 
-static int get_nnz(int njuncs, int nlinks, Slink *links) {
+static int get_nnz(int njuncs, int nlinks, Slink *links, int *paralinks) {
    int i;
    int nnz = njuncs;
    for (i = 1; i <= nlinks; i++) {
-      nnz += (links[i].N1 <= njuncs) && (links[i].N2 <= njuncs);
+      nnz += (links[i].N1 <= njuncs) && (links[i].N2 <= njuncs) && !paralinks[i-1];
    }
    return nnz;
 }
 
-static void set_rowIndex(csr_matrix matrix, int nlinks, Slink *links) {
+static void set_rowIndex(csr_matrix matrix, int nlinks, Slink *links, int *paralinks) {
    int njuncs = matrix->n;
    int i;
 //#pragma omp parallel for private(i)
@@ -135,11 +146,11 @@ static void set_rowIndex(csr_matrix matrix, int nlinks, Slink *links) {
    }
    matrix->rowIndex[0] = 0;
 
-//#pragma omp parallel for private(i)
+   //count number of nnz per row
    for (i = 1; i <= nlinks; i++) {
       int n1 = links[i].N1;
       int n2 = links[i].N2;
-      if (n1 <= njuncs && n2 <= njuncs) {
+      if (n1 <= njuncs && n2 <= njuncs && !paralinks[i-1]) {
          ASSURE_UPPER(n1, n2);
          matrix->rowIndex[n1]++;
       }
@@ -147,57 +158,61 @@ static void set_rowIndex(csr_matrix matrix, int nlinks, Slink *links) {
 
    matrix->rowIndex[0] = 1;
 
+   //set start and end
    for (i = 0; i < matrix->n; i++) {
       assert(i+1 < matrix->n+1);
       matrix->rowIndex[i+1] += matrix->rowIndex[i];
    }
 }
 
-static void set_columns(csr_matrix matrix, int nlinks, Slink *links) {
+static void set_columns(csr_matrix matrix, int nlinks, Slink *links, int *paralinks) {
    int i;
    int njuncs = matrix->n;
    int *tmp = malloc(matrix->n*sizeof(int));
 
-//#pragma omp parallel for private(i)
    for (i = 0; i < matrix->n; i++) {
       tmp[i] = 0;
    }
-   //memset(tmp, 0, sizeof(int) * matrix->n);
 
-//#pragma omp parallel for private(i)
    for (i = 0; i < njuncs; i++) {
       matrix->columns[matrix->rowIndex[i]-1] = i+1; //set diagonal indices
    }
 
-//#pragma omp parallel for private(i)
    for (i = 1; i <= nlinks; i++) {
       int n1 = links[i].N1;
       int n2 = links[i].N2;
-      if (n1 <= njuncs && n2 <= njuncs) {
+      if (n1 <= njuncs && n2 <= njuncs && !paralinks[i-1]) {
          ASSURE_UPPER(n1, n2);
 
          int offset = matrix->rowIndex[n1-1]+tmp[n1-1];
          assert(offset > 0);
          assert(offset < matrix->nnz);
          matrix->columns[offset] = n2;
-         //matrix->link_offset[i-1] = offset+1;
-//#pragma omp atomic
          tmp[n1-1]++;
       }
    }
    free(tmp);
 }
 
-static void set_link_offsets(csr_matrix matrix, int nlinks, Slink *links) {
+static void set_link_offsets(csr_matrix matrix, int nlinks, Slink *links, int *paralinks) {
    int i;
    int njuncs = matrix->n;
 
-#pragma omp parallel for private(i)
    for (i = 1; i <= nlinks; i++) {
       int n1 = links[i].N1;
       int n2 = links[i].N2;
       if (n1 <= njuncs && n2 <= njuncs) {
          ASSURE_UPPER(n1, n2);
+         if (paralinks[i-1]) {
+            int pn1 = links[paralinks[i-1]].N1;
+            int pn2 = links[paralinks[i-1]].N2;
+            ASSURE_UPPER(pn1, pn2);
+            assert(n1 == pn1);
+            assert(n2 == pn2);
+
+            matrix->link_offset[i-1] = matrix->link_offset[paralinks[i-1]-1];
+            continue;
+         }
          int start = matrix->rowIndex[n1-1];
          int stop = matrix->rowIndex[n1];
          int k;
@@ -216,8 +231,8 @@ static void set_link_offsets(csr_matrix matrix, int nlinks, Slink *links) {
 
 static void init_pardiso(csr_matrix matrix) {
    _INTEGER_t error;
-   int opt = MKL_DSS_DEFAULTS;
-   //int opt = MKL_DSS_MSG_LVL_INFO + MKL_DSS_TERM_LVL_ERROR;
+   //int opt = MKL_DSS_DEFAULTS;
+   int opt = MKL_DSS_MSG_LVL_INFO +  MKL_DSS_REFINEMENT_OFF + MKL_DSS_TERM_LVL_SUCCESS;
    error = dss_create(matrix->handle, opt);
    assert(error == MKL_DSS_SUCCESS);
 
@@ -236,12 +251,13 @@ static void init_pardiso(csr_matrix matrix) {
 static int is_sorted(csr_matrix matrix) {
    int i;
    int sorted = TRUE;
+   printf("\n");
    for (i = 0; i < matrix->n; i++) {
       int start = matrix->rowIndex[i]-1;
       int stop = matrix->rowIndex[i+1]-1;
       int k;
       for (k = start; k < stop-1; k++) {
-         if (matrix->columns[k] > matrix->columns[k+1]) {
+         if (matrix->columns[k] >= matrix->columns[k+1]) {
             printf("row %d is not sorted\n", i);
             sorted = FALSE;
          }
@@ -289,4 +305,27 @@ static int is_upper(csr_matrix matrix) {
       }
    }
    return upper;
+}
+
+static void set_paralinks(int nlinks, Slink *links, int *paralinks) {
+   int i, k;
+
+   //mark all not parallel
+   for (i = 0; i < nlinks; i++) {
+      paralinks[i] = 0;
+   }
+   for (i = 1; i <= nlinks; i++) {
+      int i_n1 = links[i].N1;
+      int i_n2 = links[i].N2;
+      ASSURE_UPPER(i_n1, i_n2);
+      for (k = i+1; k <= nlinks; k++) {
+         int k_n1 = links[k].N1;
+         int k_n2 = links[k].N2;
+         ASSURE_UPPER(k_n1, k_n2);
+         if (i_n1 == k_n1 && i_n2 == k_n2) {
+            paralinks[k-1] = i; //set to the parallel link
+            printf("link %d (%d -> %d) is parallel to link %d (%d -> %d)\n", i, i_n1, i_n2, k, k_n1, k_n2);
+         }
+      }
+   }
 }

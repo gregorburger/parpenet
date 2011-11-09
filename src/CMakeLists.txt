@@ -3,6 +3,8 @@ file(GLOB SRCS *.c *.h)
 
 option(BUILD_DLL "build EPAnet2 as dynamic link library. If not CLI version will be build" OFF)
 
+#add_definitions(-DMKL_ILP64)
+
 if (NOT EXISTS $ENV{MKLROOT}/include/mkl.h)
    message(STATUS "MKLROOT not")
 else (NOT EXISTS $ENV{MKLROOT}/include/mkl.h)
@@ -22,5 +24,5 @@ add_definitions(-DCLE)
 add_executable(epanet2 ${SRCS})
 endif (BUILD_DLL)
 
-target_link_libraries(epanet2 -lm  -Wl,--start-group  ${MKL_ROOT}/lib/intel64/libmkl_intel_lp64.a ${MKL_ROOT}/lib/intel64/libmkl_intel_thread.a ${MKL_ROOT}/lib/intel64/libmkl_core.a -Wl,--end-group -openmp -lpthread)
+target_link_libraries(epanet2 -lm -lmkl_rt -lpthread)
 
