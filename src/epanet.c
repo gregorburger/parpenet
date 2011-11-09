@@ -218,6 +218,7 @@ int   main(int argc, char *argv[])
 ----------------------------------------------------------------
 */
 
+#include <omp.h>
 
 /*** updated 3/1/01 ***/
 int DLLEXPORT ENepanet(char *f1, char *f2, char *f3, void (*pviewprog) (char *))
@@ -243,7 +244,11 @@ int DLLEXPORT ENepanet(char *f1, char *f2, char *f3, void (*pviewprog) (char *))
     int  errcode = 0;
     viewprog = pviewprog;
     ERRCODE(ENopen(f1,f2,f3));
+    printf("\nstarting hydraulics\n");
+    double start = omp_get_wtime();
     if (Hydflag != USE) ERRCODE(ENsolveH());
+    double stop = omp_get_wtime();
+    printf("\nhydraulics took %30.7f\n", stop-start);
     ERRCODE(ENsolveQ());
     ERRCODE(ENreport());
     ENclose();
