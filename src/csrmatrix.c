@@ -4,7 +4,16 @@
 #include <string.h>
 #include <stdio.h>
 #include <assert.h>
-#include <mkl_dss.h>
+
+/* PARDISO prototype. */
+void pardisoinit (void   *, int    *,   int *, int *, double *, int *);
+void pardiso     (void   *, int    *,   int *, int *,    int *, int *,
+                  double *, int    *,    int *, int *,   int *, int *,
+                     int *, double *, double *, int *, double *);
+void pardiso_chkmatrix  (int *, int *, double *, int *, int *, int *);
+void pardiso_chkvec     (int *, int *, double *, int *);
+void pardiso_printstats (int *, int *, double *, int *, int *, int *,
+                           double *, int *);
 
 #define ASSURE_UPPER(n1, n2) if (n2 < n1) { \
 n1 = n1 ^ n2; \
@@ -13,13 +22,22 @@ n1 = n1 ^ n2; \
 }
 
 struct csr_matrix_t {
-   int nnz;            //number of non zero elements a.k.a. size of value and columns
-   int n;              //matrix dimension NxN
-   double *values;     //value array
-   int *columns;       //column of each entry in value
-   int *rowIndex;      //array of size n+1 for each row i values and columns range from rowIndex[i] - rowIndex[i+1]
-   int *link_offset;   //direct offset of ith link int values array
-   _MKL_DSS_HANDLE_t handle; //handle for mkl dss library
+   int      nnz;           //number of non zero elements a.k.a. size of value and columns
+   int      n;             //matrix dimension NxN
+   double  *values;        //value array
+   int     *columns;       //column of each entry in value
+   int     *rowIndex;      //array of size n+1 for each row i values and columns range from rowIndex[i] - rowIndex[i+1]
+   int     *link_offset;   //direct offset of ith link int values array
+
+//pardiso stuff
+   void    *handle[64];    //handle for pardiso
+   int      iparm[64];
+   double   dparm[64];
+   int      mtype;     //real positiv symmetric
+   int      maxfct;
+   int      mnum;
+   int      nrhs;
+   int      msglvl;
 };
 
 // declarations internal api
@@ -39,8 +57,8 @@ csr_matrix csr_matrix_new(int njuncs, int nlinks, Slink *links) {
 
    matrix = malloc(sizeof(struct csr_matrix_t));
    matrix->n = njuncs;
-   printf("\nmatrix size: %d\n", matrix->n);
-   printf("\nnumber of equations: %d\n", nlinks);
+   //printf("\nmatrix size: %d\n", matrix->n);
+   //printf("\nnumber of equations: %d\n", nlinks);
 
    int *paralinks = malloc(nlinks  * sizeof(int));
    set_paralinks(nlinks, links, paralinks);
@@ -67,10 +85,16 @@ csr_matrix csr_matrix_new(int njuncs, int nlinks, Slink *links) {
 }
 
 void csr_matrix_free(csr_matrix matrix) {
-   int error, opt;
-   opt = MKL_DSS_DEFAULTS;
-   error = dss_delete(matrix->handle, opt);
-   assert(error == MKL_DSS_SUCCESS);
+   int error;
+   int phase = 0;
+
+   pardiso (matrix->handle, &matrix->maxfct, &matrix->mnum, &matrix->mtype, &phase,
+            &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, 0/*perm*/, &matrix->nrhs,
+            matrix->iparm, &matrix->msglvl, 0, 0, &error,  matrix->dparm);
+   if (error != 0) {
+      printf("error releasing pardios memory\n");
+   }
+
    free(matrix->link_offset);
    free(matrix->rowIndex);
    free(matrix->values);
@@ -101,15 +125,16 @@ void csr_matrix_link_add(csr_matrix matrix, int i, double v) {
 }
 
 void csr_matrix_solve(csr_matrix matrix, double *F, double *X) {
-   int opt, error;
-   opt = MKL_DSS_POSITIVE_DEFINITE + MKL_DSS_MSG_LVL_INFO;
-   error = dss_factor_real(matrix->handle, opt, matrix->values);
-   assert(error == MKL_DSS_SUCCESS);
-   opt = MKL_DSS_DEFAULTS + MKL_DSS_REFINEMENT_OFF + MKL_DSS_MSG_LVL_INFO;
-   //opt = MKL_DSS_DEFAULTS;
-   int nrhs = 1;
-   error = dss_solve_real(matrix->handle, opt, F, nrhs, X);
-   assert(error == MKL_DSS_SUCCESS);
+   int error;
+   int phase = 23;
+   pardiso (matrix->handle, &matrix->maxfct, &matrix->mnum, &matrix->mtype, &phase,
+            &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, 0/*perm*/, &matrix->nrhs,
+            matrix->iparm, &matrix->msglvl, F, X, &error,  matrix->dparm);
+
+   if (error != 0) {
+      printf("\nERROR during solution: %d", error);
+      exit(3);
+   }
 }
 
 void csr_matrix_dump(csr_matrix matrix) {
@@ -230,22 +255,51 @@ static void set_link_offsets(csr_matrix matrix, int nlinks, Slink *links, int *p
 }
 
 static void init_pardiso(csr_matrix matrix) {
-   _INTEGER_t error;
-   //int opt = MKL_DSS_DEFAULTS;
-   int opt = MKL_DSS_MSG_LVL_INFO +  MKL_DSS_REFINEMENT_OFF + MKL_DSS_TERM_LVL_SUCCESS;
-   error = dss_create(matrix->handle, opt);
-   assert(error == MKL_DSS_SUCCESS);
+   int error = 0;
+   int solver = 0; /* use sparse direct solver */
+   matrix->mtype = 2;
+   matrix->maxfct = 1;
+   matrix->mnum = 1;
+   matrix->nrhs = 1;
+   matrix->msglvl = 0;
 
-   int dss_opt = MKL_DSS_SYMMETRIC;
+   pardisoinit (matrix->handle,  &matrix->mtype, &solver, matrix->iparm, matrix->dparm, &error);
 
-   error = dss_define_structure(matrix->handle, dss_opt,
-                                matrix->rowIndex, matrix->n, matrix->n,
-                                matrix->columns, matrix->nnz);
+   if (error != 0) {
+      if (error == -10 )
+         printf("No license file found \n");
+      if (error == -11 )
+         printf("License is expired \n");
+      if (error == -12 )
+         printf("Wrong username or hostname \n");
+   } else {
+      printf("[PARDISO]: License check was successful ... \n");
+   }
 
-   assert(error == MKL_DSS_SUCCESS);
+   pardiso_chkmatrix  (&matrix->mtype, &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, &error);
 
-   error = dss_reorder(matrix->handle, opt, 0);
-   assert(error == MKL_DSS_SUCCESS);
+   if (error != 0) {
+      printf("\nERROR in consistency of matrix: %d\n", error);
+      exit(1);
+   }
+
+   int phase = 11;
+
+   matrix->iparm[7] = 0;         /* Max numbers of iterative refinement steps. */
+   matrix->iparm[23] = 1;        /* new parallel scheduling */
+   matrix->iparm[31] = 0;        /* iterative factorization */
+
+   pardiso (matrix->handle, &matrix->maxfct, &matrix->mnum, &matrix->mtype, &phase,
+            &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, 0, &matrix->nrhs,
+            matrix->iparm, &matrix->msglvl, 0, 0, &error, matrix->dparm);
+
+   if (error != 0) {
+      printf("\nERROR during symbolic factorization: %d", error);
+      exit(1);
+   }
+   printf("\nReordering completed ... ");
+   printf("\nNumber of nonzeros in factors  = %d", matrix->iparm[17]);
+   printf("\nNumber of factorization MFLOPS = %d", matrix->iparm[18]);
 }
 
 static int is_sorted(csr_matrix matrix) {
@@ -324,7 +378,7 @@ static void set_paralinks(int nlinks, Slink *links, int *paralinks) {
          ASSURE_UPPER(k_n1, k_n2);
          if (i_n1 == k_n1 && i_n2 == k_n2) {
             paralinks[k-1] = i; //set to the parallel link
-            printf("link %d (%d -> %d) is parallel to link %d (%d -> %d)\n", i, i_n1, i_n2, k, k_n1, k_n2);
+            //printf("link %d (%d -> %d) is parallel to link %d (%d -> %d)\n", i, i_n1, i_n2, k, k_n1, k_n2);
          }
       }
    }
