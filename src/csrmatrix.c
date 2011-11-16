@@ -263,6 +263,21 @@ static void init_pardiso(csr_matrix matrix) {
    matrix->nrhs = 1;
    matrix->msglvl = 0;
 
+   int num_procs;
+
+   char *var = getenv("OMP_NUM_THREADS");
+   if (var != NULL) {
+      sscanf(var , "%d" ,&num_procs);
+   } else {
+      printf("Set environment OMP_NUM_THREADS");
+      exit(1);
+   }
+
+
+   matrix->iparm[2] = num_procs;
+   matrix->iparm[7] = 0; //no iterative refinement
+
+
    pardisoinit (matrix->handle,  &matrix->mtype, &solver, matrix->iparm, matrix->dparm, &error);
 
    if (error != 0) {
@@ -283,11 +298,9 @@ static void init_pardiso(csr_matrix matrix) {
       exit(1);
    }
 
-   int phase = 11;
+   fflush(stdout);
 
-   matrix->iparm[7] = 0;         /* Max numbers of iterative refinement steps. */
-   matrix->iparm[23] = 1;        /* new parallel scheduling */
-   matrix->iparm[31] = 0;        /* iterative factorization */
+   int phase = 11;
 
    pardiso (matrix->handle, &matrix->maxfct, &matrix->mnum, &matrix->mtype, &phase,
             &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, 0, &matrix->nrhs,
