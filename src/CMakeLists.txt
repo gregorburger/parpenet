@@ -25,5 +25,5 @@ add_definitions(-DCLE)
 add_executable(epanet2 ${SRCS})
 endif (BUILD_DLL)
 
-target_link_libraries(epanet2 -lblas -llapack -lpardiso412-GNU430-X86-64)
+target_link_libraries(epanet2 -lblas -lwsmp64)
 

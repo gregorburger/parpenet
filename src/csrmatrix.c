@@ -5,15 +5,23 @@
 #include <stdio.h>
 #include <assert.h>
 
-/* PARDISO prototype. */
-void pardisoinit (void   *, int    *,   int *, int *, double *, int *);
-void pardiso     (void   *, int    *,   int *, int *,    int *, int *,
-                  double *, int    *,    int *, int *,   int *, int *,
-                     int *, double *, double *, int *, double *);
-void pardiso_chkmatrix  (int *, int *, double *, int *, int *, int *);
-void pardiso_chkvec     (int *, int *, double *, int *);
-void pardiso_printstats (int *, int *, double *, int *, int *, int *,
-                           double *, int *);
+/* WSMP prototypes. */
+
+void wsmp_initialize_();
+double wsmprtc_();
+void wsetmaxthrds_(int *);
+void wscalz_(int *n, int *ia, int *ja,
+            int *options, int *perm, int *invp,
+            int *nnzl, int *wspace, int *aux,
+            int *naux, int *info);
+
+void  wscchf_(int *n, int *ia, int *ja,
+              double *avals, int *perm, int *invp,
+              int *aux, int *naux, int *info);
+
+void wsslv_(int *n, int *perm, int *invp,
+            double *b, int *ldb, int *nrhs,
+            int *niter, int *aux, int *naux);
 
 #define ASSURE_UPPER(n1, n2) if (n2 < n1) { \
 n1 = n1 ^ n2; \
@@ -29,15 +37,11 @@ struct csr_matrix_t {
    int     *rowIndex;      //array of size n+1 for each row i values and columns range from rowIndex[i] - rowIndex[i+1]
    int     *link_offset;   //direct offset of ith link int values array
 
-//pardiso stuff
-   void    *handle[64];    //handle for pardiso
-   int      iparm[64];
-   double   dparm[64];
-   int      mtype;     //real positiv symmetric
-   int      maxfct;
-   int      mnum;
-   int      nrhs;
-   int      msglvl;
+//wsmp stuff
+   int options[5];
+   int *perm;
+   int *invp;
+   int wspace, aux, naux;
 };
 
 // declarations internal api
@@ -45,7 +49,7 @@ static int get_nnz(int njuncs, int nlinks, Slink *links, int *paralinks);
 static void set_rowIndex(csr_matrix matrix, int nlinks, Slink *links, int *paralinks);
 static void set_columns(csr_matrix matrix, int nlinks, Slink *links, int *paralinks);
 static void set_link_offsets(csr_matrix matrix, int nlinks, Slink *links, int *paralinks);
-static void init_pardiso(csr_matrix matrix);
+static void init_wsmp(csr_matrix matrix);
 static int is_sorted(csr_matrix matrix);
 static int is_upper(csr_matrix matrix);
 static void sort(csr_matrix matrix);
@@ -77,7 +81,7 @@ csr_matrix csr_matrix_new(int njuncs, int nlinks, Slink *links) {
    set_link_offsets(matrix, nlinks, links, paralinks);
    assert(is_sorted(matrix));
    assert(is_upper(matrix));
-   init_pardiso(matrix);
+   init_wsmp(matrix);
 
    free(paralinks);
 
@@ -85,15 +89,14 @@ csr_matrix csr_matrix_new(int njuncs, int nlinks, Slink *links) {
 }
 
 void csr_matrix_free(csr_matrix matrix) {
-   int error;
-   int phase = 0;
+   /*int error;
 
-   pardiso (matrix->handle, &matrix->maxfct, &matrix->mnum, &matrix->mtype, &phase,
-            &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, 0/*perm*/, &matrix->nrhs,
-            matrix->iparm, &matrix->msglvl, 0, 0, &error,  matrix->dparm);
    if (error != 0) {
       printf("error releasing pardios memory\n");
-   }
+   }*/
+
+   free(matrix->invp);
+   free(matrix->perm);
 
    free(matrix->link_offset);
    free(matrix->rowIndex);
@@ -126,10 +129,20 @@ void csr_matrix_link_add(csr_matrix matrix, int i, double v) {
 
 void csr_matrix_solve(csr_matrix matrix, double *F, double *X) {
    int error;
-   int phase = 23;
-   pardiso (matrix->handle, &matrix->maxfct, &matrix->mnum, &matrix->mtype, &phase,
-            &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, 0/*perm*/, &matrix->nrhs,
-            matrix->iparm, &matrix->msglvl, F, X, &error,  matrix->dparm);
+
+
+   wscchf_(&matrix->n, matrix->rowIndex, matrix->columns, matrix->values,
+           matrix->perm, matrix->invp, &matrix->aux, &matrix->naux, &error);
+
+   assert(error == 0);
+
+   int ldb = matrix->n;
+   int nrhs = 1;
+   int niter = 0;
+
+   wsslv_(&matrix->n, matrix->perm, matrix->invp, F, &ldb, &nrhs, &niter, &matrix->aux, &matrix->naux);
+
+   memcpy(X, F, sizeof(double)*matrix->n);
 
    if (error != 0) {
       printf("\nERROR during solution: %d", error);
@@ -299,65 +312,31 @@ static void set_link_offsets(csr_matrix matrix, int nlinks, Slink *links, int *p
    }
 }
 
-static void init_pardiso(csr_matrix matrix) {
+static void init_wsmp(csr_matrix matrix) {
    int error = 0;
-   int solver = 0; /* use sparse direct solver */
-   matrix->mtype = 2;
-   matrix->maxfct = 1;
-   matrix->mnum = 1;
-   matrix->nrhs = 1;
-   matrix->msglvl = 0;
+   wsmp_initialize_();
 
-   int num_procs;
+   matrix->options[0] = 0;
+   matrix->options[1] = 0;
+   matrix->options[2] = 0;
+   matrix->options[3] = 0;
+   matrix->options[4] = 0;
 
-   char *var = getenv("OMP_NUM_THREADS");
-   if (var != NULL) {
-      sscanf(var , "%d" ,&num_procs);
-   } else {
-      printf("Set environment OMP_NUM_THREADS");
-      exit(1);
-   }
+   matrix->perm = malloc(sizeof(int)*matrix->n);
+   matrix->invp = malloc(sizeof(int)*matrix->n);
 
+   matrix->aux = 0;
+   matrix->naux = 0;
+   int nnzl;
 
-   matrix->iparm[2] = num_procs;
-   matrix->iparm[7] = 0; //no iterative refinement
-
-
-   pardisoinit (matrix->handle,  &matrix->mtype, &solver, matrix->iparm, matrix->dparm, &error);
-
-   if (error != 0) {
-      if (error == -10 )
-         printf("No license file found \n");
-      if (error == -11 )
-         printf("License is expired \n");
-      if (error == -12 )
-         printf("Wrong username or hostname \n");
-   } else {
-      printf("[PARDISO]: License check was successful ... \n");
-   }
-
-   pardiso_chkmatrix  (&matrix->mtype, &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, &error);
-
-   if (error != 0) {
-      printf("\nERROR in consistency of matrix: %d\n", error);
-      exit(1);
-   }
-
-   fflush(stdout);
-
-   int phase = 11;
-
-   pardiso (matrix->handle, &matrix->maxfct, &matrix->mnum, &matrix->mtype, &phase,
-            &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, 0, &matrix->nrhs,
-            matrix->iparm, &matrix->msglvl, 0, 0, &error, matrix->dparm);
-
+   wscalz_(&matrix->n, matrix->rowIndex, matrix->columns,
+          matrix->options, matrix->perm, matrix->invp,
+          &nnzl, &matrix->wspace, &matrix->aux, &matrix->naux, &error);
    if (error != 0) {
       printf("\nERROR during symbolic factorization: %d", error);
       exit(1);
    }
    printf("\nReordering completed ... ");
-   printf("\nNumber of nonzeros in factors  = %d", matrix->iparm[17]);
-   printf("\nNumber of factorization MFLOPS = %d", matrix->iparm[18]);
 }
 
 static int is_sorted(csr_matrix matrix) {
