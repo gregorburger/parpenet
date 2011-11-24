@@ -45,6 +45,19 @@ void csr_matrix_link_add(csr_matrix matrix, int i, double v);
   */
 void csr_matrix_solve(csr_matrix matrix, double *F, double *X);
 
+
+/**
+  * dumps the matrix in (row, column, value) triples
+  */
 void csr_matrix_dump(csr_matrix matrix);
 
+/**
+  * dumps the matrix into a csr loadable format
+  */
+void csr_matrix_dump_csr(csr_matrix matrix, const double *b, const double *x, const char *fname);
+
+/**
+  * dump matrix in MatrixMarket format.
+  */
+void csr_matrix_dump_mm(csr_matrix matrix, const char *fname);
 #endif // CSRMATRIX_H

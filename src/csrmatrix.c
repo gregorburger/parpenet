@@ -151,6 +151,51 @@ void csr_matrix_dump(csr_matrix matrix) {
    fflush(stdout);
 }
 
+void csr_matrix_dump_csr(csr_matrix matrix, const double *b, const double *x, const char *fname) {
+    FILE *dump_file;
+    int i;
+
+    dump_file = fopen(fname, "w+");
+
+    fprintf(dump_file, "%d %d\n", matrix->n, matrix->nnz);
+
+    for (i = 0; i < matrix->n+1; i++) {
+        fprintf(dump_file, "%d\n", matrix->rowIndex[i]);
+    }
+    fprintf(dump_file, "\n");
+
+    for (i = 0; i < matrix->nnz; i++) {
+        fprintf(dump_file, "%d %f\n", matrix->columns[i], matrix->values[i]);
+    }
+
+    fprintf(dump_file, "\n");
+
+    for (i = 0; i < matrix->n; i++) {
+        fprintf(dump_file, "%f %f\n", b[i], x[i]);
+    }
+
+    fprintf(dump_file, "\n");
+    fclose(dump_file);
+}
+
+void csr_matrix_dump_mm(csr_matrix matrix, const char *fname) {
+    FILE *dump_file;
+    int i, j;
+
+    dump_file = fopen(fname, "w+");
+
+    fprintf(dump_file, "%%%%MatrixMarket matrix coordinate real symmetric\n");
+    fprintf(dump_file, "%d %d %d\n", matrix->n, matrix->n, matrix->nnz);
+
+    for (i = 0; i < matrix->n; i++) {
+       int start = matrix->rowIndex[i]-1;
+       int stop = matrix->rowIndex[i+1]-1;
+       for (j = start; j < stop; j++) {
+          fprintf(dump_file, "%d %d %f\n", i+1, matrix->columns[j], matrix->values[j]);
+       }
+    }
+}
+
 // BEGIN INTERNAL API
 
 static int get_nnz(int njuncs, int nlinks, Slink *links, int *paralinks) {
