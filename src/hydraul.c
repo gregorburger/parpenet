@@ -1100,6 +1100,8 @@ double  tankgrade(int i, double v)
 
 }                        /* End of tankgrade */
 
+#include <omp.h>
+#include <stdlib.h>
 
 int  netsolve(int *iter, double *relerr)
 /*
@@ -1157,8 +1159,34 @@ int  netsolve(int *iter, double *relerr)
       ** Solution for H is returned in F from call to linsolve().
       */
       newcoeffs();
+      char str[100];
+      char *bench_file;
+      /*snprintf(str, 100, "/tmp/matrix-%d.mm", *iter);
+      csr_matrix_dump_mm(csr, str);
+      snprintf(str, 100, "/tmp/matrix-%d.dat", *iter);
+      csr_matrix_dump_matlab(csr, str);
+      exit(0);*/
 
+      bench_file = getenv("EN_BENCH_FILE");
+      printf("using benchfile %s\n", bench_file);
+      
+      if (!bench_file) {
+         exit(-1);
+      }
+      
+      
+      double start = omp_get_wtime();
       csr_matrix_solve(csr, &F[1], &H[1]);
+      double stop = omp_get_wtime();
+      
+      
+      if (bench_file) {
+         FILE *tmp = fopen(bench_file, "a");
+         fprintf(tmp, "\t%f\n", stop-start);
+         fclose(tmp);
+         exit(0);
+      }
+
       //errcode = linsolve(Njuncs, Aii, Aij,F);
 
       /* Take action depending on error code */

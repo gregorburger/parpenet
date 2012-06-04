@@ -15,7 +15,7 @@ set(MKL_ROOT $ENV{MKLROOT})
 message(STATUS "gaga " ${MKL_ROOT})
 include_directories(${MKL_ROOT}/include/)
 message(STATUS ${CMAKE_CURRENT_BINARY_DIR})
-link_directories(${MKL_ROOT}/lib/intel64/ ${CMAKE_CURRENT_BINARY_DIR})
+link_directories(${MKL_ROOT}/lib/intel64/ ${CMAKE_CURRENT_BINARY_DIR}/..)
 
 if (BUILD_DLL)
 add_definitions(-DDLL)
@@ -25,5 +25,5 @@ add_definitions(-DCLE)
 add_executable(epanet2 ${SRCS})
 endif (BUILD_DLL)
 
-target_link_libraries(epanet2 -lblas -llapack -lpardiso412-GNU430-X86-64)
+target_link_libraries(epanet2 -lblas -llapack -lpardiso412-GNU430-X86-64 -lm)
 

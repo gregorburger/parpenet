@@ -60,4 +60,11 @@ void csr_matrix_dump_csr(csr_matrix matrix, const double *b, const double *x, co
   * dump matrix in MatrixMarket format.
   */
 void csr_matrix_dump_mm(csr_matrix matrix, const char *fname);
+
+/**
+ * @brief loadable with "load" and spconvert command of matlab 
+ * @param matrix
+ * @param fname
+ */
+void csr_matrix_dump_matlab(csr_matrix matrix, const char *fname);
 #endif // CSRMATRIX_H

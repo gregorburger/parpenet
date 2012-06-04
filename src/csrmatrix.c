@@ -196,6 +196,22 @@ void csr_matrix_dump_mm(csr_matrix matrix, const char *fname) {
     }
 }
 
+void csr_matrix_dump_matlab(csr_matrix matrix, const char *fname) {
+    FILE *dump_file;
+    int i, j;
+
+    dump_file = fopen(fname, "w+");
+
+    for (i = 0; i < matrix->n; i++) {
+       int start = matrix->rowIndex[i]-1;
+       int stop = matrix->rowIndex[i+1]-1;
+       for (j = start; j < stop; j++) {
+          fprintf(dump_file, "%d, %d, %f\n", i+1, matrix->columns[j], matrix->values[j]);
+       }
+    }
+}
+
+
 // BEGIN INTERNAL API
 
 static int get_nnz(int njuncs, int nlinks, Slink *links, int *paralinks) {
@@ -423,9 +439,11 @@ static void set_paralinks(int nlinks, Slink *links, int *paralinks) {
    int i, k;
 
    //mark all not parallel
+#pragma omp parallel for private(i)
    for (i = 0; i < nlinks; i++) {
       paralinks[i] = 0;
    }
+#pragma omp parallel for private(i, k)
    for (i = 1; i <= nlinks; i++) {
       int i_n1 = links[i].N1;
       int i_n2 = links[i].N2;
