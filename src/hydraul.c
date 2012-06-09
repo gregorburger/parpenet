@@ -82,6 +82,7 @@ double RelaxFactor;                                                            /
 /* Function to find flow coeffs. through open/closed valves */                 //(2.00.11 - LR)
 void valvecoeff(int k);                                                        //(2.00.11 - LR)
 
+double old_times, par_times;
 
 int  openhyd()
 /*
@@ -98,6 +99,8 @@ int  openhyd()
    ERRCODE(allocmatrix());      /* Allocate solution matrices */
    for (i=1; i<=Nlinks; i++)    /* Initialize flows */
       initlinkflow(i,Link[i].Stat,Link[i].Kc);
+   par_times = 0.0;
+   old_times = 0.0;
    return(errcode);
 }
 
@@ -255,7 +258,8 @@ int  nexthyd(long *tstep)
    *tstep = hydstep;
    return(errcode);
 }
-  
+
+#include <stdlib.h>
 
 void  closehyd()
 /*
@@ -268,6 +272,19 @@ void  closehyd()
 {
    freesparse();           /* see SMATRIX.C */
    freematrix();
+   
+   char *bench_file_path = getenv("EN_BENCH_FILE");
+   
+   if (bench_file_path) {
+      FILE *f;
+      printf("\nusing bench file %s\n", bench_file_path);
+      f = fopen(bench_file_path, "a");
+      fprintf(f, "\t%f\t%f\n", old_times, par_times);
+      fclose(f);
+      exit(0);
+   } else {
+      printf("\nnot writing bench file\n");
+   }
 }
 
 
@@ -1103,6 +1120,8 @@ double  tankgrade(int i, double v)
 
 }                        /* End of tankgrade */
 
+#include "csrmatrix.h"
+#include <omp.h>     //for omp_get_wclock
 
 int  netsolve(int *iter, double *relerr)
 /*
@@ -1159,8 +1178,30 @@ int  netsolve(int *iter, double *relerr)
       ** head loss gradients, & F = flow correction terms.
       ** Solution for H is returned in F from call to linsolve().
       */
+      double start, stop;
+      
       newcoeffs();
-      errcode = linsolve(Njuncs,Aii,Aij,F);
+      
+      csr_matrix m = csr_matrix_convert_from_en2(Njuncs, XLNZ, NZSUB, LNZ, Aii, Aij);
+      csr_matrix_dump_matlab(m, "/tmp/dumpedmatrix.dat");
+      double *csr_F = (double*) malloc(Njuncs * sizeof(double));
+      memset(csr_F, 0, Njuncs* sizeof(double));
+      
+      int ntimes = 1;
+      
+      start = omp_get_wtime();
+      for (i = 0; i < ntimes; i++) {
+         csr_matrix_solve(m, &F[1], csr_F);
+      }
+      stop = omp_get_wtime();
+      par_times += stop-start;
+      
+      start = omp_get_wtime();
+      for (i = 0; i < ntimes; i++) {
+         errcode = linsolve(Njuncs,Aii,Aij,F);
+      }
+      stop = omp_get_wtime();
+      old_times += stop-start;
 
       /* Take action depending on error code */
       if (errcode < 0) break;    /* Memory allocation problem */
