@@ -279,7 +279,7 @@ void  closehyd()
       FILE *f;
       printf("\nusing bench file %s\n", bench_file_path);
       f = fopen(bench_file_path, "a");
-      fprintf(f, "\t%f\t%f\n", old_times, par_times);
+      fprintf(f, "%f,%f\n", old_times, par_times);
       fclose(f);
       exit(0);
    } else {
