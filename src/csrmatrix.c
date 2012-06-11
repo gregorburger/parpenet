@@ -152,9 +152,13 @@ csr_matrix csr_matrix_convert_from_en2(int njuncs,
       }
       matrix->rowIndex[col] = i_nnz+1;
    }
+#ifdef _DEBUG
    printf("\niniting pardiso matrix");
+#endif
    init_pardiso(matrix);
+#ifdef _DEBUG
    printf("\nfinished initing pardiso matrix");
+#endif
    return matrix;
 }
 
@@ -423,8 +427,6 @@ static void init_pardiso(csr_matrix matrix) {
          printf("License is expired \n");
       if (error == -12 )
          printf("Wrong username or hostname \n");
-   } else {
-      printf("[PARDISO]: License check was successful ... \n");
    }
 
    pardiso_chkmatrix  (&matrix->mtype, &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, &error);
@@ -446,9 +448,11 @@ static void init_pardiso(csr_matrix matrix) {
       printf("\nERROR during symbolic factorization: %d", error);
       exit(1);
    }
+#ifdef _DEBUG
    printf("\nReordering completed ... ");
    printf("\nNumber of nonzeros in factors  = %d", matrix->iparm[17]);
    printf("\nNumber of factorization MFLOPS = %d", matrix->iparm[18]);
+#endif
 }
 
 static int is_sorted(csr_matrix matrix) {
