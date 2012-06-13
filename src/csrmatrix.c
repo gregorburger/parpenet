@@ -164,7 +164,7 @@ csr_matrix csr_matrix_convert_from_en2(int njuncs,
 
 void csr_matrix_free(csr_matrix matrix) {
    int error;
-   int phase = 0;
+   int phase = -1;
 
    pardiso (matrix->handle, &matrix->maxfct, &matrix->mnum, &matrix->mtype, &phase,
             &matrix->n, matrix->values, matrix->rowIndex, matrix->columns, 0/*perm*/, &matrix->nrhs,
