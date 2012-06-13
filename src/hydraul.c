@@ -1196,6 +1196,9 @@ int  netsolve(int *iter, double *relerr)
       stop = omp_get_wtime();
       par_times += stop-start;
       
+      free(csr_F);
+      csr_matrix_free(m);
+      
       start = omp_get_wtime();
       for (i = 0; i < ntimes; i++) {
          errcode = linsolve(Njuncs,Aii,Aij,F);
