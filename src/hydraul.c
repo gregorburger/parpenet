@@ -1183,7 +1183,7 @@ int  netsolve(int *iter, double *relerr)
       newcoeffs();
       
       csr_matrix m = csr_matrix_convert_from_en2(Njuncs, XLNZ, NZSUB, LNZ, Aii, Aij);
-      csr_matrix_dump_matlab(m, "/tmp/dumpedmatrix.dat");
+      //csr_matrix_dump_matlab(m, "/tmp/dumpedmatrix.dat");
       double *csr_F = (double*) malloc(Njuncs * sizeof(double));
       memset(csr_F, 0, Njuncs* sizeof(double));
       

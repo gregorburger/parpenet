@@ -413,6 +413,7 @@ static void init_pardiso(csr_matrix matrix) {
    }
 
 
+   matrix->iparm[1] = 2; //0 == amd 2 == nested dissection from metis
    matrix->iparm[2] = num_procs;
    matrix->iparm[5] = 1; //do not overwrite X
    matrix->iparm[7] = 0; //no iterative refinement
