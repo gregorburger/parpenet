@@ -84,55 +84,37 @@ csr_matrix csr_matrix_new(int njuncs, int nlinks, Slink *links) {
    return matrix;
 }
 
-int        dump_numpy(int njuncs,
-                      int *XLNZ, int *NZSUB, int *LNZ,
-                      double *Aii, double *Aij) {
+int get_nnz_en2(int njuncs,
+                int *XLNZ, int *NZSUB, int *LNZ,
+                double *Aii, double *Aij) {
    int col, i, i_nnz;
-   FILE *f;
-   
-   f = fopen("coo_dump.py", "w");
-   fprintf(f, "crv = [");
    
    i_nnz = 0;
    
    for (col = 1; col <= njuncs; col++) {
-      double val = Aii[col];
-      
-      fprintf(f, "  (%d, %d, %f),\n", col-1, col-1, val);
-      i_nnz++;
-      
       int start = XLNZ[col];
       int stop = XLNZ[col+1];
       
-      for (i = start; i < stop; ++i) {
-         val = Aij[LNZ[i]];
-         int row = NZSUB[i];
-         fprintf(f, "  (%d, %d, %f),\n", col-1, row-1, val);
-         i_nnz++;
-      }
+      i_nnz += (stop-start) + 1;
    }
-   fprintf(f, "]");
-   fclose(f);
    return i_nnz;
 }
 
 csr_matrix csr_matrix_convert_from_en2(int njuncs, 
                                        int *XLNZ, int *NZSUB, int *LNZ,
                                        double *Aii, double *Aij) {
-   
-   int nlinks = dump_numpy(njuncs, XLNZ, NZSUB, LNZ, Aii, Aij);
    csr_matrix matrix;
    int col, i;
 
    matrix = malloc(sizeof(struct csr_matrix_t));
    matrix->n = njuncs;
    
-   matrix->nnz = nlinks;
+   matrix->nnz = get_nnz_en2(njuncs, XLNZ, NZSUB, LNZ, Aii, Aij);
    
    matrix->columns = malloc(matrix->nnz*sizeof(int));
    matrix->values = malloc(matrix->nnz*sizeof(double));
    matrix->rowIndex = malloc((matrix->n+1)*sizeof(int));
-   matrix->link_offset = malloc(nlinks*sizeof(int)); //not used here
+   matrix->link_offset = malloc(matrix->nnz*sizeof(int)); //not used here
    
    int i_nnz = 0;
    
