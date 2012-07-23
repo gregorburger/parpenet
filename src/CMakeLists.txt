@@ -25,5 +25,5 @@ add_definitions(-DCLE)
 add_executable(epanet-par ${SRCS})
 endif (BUILD_DLL)
 
-target_link_libraries(epanet-par -lblas -llapack -lpardiso412-GNU430-X86-64 -lm)
+target_link_libraries(epanet-par -lblas -llapack -lpardiso412-GNU450-X86-64 -lm)
 
