@@ -47,6 +47,7 @@ AUTHOR:     L. Rossman
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <malloc.h>
 #include <math.h>
@@ -82,6 +83,7 @@ double RelaxFactor;                                                            /
 /* Function to find flow coeffs. through open/closed valves */                 //(2.00.11 - LR)
 void valvecoeff(int k);                                                        //(2.00.11 - LR)
 
+double hydraulic_times;
 
 int  openhyd()
 /*
@@ -98,6 +100,7 @@ int  openhyd()
    ERRCODE(allocmatrix());      /* Allocate solution matrices */
    for (i=1; i<=Nlinks; i++)    /* Initialize flows */
       initlinkflow(i,Link[i].Stat,Link[i].Kc);
+   hydraulic_times = 0.0;
    return(errcode);
 }
 
@@ -268,6 +271,19 @@ void  closehyd()
 {
    freesparse();           /* see SMATRIX.C */
    freematrix();
+   
+   char *bench_file_path = getenv("EN_BENCH_FILE");
+   
+   if (bench_file_path) {
+      FILE *f;
+      printf("\nusing bench file %s\n", bench_file_path);
+      f = fopen(bench_file_path, "a");
+      fprintf(f, "%f", hydraulic_times);
+      fclose(f);
+      exit(0);
+   } else {
+      printf("\nnot writing bench file\n");
+   }
 }
 
 
@@ -1103,6 +1119,7 @@ double  tankgrade(int i, double v)
 
 }                        /* End of tankgrade */
 
+#include <omp.h>
 
 int  netsolve(int *iter, double *relerr)
 /*
@@ -1160,7 +1177,11 @@ int  netsolve(int *iter, double *relerr)
       ** Solution for H is returned in F from call to linsolve().
       */
       newcoeffs();
+      double start, stop;
+      start = omp_get_wtime();
       errcode = linsolve(Njuncs,Aii,Aij,F);
+      stop = omp_get_wtime();
+      hydraulic_times += stop - start;
 
       /* Take action depending on error code */
       if (errcode < 0) break;    /* Memory allocation problem */
