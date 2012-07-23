@@ -8,8 +8,8 @@ add_definitions(-DDLL)
 add_library(epanet2 SHARED ${SRCS})
 else (BUILD_DLL)
 add_definitions(-DCLE)
-add_executable(epanet2 ${SRCS})
+add_executable(epanet-seq ${SRCS})
 endif (BUILD_DLL)
 
-target_link_libraries(epanet2 -lm)
+target_link_libraries(epanet-seq -lm)
 
