@@ -318,7 +318,7 @@ static void init_pardiso(csr_matrix matrix) {
       exit(1);
    }
 
-
+   matrix->iparm[1] = 2; //matrix reordering 0 == amd 2 == nested dissection
    matrix->iparm[2] = num_procs;
    matrix->iparm[7] = 0; //no iterative refinement
 
